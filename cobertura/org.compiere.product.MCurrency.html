@@ -1,0 +1,806 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+           "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Coverage Report</title>
+<link title="Style" type="text/css" rel="stylesheet" href="css/main.css"/>
+<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+<h5>Coverage Report - org.compiere.product.MCurrency</h5>
+<div class="separator">&nbsp;</div>
+<table class="report">
+<thead><tr>  <td class="heading">Classes in this File</td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Line Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Branch Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Complexity</a></td></tr></thead>
+  <tr><td><a href="org.compiere.product.MCurrency.html">MCurrency</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">37%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:37px"><span class="text">23/62</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">33%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:33px"><span class="text">4/12</span></div></div></td></tr></table></td><td class="value"><span class="hidden">2.0;</span>2</td></tr>
+
+</table>
+<div class="separator">&nbsp;</div>
+<table cellspacing="0" cellpadding="0" class="src">
+<tr>  <td class="numLine">&nbsp;1</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">package</span> org.compiere.product;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;2</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;3</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.sql.ResultSet;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;4</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> java.util.Properties;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;5</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;6</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.compiere.model.I_C_Currency;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;7</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.compiere.orm.Query;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;8</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">import</span> org.idempiere.common.util.CCache;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;9</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;10</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;11</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *         Currency Model.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;12</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;13</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> *  @author Jorg Janke</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;14</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment"> */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;15</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">class</span> MCurrency <span class="keyword">extends</span> X_C_Currency</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;16</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;{</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;17</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;18</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;19</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;20</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = 2262097171335518186L;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;21</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;22</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;23</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Currency Constructor</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;24</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;25</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param C_Currency_ID id</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;26</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param trxName transaction</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;27</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;28</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MCurrency (Properties ctx, <span class="keyword">int</span> C_Currency_ID, String trxName)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;29</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;30</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span> (ctx, C_Currency_ID, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsUncovered"><a title="Line 31: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 31: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Currency_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;33</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsEMUMember (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;34</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsEuro (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;35</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setStdPrecision (2);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;36</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setCostingPrecision (4);</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;37</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;38</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        MCurrency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;39</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;40</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;41</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * Resultset constructor</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;42</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * </span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;43</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @param ctx</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @param rs</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;45</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         * @param trxName</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;46</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;47</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MCurrency(Properties ctx, ResultSet rs, String trxName) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;48</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">super</span>(ctx, rs, trxName);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;49</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;50</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;51</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;52</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Currency Constructor</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;53</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;54</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ISO_Code ISO</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;55</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param Description Name</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;56</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param CurSymbol symbol</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;57</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param StdPrecision prec</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param CostingPrecision prec</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;59</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param trxName transaction</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;60</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;61</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MCurrency (Properties ctx, String ISO_Code,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;62</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                String Description, String CurSymbol, <span class="keyword">int</span> StdPrecision, <span class="keyword">int</span> CostingPrecision, String trxName)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;63</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;64</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">super</span>(ctx, 0, trxName);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;65</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setISO_Code(ISO_Code);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;66</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setDescription(Description);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;67</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setCurSymbol(CurSymbol);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setStdPrecision (StdPrecision);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;69</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setCostingPrecision (CostingPrecision);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setIsEMUMember (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;71</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setIsEuro (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }        <span class="comment">//        MCurrency</span></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;73</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**        Store System Currencies                        **/</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;76</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> CCache&lt;Integer,MCurrency&gt; s_currencies = <span class="keyword">new</span> CCache&lt;Integer,MCurrency&gt;(I_C_Currency.Table_Name, 50);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Cache System Currencies by using ISO code as key **/</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;78</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> CCache&lt;String,MCurrency&gt; s_currenciesISO = <span class="keyword">new</span> CCache&lt;String,MCurrency&gt;(I_C_Currency.Table_Name, <span class="string">"C_CurrencyISO"</span>, 50);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;79</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Get Currency using ISO code</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx Context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;83</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ISOcode        Iso code</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return MCurrency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;85</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MCurrency get (Properties ctx, String ISOcode)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;87</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;88</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Try Cache</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MCurrency retValue = (MCurrency)s_currenciesISO.get(ISOcode);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;90</td>  <td class="nbHitsUncovered"><a title="Line 90: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 90: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;91</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> retValue;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;92</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;93</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Try database</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                Query query = <span class="keyword">new</span> Query(ctx, I_C_Currency.Table_Name, <span class="string">"ISO_Code=?"</span>, <span class="keyword">null</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                query.setParameters(ISOcode);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;96</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                retValue = (MCurrency)query.firstOnly();</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;97</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;98</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Save </span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;99</td>  <td class="nbHitsUncovered"><a title="Line 99: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 99: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue!=<span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;100</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_currenciesISO.put(ISOcode, retValue);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;101</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> retValue;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;102</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;103</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
+<tr>  <td class="numLine">&nbsp;104</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;105</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;106</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Get Currency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;107</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx Context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;108</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param C_Currency_ID currency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;109</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return ISO Code</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;111</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MCurrency get (Properties ctx, <span class="keyword">int</span> C_Currency_ID)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;112</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;113</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Try Cache</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;114</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                Integer key = <span class="keyword">new</span> Integer(C_Currency_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                MCurrency retValue = (MCurrency)s_currencies.get(key);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsCovered"><a title="Line 116: Conditional coverage 100% (2/2).">&nbsp;24</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 116: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsCovered">&nbsp;22</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> retValue;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;118</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;119</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Create it</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                retValue = <span class="keyword">new</span> MCurrency(ctx, C_Currency_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Save in System</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsUncovered"><a title="Line 122: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 122: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (retValue.getAD_Client_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;123</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        s_currencies.put(key, retValue);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> retValue;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;125</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        get</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;126</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;127</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;128</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Get Currency Iso Code.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;129</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx Context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;130</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param C_Currency_ID currency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;131</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return ISO Code</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;132</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;133</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> String getISO_Code (Properties ctx, <span class="keyword">int</span> C_Currency_ID)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;134</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;135</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder contextKey = <span class="keyword">new</span> StringBuilder(<span class="string">"C_Currency_"</span>).append(C_Currency_ID);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String retValue = ctx.getProperty(contextKey.toString());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsUncovered"><a title="Line 137: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 137: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;138</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> retValue;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;139</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;140</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Create it</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;141</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MCurrency c = get(ctx, C_Currency_ID);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;142</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                retValue = c.getISO_Code();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;143</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                ctx.setProperty(contextKey.toString(), retValue);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;144</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> retValue;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;145</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getISO</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;146</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;147</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;148</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Get Standard Precision.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;149</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx Context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;150</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param C_Currency_ID currency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;151</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return Standard Precision</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;152</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;153</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> getStdPrecision (Properties ctx, <span class="keyword">int</span> C_Currency_ID)</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;154</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;155</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                MCurrency c = get(ctx, C_Currency_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;156</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> c.getStdPrecision();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;157</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getStdPrecision</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;158</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;159</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;160</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         String Representation</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;161</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return info</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;162</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;163</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String toString()</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;164</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;165</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder msgreturn = <span class="keyword">new</span> StringBuilder(<span class="string">"MCurrency["</span>).append(getC_Currency_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;166</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"-"</span>).append(getISO_Code()).append(<span class="string">"-"</span>).append(getCurSymbol())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;167</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">","</span>).append(getDescription())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;168</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">",Precision="</span>).append(getStdPrecision()).append(<span class="string">"/"</span>).append(getCostingPrecision());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;169</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> msgreturn.toString();</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;170</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        toString</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;171</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;172</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/**</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;173</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *         Get Costing Precision.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;174</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param ctx Context</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;175</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @param C_Currency_ID currency</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;176</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         *        @return Costing Precision</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;177</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;178</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> getCostingPrecision(Properties ctx, <span class="keyword">int</span> C_Currency_ID) {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;179</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MCurrency c = get(ctx, C_Currency_ID);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;180</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> c.getCostingPrecision();</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;181</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;182</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;183</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;184</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_Country = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;185</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_Currency = 1;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;186</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_Precision = 2;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;187</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_Symbol = 3;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;188</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_DecimalPoint = 4;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;189</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_FormatIndex = 5;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;190</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> <span class="keyword">int</span>        I_Name = 6;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;191</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">static</span> String[][] s_table = <span class="keyword">new</span> String[][] {</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;192</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"US"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>, <span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;193</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AR"</span>,<span class="string">"ARS"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">","</span>,<span class="string">"0"</span>, <span class="string">"Argentine Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;194</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AS"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CC"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;196</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CK"</span>,<span class="string">"NZD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"New Zealand Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;197</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CX"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;198</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"EC"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;199</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FM"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;200</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GU"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;201</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KI"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;202</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LR"</span>,<span class="string">"LRD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Liberian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;203</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MH"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;204</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MP"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;205</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MX"</span>,<span class="string">"MXN"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Mexican Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;206</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NF"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;207</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NR"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;208</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NU"</span>,<span class="string">"NZD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"New Zealand Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;209</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NZ"</span>,<span class="string">"NZD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"New Zealand Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;210</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PR"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;211</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PW"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;212</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TC"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;213</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TK"</span>,<span class="string">"NZD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"New Zealand Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;214</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TV"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;215</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VG"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;216</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VI"</span>,<span class="string">"USD"</span>,<span class="string">"2"</span>,<span class="string">"$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"US Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;217</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"UY"</span>,<span class="string">"UYU"</span>,<span class="string">"2"</span>,<span class="string">"$U"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"Peso Uruguayo"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AM"</span>,<span class="string">"AMD"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Armenian Dram"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;219</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AO"</span>,<span class="string">"AOA"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kwanza"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;220</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AZ"</span>,<span class="string">"AZM"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Azerbaijanian Manat"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;221</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BO"</span>,<span class="string">"BOB"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Boliviano"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;222</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CD"</span>,<span class="string">"CDF"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Franc Congolais"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;223</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CZ"</span>,<span class="string">"CZK"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Czech Koruna"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;224</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GE"</span>,<span class="string">"GEL"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Lari"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;225</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IR"</span>,<span class="string">"IRR"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Iranian Rial"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;226</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LT"</span>,<span class="string">"LTL"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Lithuanian Litus"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;227</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MD"</span>,<span class="string">"MDL"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Moldovan Leu"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;228</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PH"</span>,<span class="string">"PHP"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Philippine Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PL"</span>,<span class="string">"PLN"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Zloty"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;230</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"RU"</span>,<span class="string">"RUR"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"1"</span>,<span class="string">"Russian Ruble"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;231</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SD"</span>,<span class="string">"SDD"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Sudanese Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;232</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TJ"</span>,<span class="string">"TJS"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Somoni"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;233</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TM"</span>,<span class="string">"TMM"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Manat"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;234</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TP"</span>,<span class="string">"TPE"</span>,<span class="string">"0"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Timor Escudo"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;235</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"UA"</span>,<span class="string">"UAH"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Hryvnia"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;236</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"UZ"</span>,<span class="string">"UZS"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Uzbekistan Sum"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;237</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GB"</span>,<span class="string">"GBP"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Pound Sterling"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CY"</span>,<span class="string">"CYP"</span>,<span class="string">"2"</span>,<span class="string">"�C"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cyprus Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;239</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"EG"</span>,<span class="string">"EGP"</span>,<span class="string">"2"</span>,<span class="string">"�E"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Egyptian Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;240</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FK"</span>,<span class="string">"FKP"</span>,<span class="string">"2"</span>,<span class="string">"�F"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Falkland Islands Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;241</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GI"</span>,<span class="string">"GIP"</span>,<span class="string">"2"</span>,<span class="string">"�G"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Gibraltar Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;242</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SH"</span>,<span class="string">"SHP"</span>,<span class="string">"2"</span>,<span class="string">"�S"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Saint Helena Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;243</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SY"</span>,<span class="string">"SYP"</span>,<span class="string">"2"</span>,<span class="string">"�S"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Syrian Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;244</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"JP"</span>,<span class="string">"JPY"</span>,<span class="string">"0"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Yen"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;245</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GH"</span>,<span class="string">"GHC"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cedi"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;246</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SV"</span>,<span class="string">"SVC"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"El Salvador Colon"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AD"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;248</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AT"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;249</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BE"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DE"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ES"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;252</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FI"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;253</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FR"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GF"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;255</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GP"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;256</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GR"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IE"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;258</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IT"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;259</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LU"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;260</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MC"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;261</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MQ"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;262</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NL"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;263</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PM"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;264</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PT"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"$"</span>,<span class="string">"3"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;265</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"RE"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;266</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SM"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;267</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VA"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;268</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"YT"</span>,<span class="string">"EUR"</span>,<span class="string">"2"</span>,<span class="string">"�"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"euro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;269</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AU"</span>,<span class="string">"AUD"</span>,<span class="string">"2"</span>,<span class="string">"A$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Australian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;270</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AF"</span>,<span class="string">"AFA"</span>,<span class="string">"2"</span>,<span class="string">"Af"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Afghani"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;271</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AW"</span>,<span class="string">"AWG"</span>,<span class="string">"2"</span>,<span class="string">"Af."</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Aruban Guilder"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;272</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PA"</span>,<span class="string">"PAB"</span>,<span class="string">"2"</span>,<span class="string">"B"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Balboa"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;273</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BN"</span>,<span class="string">"BND"</span>,<span class="string">"2"</span>,<span class="string">"B$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Brunei Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;274</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BS"</span>,<span class="string">"BSD"</span>,<span class="string">"2"</span>,<span class="string">"B$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Bahamian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;275</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BH"</span>,<span class="string">"BHD"</span>,<span class="string">"3"</span>,<span class="string">"BD"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Bahraini Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;276</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BM"</span>,<span class="string">"BMD"</span>,<span class="string">"2"</span>,<span class="string">"Bd$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Bermudian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;277</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BB"</span>,<span class="string">"BBD"</span>,<span class="string">"2"</span>,<span class="string">"Bds$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Barbados Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;278</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BY"</span>,<span class="string">"BYR"</span>,<span class="string">"0"</span>,<span class="string">"BR"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Belarussian Ruble"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;279</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ET"</span>,<span class="string">"ETB"</span>,<span class="string">"2"</span>,<span class="string">"Br"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Ethiopian Birr"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;280</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VE"</span>,<span class="string">"VEB"</span>,<span class="string">"2"</span>,<span class="string">"Bs"</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Bolivar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;281</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TH"</span>,<span class="string">"THB"</span>,<span class="string">"2"</span>,<span class="string">"Bt"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Baht"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;282</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BZ"</span>,<span class="string">"BZD"</span>,<span class="string">"2"</span>,<span class="string">"BZ$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Belize Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CA"</span>,<span class="string">"CAD"</span>,<span class="string">"2"</span>,<span class="string">"C$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Canadian Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;284</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NI"</span>,<span class="string">"NIO"</span>,<span class="string">"2"</span>,<span class="string">"C$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cordoba Oro"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;285</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CV"</span>,<span class="string">"CVE"</span>,<span class="string">"2"</span>,<span class="string">"C.V.Esc."</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cape Verde Escudo"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KM"</span>,<span class="string">"KMF"</span>,<span class="string">"0"</span>,<span class="string">"CF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Comoro Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;287</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BF"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;288</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BJ"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;289</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CF"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CG"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;291</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CI"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEA"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;292</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CM"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;293</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GA"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GQ"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;295</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ML"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;296</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NE"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;297</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SN"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;298</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TD"</span>,<span class="string">"XAF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BEAC"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;299</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TG"</span>,<span class="string">"XOF"</span>,<span class="string">"0"</span>,<span class="string">"CFAF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFA Franc BCEAO"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;300</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NC"</span>,<span class="string">"XPF"</span>,<span class="string">"0"</span>,<span class="string">"CFPF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFP Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;301</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PF"</span>,<span class="string">"XPF"</span>,<span class="string">"0"</span>,<span class="string">"CFPF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFP Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;302</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"WF"</span>,<span class="string">"XPF"</span>,<span class="string">"0"</span>,<span class="string">"CFPF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"CFP Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;303</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CL"</span>,<span class="string">"CLP"</span>,<span class="string">"0"</span>,<span class="string">"Ch$"</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Chilean Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;304</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KY"</span>,<span class="string">"KYD"</span>,<span class="string">"2"</span>,<span class="string">"CI$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cayman Islands Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;305</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CO"</span>,<span class="string">"COP"</span>,<span class="string">"2"</span>,<span class="string">"Col$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Colombian Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;306</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KH"</span>,<span class="string">"KHR"</span>,<span class="string">"2"</span>,<span class="string">"CR"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Riel"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;307</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CU"</span>,<span class="string">"CUP"</span>,<span class="string">"2"</span>,<span class="string">"Cu$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Cuban Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;308</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GM"</span>,<span class="string">"GMD"</span>,<span class="string">"2"</span>,<span class="string">"D"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Dalasi"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;309</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VN"</span>,<span class="string">"VND"</span>,<span class="string">"2"</span>,<span class="string">"D"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Dong"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;310</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DZ"</span>,<span class="string">"DZD"</span>,<span class="string">"2"</span>,<span class="string">"DA"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Algerian Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;311</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ST"</span>,<span class="string">"STD"</span>,<span class="string">"2"</span>,<span class="string">"Db"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Dobra"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;312</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DJ"</span>,<span class="string">"DJF"</span>,<span class="string">"0"</span>,<span class="string">"DF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Djibouti Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;313</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AE"</span>,<span class="string">"AED"</span>,<span class="string">"2"</span>,<span class="string">"Dh"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"UAE Dirham"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;314</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MA"</span>,<span class="string">"MAD"</span>,<span class="string">"2"</span>,<span class="string">"DH"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Moroccan Dirham"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;315</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"YU"</span>,<span class="string">"YUM"</span>,<span class="string">"2"</span>,<span class="string">"Din"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Yugoslavian Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;316</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DK"</span>,<span class="string">"DKK"</span>,<span class="string">"2"</span>,<span class="string">"Dkr"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"Danish Krone"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;317</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FO"</span>,<span class="string">"DKK"</span>,<span class="string">"2"</span>,<span class="string">"Dkr"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"Danish Krone"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;318</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GL"</span>,<span class="string">"DKK"</span>,<span class="string">"2"</span>,<span class="string">"Dkr"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Danish Krone"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;319</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AG"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;320</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AI"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;321</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DM"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;322</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GD"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;323</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KN"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;324</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LC"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;325</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MS"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;326</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VC"</span>,<span class="string">"XCD"</span>,<span class="string">"2"</span>,<span class="string">"EC$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"East Caribbean Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;327</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"FJ"</span>,<span class="string">"FJD"</span>,<span class="string">"2"</span>,<span class="string">"F$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Fiji Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;328</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BI"</span>,<span class="string">"BIF"</span>,<span class="string">"0"</span>,<span class="string">"FBu"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Burundi Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;329</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MG"</span>,<span class="string">"MGF"</span>,<span class="string">"0"</span>,<span class="string">"FMG"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Malagasy Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;330</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"HU"</span>,<span class="string">"HUF"</span>,<span class="string">"2"</span>,<span class="string">"Ft"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Forint"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;331</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"HT"</span>,<span class="string">"HTG"</span>,<span class="string">"2"</span>,<span class="string">"G"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Gourde"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;332</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GY"</span>,<span class="string">"GYD"</span>,<span class="string">"2"</span>,<span class="string">"G$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Guyana Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;333</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"HK"</span>,<span class="string">"HKD"</span>,<span class="string">"2"</span>,<span class="string">"HK$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Hong Kong Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;334</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"HR"</span>,<span class="string">"HRK"</span>,<span class="string">"2"</span>,<span class="string">"HRK"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"Croatian Kuna"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;335</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IQ"</span>,<span class="string">"IQD"</span>,<span class="string">"3"</span>,<span class="string">"ID"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Iraqi Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;336</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IS"</span>,<span class="string">"ISK"</span>,<span class="string">"2"</span>,<span class="string">"IKr"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Iceland Krona"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;337</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"JM"</span>,<span class="string">"JMD"</span>,<span class="string">"2"</span>,<span class="string">"J$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Jamaican Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;338</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"JO"</span>,<span class="string">"JOD"</span>,<span class="string">"3"</span>,<span class="string">"JD"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Jordanian Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;339</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MM"</span>,<span class="string">"MMK"</span>,<span class="string">"2"</span>,<span class="string">"K"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kyat"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;340</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PG"</span>,<span class="string">"PGK"</span>,<span class="string">"2"</span>,<span class="string">"K"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kina"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;341</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KE"</span>,<span class="string">"KES"</span>,<span class="string">"2"</span>,<span class="string">"K Sh"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kenyan Shilling"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;342</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KW"</span>,<span class="string">"KWD"</span>,<span class="string">"3"</span>,<span class="string">"KD"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Kuwaiti Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;343</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BA"</span>,<span class="string">"BAM"</span>,<span class="string">"2"</span>,<span class="string">"KM"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Convertible Marks"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;344</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LA"</span>,<span class="string">"LAK"</span>,<span class="string">"2"</span>,<span class="string">"KN"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kip"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;345</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ER"</span>,<span class="string">"ERN"</span>,<span class="string">"2"</span>,<span class="string">"KR"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Nakfa"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;346</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AL"</span>,<span class="string">"ALL"</span>,<span class="string">"2"</span>,<span class="string">"L"</span>,<span class="string">","</span>,<span class="string">"1"</span>,<span class="string">"Lek"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;347</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"HN"</span>,<span class="string">"HNL"</span>,<span class="string">"2"</span>,<span class="string">"L"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Lempira"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"RO"</span>,<span class="string">"ROL"</span>,<span class="string">"2"</span>,<span class="string">"L"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Leu"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;349</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SZ"</span>,<span class="string">"SZL"</span>,<span class="string">"2"</span>,<span class="string">"L"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Lilangeni"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;350</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LY"</span>,<span class="string">"LYD"</span>,<span class="string">"3"</span>,<span class="string">"LD"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Libyan Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;351</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SL"</span>,<span class="string">"SLL"</span>,<span class="string">"2"</span>,<span class="string">"Le"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Leone"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;352</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MT"</span>,<span class="string">"MTL"</span>,<span class="string">"2"</span>,<span class="string">"Lm"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Maltese Lira"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;353</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LV"</span>,<span class="string">"LVL"</span>,<span class="string">"2"</span>,<span class="string">"Ls"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Latvian Lats"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;354</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BG"</span>,<span class="string">"BGL"</span>,<span class="string">"2"</span>,<span class="string">"Lv"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Lev"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;355</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MU"</span>,<span class="string">"MUR"</span>,<span class="string">"2"</span>,<span class="string">"Mau Rs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Mauritius Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;356</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MW"</span>,<span class="string">"MWK"</span>,<span class="string">"2"</span>,<span class="string">"MK"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kwacha"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;357</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MK"</span>,<span class="string">"MKD"</span>,<span class="string">"2"</span>,<span class="string">"MKD"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Denar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;358</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MZ"</span>,<span class="string">"MZM"</span>,<span class="string">"2"</span>,<span class="string">"Mt"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Metical"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;359</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"AN"</span>,<span class="string">"ANG"</span>,<span class="string">"2"</span>,<span class="string">"NAf."</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Netherlands Antillian Guilder"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;360</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"EE"</span>,<span class="string">"EEK"</span>,<span class="string">"2"</span>,<span class="string">"Nfa"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Kroon"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;361</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IL"</span>,<span class="string">"ILS"</span>,<span class="string">"2"</span>,<span class="string">"NIS"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"New Israeli Sheqel"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;362</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NO"</span>,<span class="string">"NOK"</span>,<span class="string">"2"</span>,<span class="string">"NKr"</span>,<span class="string">","</span>,<span class="string">"2"</span>,<span class="string">"Norwegian Krone"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;363</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NP"</span>,<span class="string">"NPR"</span>,<span class="string">"2"</span>,<span class="string">"NRs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Nepalese Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;364</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TW"</span>,<span class="string">"TWD"</span>,<span class="string">"2"</span>,<span class="string">"NT$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"New Taiwan Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;365</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BW"</span>,<span class="string">"BWP"</span>,<span class="string">"2"</span>,<span class="string">"P"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Pula"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;366</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MO"</span>,<span class="string">"MOP"</span>,<span class="string">"2"</span>,<span class="string">"P"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Pataca"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;367</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GT"</span>,<span class="string">"GTQ"</span>,<span class="string">"2"</span>,<span class="string">"Q"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Quetzal"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;368</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"QA"</span>,<span class="string">"QAR"</span>,<span class="string">"2"</span>,<span class="string">"QR"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Qatari Rial"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;369</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LS"</span>,<span class="string">"ZAR"</span>,<span class="string">"2"</span>,<span class="string">"R"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Rand"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;370</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NA"</span>,<span class="string">"ZAR"</span>,<span class="string">"2"</span>,<span class="string">"R"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Rand"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;371</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ZA"</span>,<span class="string">"ZAR"</span>,<span class="string">"2"</span>,<span class="string">"R"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Rand"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;372</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BR"</span>,<span class="string">"BRL"</span>,<span class="string">"2"</span>,<span class="string">"R$"</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Brazilian Real"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;373</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"DO"</span>,<span class="string">"DOP"</span>,<span class="string">"2"</span>,<span class="string">"RD$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Dominican Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;374</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MV"</span>,<span class="string">"MVR"</span>,<span class="string">"2"</span>,<span class="string">"Rf"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Rufiyaa"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;375</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"RW"</span>,<span class="string">"RWF"</span>,<span class="string">"0"</span>,<span class="string">"RF"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Rwanda Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;376</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MY"</span>,<span class="string">"MYR"</span>,<span class="string">"2"</span>,<span class="string">"RM"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Malaysian Ringgit"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;377</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"OM"</span>,<span class="string">"OMR"</span>,<span class="string">"3"</span>,<span class="string">"RO"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Rial Omani"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;378</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ID"</span>,<span class="string">"IDR"</span>,<span class="string">"2"</span>,<span class="string">"Rp"</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Rupiah"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;379</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BT"</span>,<span class="string">"INR"</span>,<span class="string">"2"</span>,<span class="string">"Rs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Indian Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;380</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"IN"</span>,<span class="string">"INR"</span>,<span class="string">"2"</span>,<span class="string">"Rs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Indian Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;381</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PK"</span>,<span class="string">"PKR"</span>,<span class="string">"2"</span>,<span class="string">"Rs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Pakistan Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;382</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SG"</span>,<span class="string">"SGD"</span>,<span class="string">"2"</span>,<span class="string">"S$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Singapore Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;383</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PE"</span>,<span class="string">"PEN"</span>,<span class="string">"2"</span>,<span class="string">"S/."</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Nuevo Sol"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;384</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SR"</span>,<span class="string">"SRG"</span>,<span class="string">"2"</span>,<span class="string">"Sf."</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Suriname Guilder"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;385</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SB"</span>,<span class="string">"SBD"</span>,<span class="string">"2"</span>,<span class="string">"SI$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Solomon Islands Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;386</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SE"</span>,<span class="string">"SEK"</span>,<span class="string">"2"</span>,<span class="string">"Sk"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Swedish Krona"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;387</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SK"</span>,<span class="string">"SKK"</span>,<span class="string">"2"</span>,<span class="string">"Sk"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Slovak Koruna"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;388</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LK"</span>,<span class="string">"LKR"</span>,<span class="string">"2"</span>,<span class="string">"SLRs"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Sri Lanka Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;389</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SI"</span>,<span class="string">"SIT"</span>,<span class="string">"2"</span>,<span class="string">"SlT"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Tolar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;390</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SO"</span>,<span class="string">"SOS"</span>,<span class="string">"2"</span>,<span class="string">"So. Sh."</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Somali Shilling"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;391</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SC"</span>,<span class="string">"SCR"</span>,<span class="string">"2"</span>,<span class="string">"SR"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Seychelles Rupee"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;392</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"SA"</span>,<span class="string">"SAR"</span>,<span class="string">"2"</span>,<span class="string">"SRls"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Saudi Riyal"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;393</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CH"</span>,<span class="string">"CHF"</span>,<span class="string">"2"</span>,<span class="string">"SwF"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Swiss Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;394</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LI"</span>,<span class="string">"CHF"</span>,<span class="string">"2"</span>,<span class="string">"SwF"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Swiss Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;395</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TO"</span>,<span class="string">"TOP"</span>,<span class="string">"2"</span>,<span class="string">"T$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Pa�anga"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;396</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TN"</span>,<span class="string">"TND"</span>,<span class="string">"3"</span>,<span class="string">"TD"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Tunisian Dinar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;397</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"BD"</span>,<span class="string">"BDT"</span>,<span class="string">"2"</span>,<span class="string">"Tk"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Taka"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;398</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TR"</span>,<span class="string">"TRL"</span>,<span class="string">"0"</span>,<span class="string">"TL"</span>,<span class="string">","</span>,<span class="string">"3"</span>,<span class="string">"Turkish Lira"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;399</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TZ"</span>,<span class="string">"TZS"</span>,<span class="string">"2"</span>,<span class="string">"TSh"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Tanzanian Shilling"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;400</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"TT"</span>,<span class="string">"TTD"</span>,<span class="string">"2"</span>,<span class="string">"TT$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Trinidad and Tobago Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;401</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MN"</span>,<span class="string">"MNT"</span>,<span class="string">"2"</span>,<span class="string">"Tug"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Tugrik"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;402</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"MR"</span>,<span class="string">"MRO"</span>,<span class="string">"2"</span>,<span class="string">"UM"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Ouguiya"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;403</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"UG"</span>,<span class="string">"UGX"</span>,<span class="string">"2"</span>,<span class="string">"USh"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Uganda Shilling"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;404</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"VU"</span>,<span class="string">"VUV"</span>,<span class="string">"0"</span>,<span class="string">"VT"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Vatu"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;405</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KR"</span>,<span class="string">"KRW"</span>,<span class="string">"0"</span>,<span class="string">"W"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Won"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;406</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"WS"</span>,<span class="string">"WST"</span>,<span class="string">"2"</span>,<span class="string">"WS$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Tala"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;407</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CN"</span>,<span class="string">"CNY"</span>,<span class="string">"2"</span>,<span class="string">"Y"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Yuan Renminbi"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;408</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"YE"</span>,<span class="string">"YER"</span>,<span class="string">"2"</span>,<span class="string">"YRls"</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Yemeni Rial"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;409</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ZW"</span>,<span class="string">"ZWD"</span>,<span class="string">"2"</span>,<span class="string">"Z$"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Zimbabwe Dollar"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;410</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"ZM"</span>,<span class="string">"ZMK"</span>,<span class="string">"2"</span>,<span class="string">"ZK"</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Kwacha"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;411</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"CR"</span>,<span class="string">"CRC"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Costa Rican Colon"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;412</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GN"</span>,<span class="string">"GNF"</span>,<span class="string">"0"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Guinea Franc"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;413</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"GW"</span>,<span class="string">"GWP"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Guinea-Bissau Peso"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;414</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KG"</span>,<span class="string">"KGS"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Som"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;415</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KP"</span>,<span class="string">"KPW"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"North Korean Won"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;416</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"KZ"</span>,<span class="string">"KZT"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Tenge"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;417</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"LB"</span>,<span class="string">"LBP"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"2"</span>,<span class="string">"Lebanese Pound"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;418</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"NG"</span>,<span class="string">"NGN"</span>,<span class="string">"2"</span>,<span class="string">""</span>,<span class="string">"."</span>,<span class="string">"0"</span>,<span class="string">"Naira"</span>},</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;419</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;                <span class="keyword">new</span> String[]{<span class="string">"PY"</span>,<span class="string">"PYG"</span>,<span class="string">"0"</span>,<span class="string">""</span>,<span class="string">","</span>,<span class="string">"0"</span>,<span class="string">"Guarani"</span>}</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;420</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        };</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;421</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;422</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MCurrency</span></pre></td></tr>
+</table>
+
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/9/18 6:30 PM.</div>
+</body>
+</html>
