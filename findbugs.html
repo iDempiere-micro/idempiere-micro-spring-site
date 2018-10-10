@@ -3259,13 +3259,13 @@
 <td>org.compiere.orm.DefaultModelFactory.getPO(String, int, String) invokes inefficient new Integer(int) constructor; use Integer.valueOf(int) instead</td>
 <td>PERFORMANCE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#DM_NUMBER_CTOR">DM_NUMBER_CTOR</a></td>
-<td>256</td>
+<td>257</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Exception is caught when Exception is not thrown in org.compiere.orm.DefaultModelFactory.getPOclass(String, String)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#REC_CATCH_EXCEPTION">REC_CATCH_EXCEPTION</a></td>
-<td>221</td>
+<td>222</td>
 <td>Medium</td></tr></table></div><a name="org.compiere.orm.GenericPO"></a>
 <div class="section">
 <h3>org.compiere.orm.GenericPO<a name="org.compiere.orm.GenericPO"></a></h3>
@@ -4792,7 +4792,7 @@
 <td>value could be null and is guaranteed to be dereferenced in org.compiere.server.Scheduler.fillParameter(MPInstance)</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_GUARANTEED_DEREF">NP_GUARANTEED_DEREF</a></td>
-<td>376</td>
+<td>336</td>
 <td>Medium</td></tr>
 <tr class="a">
 <td>Redundant nullcheck of variable, which is known to be non-null in org.compiere.server.Scheduler.parseVariable(MSchedulerPara, String)</td>
