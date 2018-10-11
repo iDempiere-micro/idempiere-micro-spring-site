@@ -450,7 +450,7 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;234</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//bug [1637432]</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;96</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc == <span class="keyword">null</span>) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;87</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc == <span class="keyword">null</span>) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;236</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        System.out.println(<span class="string">"s_cc == null"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
@@ -459,23 +459,23 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;240</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//direct connection</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;241</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> success = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;242</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                CLogErrorBuffer eb = CLogErrorBuffer.get(<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;243</td>  <td class="nbHitsUncovered"><a title="Line 243: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">&nbsp;96</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 243: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">                <span class="keyword">if</span> (eb != <span class="keyword">null</span> &amp;&amp; eb.isIssueError())</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;244</td>  <td class="nbHitsCovered">&nbsp;94</td>  <td class="src"><pre class="src">&nbsp;                        eb.setIssueError(<span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;241</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> success = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;242</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                CLogErrorBuffer eb = CLogErrorBuffer.get(<span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;243</td>  <td class="nbHitsUncovered"><a title="Line 243: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">&nbsp;87</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 243: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">                <span class="keyword">if</span> (eb != <span class="keyword">null</span> &amp;&amp; eb.isIssueError())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;244</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                        eb.setIssueError(<span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;245</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        eb = <span class="keyword">null</span>;        <span class="comment">//        don't reset</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsCovered">&nbsp;63</td>  <td class="src"><pre class="src">&nbsp;                        eb = <span class="keyword">null</span>;        <span class="comment">//        don't reset</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;248</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;249</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;            Connection conn = getConnectionRW(createNew);   <span class="comment">//  try to get a connection</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;250</td>  <td class="nbHitsUncovered"><a title="Line 250: Conditional coverage 50% (1/2).">&nbsp;96</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 250: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (conn != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;249</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;            Connection conn = getConnectionRW(createNew);   <span class="comment">//  try to get a connection</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;250</td>  <td class="nbHitsUncovered"><a title="Line 250: Conditional coverage 50% (1/2).">&nbsp;87</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 250: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (conn != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                conn.close();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;253</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                success = <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                conn.close();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;253</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                success = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">else</span> success = <span class="keyword">false</span>;</span></pre></td></tr>
@@ -487,10 +487,10 @@
 <tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        System.out.println(<span class="string">"E1"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        e.printStackTrace();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;261</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        success = <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;263</td>  <td class="nbHitsCovered"><a title="Line 263: Conditional coverage 100% (2/2).">&nbsp;96</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 263: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (eb != <span class="keyword">null</span>)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;264</td>  <td class="nbHitsCovered">&nbsp;94</td>  <td class="src"><pre class="src">&nbsp;                        eb.setIssueError(<span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;265</td>  <td class="nbHitsCovered">&nbsp;96</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> success;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;263</td>  <td class="nbHitsCovered"><a title="Line 263: Conditional coverage 100% (2/2).">&nbsp;87</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 263: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (eb != <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;264</td>  <td class="nbHitsCovered">&nbsp;24</td>  <td class="src"><pre class="src">&nbsp;                        eb.setIssueError(<span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;265</td>  <td class="nbHitsCovered">&nbsp;87</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> success;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;266</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  isConnected</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;267</td>  <td class="nbHits">&nbsp;</td>
@@ -526,7 +526,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> Connection getConnectionRW (<span class="keyword">boolean</span> createNew)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;284</td>  <td class="nbHitsCovered">&nbsp;99</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> createConnection(<span class="keyword">true</span>, <span class="keyword">false</span>, Connection.TRANSACTION_READ_COMMITTED);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;284</td>  <td class="nbHitsCovered">&nbsp;90</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> createConnection(<span class="keyword">true</span>, <span class="keyword">false</span>, Connection.TRANSACTION_READ_COMMITTED);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;285</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getConnectionRW</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
@@ -657,7 +657,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> Connection createConnection (<span class="keyword">boolean</span> autoCommit, <span class="keyword">boolean</span> readOnly, <span class="keyword">int</span> trxLevel)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;353</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;354</td>  <td class="nbHitsCovered">&nbsp;669</td>  <td class="src"><pre class="src">&nbsp;        Connection conn = s_cc.getConnection (autoCommit, trxLevel);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;354</td>  <td class="nbHitsCovered">&nbsp;657</td>  <td class="src"><pre class="src">&nbsp;        Connection conn = s_cc.getConnection (autoCommit, trxLevel);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;355</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;356</td>  <td class="nbHits">&nbsp;</td>
@@ -690,7 +690,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">        }*/</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;370</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsUncovered"><a title="Line 371: Conditional coverage 50% (1/2).">&nbsp;669</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 371: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (conn == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsUncovered"><a title="Line 371: Conditional coverage 50% (1/2).">&nbsp;657</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 371: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (conn == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;372</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;373</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"DB.getConnectionRO - @NoDBConnection@"</span>);</span></pre></td></tr>
@@ -702,16 +702,16 @@
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//hengsin: failed to set autocommit can lead to severe lock up of the system</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;377</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">try</span> {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;378</td>  <td class="nbHitsUncovered"><a title="Line 378: Conditional coverage 50% (1/2).">&nbsp;669</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 378: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (conn.getAutoCommit() != autoCommit)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;378</td>  <td class="nbHitsUncovered"><a title="Line 378: Conditional coverage 50% (1/2).">&nbsp;657</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 378: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (conn.getAutoCommit() != autoCommit)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;379</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;380</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(<span class="string">"Failed to set the requested auto commit mode on connection. [autocommit="</span> + autoCommit +<span class="string">"]"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;381</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;382</td>  <td class="nbHitsCovered">&nbsp;669</td>  <td class="src"><pre class="src">&nbsp;        } <span class="keyword">catch</span> (SQLException e) {}</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;382</td>  <td class="nbHitsCovered">&nbsp;657</td>  <td class="src"><pre class="src">&nbsp;        } <span class="keyword">catch</span> (SQLException e) {}</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;383</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;384</td>  <td class="nbHitsCovered">&nbsp;669</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> conn;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;384</td>  <td class="nbHitsCovered">&nbsp;657</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> conn;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;385</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }   <span class="comment">//  createConnection</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;386</td>  <td class="nbHits">&nbsp;</td>
@@ -730,8 +730,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> AdempiereDatabase getDatabase()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;393</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;394</td>  <td class="nbHitsUncovered"><a title="Line 394: Conditional coverage 50% (1/2).">&nbsp;910</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 394: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc != <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;395</td>  <td class="nbHitsCovered">&nbsp;910</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> s_cc.getDatabase();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;394</td>  <td class="nbHitsUncovered"><a title="Line 394: Conditional coverage 50% (1/2).">&nbsp;992</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 394: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;395</td>  <td class="nbHitsCovered">&nbsp;992</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> s_cc.getDatabase();</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;396</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                log.severe(<span class="string">"No Database Connection"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;397</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;398</td>  <td class="nbHits">&nbsp;</td>
@@ -793,8 +793,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> isPostgreSQL()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;429</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsUncovered"><a title="Line 430: Conditional coverage 50% (1/2).">&nbsp;109</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 430: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc != <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;431</td>  <td class="nbHitsCovered">&nbsp;109</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> s_cc.isPostgreSQL();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsUncovered"><a title="Line 430: Conditional coverage 50% (1/2).">&nbsp;111</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 430: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (s_cc != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;431</td>  <td class="nbHitsCovered">&nbsp;111</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> s_cc.isPostgreSQL();</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;432</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                log.severe(<span class="string">"No Database"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;433</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;434</td>  <td class="nbHits">&nbsp;</td>
@@ -1086,11 +1086,11 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> CPreparedStatement prepareStatement (String sql, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;614</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;615</td>  <td class="nbHitsCovered">&nbsp;724</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> concurrency = ResultSet.CONCUR_READ_ONLY;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;616</td>  <td class="nbHitsCovered">&nbsp;724</td>  <td class="src"><pre class="src">&nbsp;                String upper = sql.toUpperCase();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;617</td>  <td class="nbHitsUncovered"><a title="Line 617: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;724</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 617: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (upper.startsWith(<span class="string">"UPDATE "</span>) || upper.startsWith(<span class="string">"DELETE "</span>))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;615</td>  <td class="nbHitsCovered">&nbsp;718</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> concurrency = ResultSet.CONCUR_READ_ONLY;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;616</td>  <td class="nbHitsCovered">&nbsp;718</td>  <td class="src"><pre class="src">&nbsp;                String upper = sql.toUpperCase();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;617</td>  <td class="nbHitsUncovered"><a title="Line 617: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;718</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 617: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (upper.startsWith(<span class="string">"UPDATE "</span>) || upper.startsWith(<span class="string">"DELETE "</span>))</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;618</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        concurrency = ResultSet.CONCUR_UPDATABLE;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;619</td>  <td class="nbHitsCovered">&nbsp;724</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> prepareStatement(sql, ResultSet.TYPE_FORWARD_ONLY, concurrency, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;619</td>  <td class="nbHitsCovered">&nbsp;718</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> prepareStatement(sql, ResultSet.TYPE_FORWARD_ONLY, concurrency, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;620</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        prepareStatement</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;621</td>  <td class="nbHits">&nbsp;</td>
@@ -1144,11 +1144,11 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> resultSetType, <span class="keyword">int</span> resultSetConcurrency, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;646</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;647</td>  <td class="nbHitsUncovered"><a title="Line 647: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;724</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 647: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (sql == <span class="keyword">null</span> || sql.length() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;647</td>  <td class="nbHitsUncovered"><a title="Line 647: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;718</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 647: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (sql == <span class="keyword">null</span> || sql.length() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;648</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No SQL"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;649</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;650</td>  <td class="nbHitsCovered">&nbsp;724</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ProxyFactory.newCPreparedStatement(resultSetType, resultSetConcurrency, sql, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;650</td>  <td class="nbHitsCovered">&nbsp;718</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ProxyFactory.newCPreparedStatement(resultSetType, resultSetConcurrency, sql, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;651</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        prepareStatement</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;652</td>  <td class="nbHits">&nbsp;</td>
@@ -1215,10 +1215,10 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;685</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;686</td>  <td class="nbHitsCovered"><a title="Line 686: Conditional coverage 100% (2/2).">&nbsp;1657</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 686: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; params.length; i++)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;686</td>  <td class="nbHitsCovered"><a title="Line 686: Conditional coverage 100% (2/2).">&nbsp;1654</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 686: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; params.length; i++)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;687</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;688</td>  <td class="nbHitsCovered">&nbsp;1448</td>  <td class="src"><pre class="src">&nbsp;                        setParameter(stmt, i+1, params[i]);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;688</td>  <td class="nbHitsCovered">&nbsp;1445</td>  <td class="src"><pre class="src">&nbsp;                        setParameter(stmt, i+1, params[i]);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;689</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;690</td>  <td class="nbHitsCovered">&nbsp;209</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -1279,12 +1279,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">throws</span> SQLException</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;721</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;722</td>  <td class="nbHitsCovered"><a title="Line 722: Conditional coverage 100% (2/2).">&nbsp;1493</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 722: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (param == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;722</td>  <td class="nbHitsCovered"><a title="Line 722: Conditional coverage 100% (2/2).">&nbsp;1490</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 722: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (param == <span class="keyword">null</span>)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;723</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setObject(index, <span class="keyword">null</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;724</td>  <td class="nbHitsCovered"><a title="Line 724: Conditional coverage 100% (2/2).">&nbsp;1486</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 724: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> String)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;724</td>  <td class="nbHitsCovered"><a title="Line 724: Conditional coverage 100% (2/2).">&nbsp;1483</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 724: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> String)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;725</td>  <td class="nbHitsCovered">&nbsp;533</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setString(index, (String)param);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;726</td>  <td class="nbHitsCovered"><a title="Line 726: Conditional coverage 100% (2/2).">&nbsp;953</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 726: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> Integer)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;727</td>  <td class="nbHitsCovered">&nbsp;632</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(index, ((Integer)param).intValue());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;726</td>  <td class="nbHitsCovered"><a title="Line 726: Conditional coverage 100% (2/2).">&nbsp;950</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 726: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> Integer)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;727</td>  <td class="nbHitsCovered">&nbsp;629</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(index, ((Integer)param).intValue());</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;728</td>  <td class="nbHitsCovered"><a title="Line 728: Conditional coverage 100% (2/2).">&nbsp;321</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 728: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> BigDecimal)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsCovered">&nbsp;121</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setBigDecimal(index, (BigDecimal)param);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsCovered"><a title="Line 730: Conditional coverage 100% (2/2).">&nbsp;200</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 730: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (param <span class="keyword">instanceof</span> Timestamp)</a></pre></td></tr>
@@ -1296,7 +1296,7 @@
 <tr>  <td class="numLine">&nbsp;736</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;737</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> DBException(<span class="string">"Unknown parameter type "</span>+index+<span class="string">" - "</span>+param);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;738</td>  <td class="nbHitsCovered">&nbsp;1493</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;738</td>  <td class="nbHitsCovered">&nbsp;1490</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;739</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;740</td>  <td class="nbHits">&nbsp;</td>
@@ -2070,9 +2070,9 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">     */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1180</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> close(ResultSet rs, Statement st) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1181</td>  <td class="nbHitsCovered">&nbsp;776</td>  <td class="src"><pre class="src">&nbsp;            close(rs);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1182</td>  <td class="nbHitsCovered">&nbsp;776</td>  <td class="src"><pre class="src">&nbsp;            close(st);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1183</td>  <td class="nbHitsCovered">&nbsp;776</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1181</td>  <td class="nbHitsCovered">&nbsp;770</td>  <td class="src"><pre class="src">&nbsp;            close(rs);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1182</td>  <td class="nbHitsCovered">&nbsp;770</td>  <td class="src"><pre class="src">&nbsp;            close(st);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1183</td>  <td class="nbHitsCovered">&nbsp;770</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1184</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1185</td>  <td class="nbHits">&nbsp;</td>
@@ -3041,12 +3041,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> close( ResultSet rs) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1742</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">try</span> {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1743</td>  <td class="nbHitsUncovered"><a title="Line 1743: Conditional coverage 50% (1/2).">&nbsp;778</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1743: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (rs!=<span class="keyword">null</span>) rs.close();</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1743</td>  <td class="nbHitsUncovered"><a title="Line 1743: Conditional coverage 50% (1/2).">&nbsp;772</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1743: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (rs!=<span class="keyword">null</span>) rs.close();</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1744</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        } <span class="keyword">catch</span> (SQLException e) {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1745</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            ;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1746</td>  <td class="nbHitsCovered">&nbsp;778</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1747</td>  <td class="nbHitsCovered">&nbsp;778</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1746</td>  <td class="nbHitsCovered">&nbsp;772</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1747</td>  <td class="nbHitsCovered">&nbsp;772</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1748</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1749</td>  <td class="nbHits">&nbsp;</td>
@@ -3061,12 +3061,12 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> close( Statement st) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1754</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">try</span> {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1755</td>  <td class="nbHitsUncovered"><a title="Line 1755: Conditional coverage 50% (1/2).">&nbsp;1813</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1755: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (st!=<span class="keyword">null</span>) st.close();</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1755</td>  <td class="nbHitsUncovered"><a title="Line 1755: Conditional coverage 50% (1/2).">&nbsp;1801</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1755: Conditional coverage 50% (1/2).">            <span class="keyword">if</span> (st!=<span class="keyword">null</span>) st.close();</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1756</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        } <span class="keyword">catch</span> (SQLException e) {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1757</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            ;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1758</td>  <td class="nbHitsCovered">&nbsp;1813</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1759</td>  <td class="nbHitsCovered">&nbsp;1813</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1758</td>  <td class="nbHitsCovered">&nbsp;1801</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1759</td>  <td class="nbHitsCovered">&nbsp;1801</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1760</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1761</td>  <td class="nbHits">&nbsp;</td>
@@ -3650,6 +3650,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        DB</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/10/18 6:49 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/11/18 7:58 PM.</div>
 </body>
 </html>
