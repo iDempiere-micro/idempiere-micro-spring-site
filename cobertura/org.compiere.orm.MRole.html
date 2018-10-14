@@ -12,7 +12,7 @@
 <div class="separator">&nbsp;</div>
 <table class="report">
 <thead><tr>  <td class="heading">Classes in this File</td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Line Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Branch Coverage</a></td>  <td class="heading"><a class="dfn" href="help.html" onclick="popupwindow('help.html'); return false;">Complexity</a></td></tr></thead>
-  <tr><td><a href="org.compiere.orm.MRole.html">MRole</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">26%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:26px"><span class="text">359/1335</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">14%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:14px"><span class="text">125/868</span></div></div></td></tr></table></td><td class="value"><span class="hidden">7.6923076923076925;</span>7.692</td></tr>
+  <tr><td><a href="org.compiere.orm.MRole.html">MRole</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">25%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:25px"><span class="text">342/1335</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">14%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:14px"><span class="text">127/868</span></div></div></td></tr></table></td><td class="value"><span class="hidden">7.6923076923076925;</span>7.692</td></tr>
   <tr><td><a href="org.compiere.orm.MRole.html">MRole$OrgAccess</a></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">40%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:40px"><span class="text">11/27</span></div></div></td></tr></table></td><td><table cellpadding="0px" cellspacing="0px" class="percentgraph"><tr class="percentgraph"><td align="right" class="percentgraph" width="40">28%</td><td class="percentgraph"><div class="percentgraph"><div class="greenbar" style="width:28px"><span class="text">4/14</span></div></div></td></tr></table></td><td class="value"><span class="hidden">7.6923076923076925;</span>7.692</td></tr>
 
 </table>
@@ -128,7 +128,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MRole getDefault ()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;55</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;56</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> getDefault (Env.getCtx(), <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;56</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> getDefault (Env.getCtx(), <span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;57</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getDefault</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
@@ -151,29 +151,29 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MRole getDefault (Properties ctx, <span class="keyword">boolean</span> reload)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;67</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_Role_ID = Env.getContextAsInt(ctx, <span class="string">"#AD_Role_ID"</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;69</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_User_ID = Env.getContextAsInt(ctx, <span class="string">"#AD_User_ID"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_Role_ID = Env.getContextAsInt(ctx, <span class="string">"#AD_Role_ID"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;69</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_User_ID = Env.getContextAsInt(ctx, <span class="string">"#AD_User_ID"</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">//                if (!Ini.isClient())        //        none for Server</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">//                        AD_User_ID = 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                MRole defaultRole = getDefaultRole();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsUncovered"><a title="Line 73: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 73: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (reload || defaultRole == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                MRole defaultRole = getDefaultRole();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsUncovered"><a title="Line 73: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;18</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 73: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (reload || defaultRole == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        defaultRole = get (ctx, AD_Role_ID, AD_User_ID, reload);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;76</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setDefaultRole(defaultRole);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;78</td>  <td class="nbHitsCovered"><a title="Line 78: Conditional coverage 100% (2/2).">&nbsp;13</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 78: Conditional coverage 100% (2/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (defaultRole.getAD_Role_ID() != AD_Role_ID</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsUncovered"><a title="Line 79: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 79: Conditional coverage 50% (1/2).">                        || defaultRole.getAD_User_ID() != AD_User_ID)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;78</td>  <td class="nbHitsUncovered"><a title="Line 78: Conditional coverage 50% (1/2).">&nbsp;17</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 78: Conditional coverage 50% (1/2).">                <span class="keyword">else</span> <span class="keyword">if</span> (defaultRole.getAD_Role_ID() != AD_Role_ID</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsCovered"><a title="Line 79: Conditional coverage 100% (2/2).">&nbsp;17</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 79: Conditional coverage 100% (2/2).">                        || defaultRole.getAD_User_ID() != AD_User_ID)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;81</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        defaultRole = get (ctx, AD_Role_ID, AD_User_ID, reload);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;82</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setDefaultRole(defaultRole);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;83</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;84</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> defaultRole;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;84</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> defaultRole;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;85</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getDefault</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
@@ -187,7 +187,7 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;92</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">static</span> MRole getDefaultRole() {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;93</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (MRole) Env.getCtx().get(ROLE_KEY);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;93</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (MRole) Env.getCtx().get(ROLE_KEY);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;94</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;95</td>  <td class="nbHits">&nbsp;</td>
@@ -220,11 +220,11 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        role = <span class="keyword">new</span> MRole (ctx, AD_Role_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;112</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        s_roles.put (key, role);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsCovered"><a title="Line 113: Conditional coverage 100% (2/2).">&nbsp;2</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 113: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (AD_Role_ID == 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsUncovered"><a title="Line 113: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 113: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (AD_Role_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;114</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                String trxName = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                role.load(trxName);                        <span class="comment">//        special Handling</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                String trxName = <span class="keyword">null</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;116</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                role.load(trxName);                        <span class="comment">//        special Handling</span></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;117</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;118</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        role.setAD_User_ID(AD_User_ID);</pre></td></tr>
@@ -452,25 +452,25 @@
 <tr>  <td class="numLineCover">&nbsp;250</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span> (ctx, AD_Role_ID, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        ID=0 == System Administrator</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsCovered"><a title="Line 252: Conditional coverage 100% (2/2).">&nbsp;2</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 252: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (AD_Role_ID == 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsUncovered"><a title="Line 252: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 252: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (AD_Role_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;253</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        setName (null);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsCanExport (<span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsCanReport (<span class="keyword">true</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;257</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsManual (<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsPersonalAccess (<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsPersonalLock (<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsShowAcct (<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;261</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsAccessAllOrgs(<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setUserLevel (X_AD_Role.USERLEVEL_Organization);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;263</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setPreferenceType(X_AD_Role.PREFERENCETYPE_Organization);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;264</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsChangeLog(<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;265</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setOverwritePriceLimit(<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;266</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setIsUseUserOrgAccess(<span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;267</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setMaxQueryRecords(0);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;268</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setConfirmQueryRecords(0);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsCanExport (<span class="keyword">true</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsCanReport (<span class="keyword">true</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;257</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsManual (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsPersonalAccess (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsPersonalLock (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsShowAcct (<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;261</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsAccessAllOrgs(<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setUserLevel (X_AD_Role.USERLEVEL_Organization);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;263</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setPreferenceType(X_AD_Role.PREFERENCETYPE_Organization);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;264</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsChangeLog(<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;265</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setOverwritePriceLimit(<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;266</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setIsUseUserOrgAccess(<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;267</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setMaxQueryRecords(0);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;268</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setConfirmQueryRecords(0);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;269</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;270</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        MRole</span></pre></td></tr>
@@ -957,13 +957,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String toString()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;560</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;561</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="string">"MRole["</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                sb.append(getAD_Role_ID()).append(<span class="string">","</span>).append(getName())</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .append(<span class="string">",UserLevel="</span>).append(getUserLevel())</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .append(<span class="string">","</span>).append(getClientWhere(<span class="keyword">false</span>))</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;565</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .append(<span class="string">","</span>).append(getOrgWhere(<span class="keyword">false</span>))</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;566</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .append(<span class="string">"]"</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;567</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> sb.toString();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;561</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="string">"MRole["</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                sb.append(getAD_Role_ID()).append(<span class="string">","</span>).append(getName())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",UserLevel="</span>).append(getUserLevel())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">","</span>).append(getClientWhere(<span class="keyword">false</span>))</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;565</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">","</span>).append(getOrgWhere(<span class="keyword">false</span>))</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;566</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">"]"</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;567</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> sb.toString();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;568</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        toString</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;569</td>  <td class="nbHits">&nbsp;</td>
@@ -1113,7 +1113,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getAD_User_ID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;661</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;662</td>  <td class="nbHitsCovered">&nbsp;16</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_AD_User_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;662</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_AD_User_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;663</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getAD_User_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;664</td>  <td class="nbHits">&nbsp;</td>
@@ -1163,8 +1163,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> loadOrgAccess (<span class="keyword">boolean</span> reload)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;693</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;694</td>  <td class="nbHitsUncovered"><a title="Line 694: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;8</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 694: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (!(reload || m_orgAccess == <span class="keyword">null</span>))</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;694</td>  <td class="nbHitsUncovered"><a title="Line 694: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 694: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (!(reload || m_orgAccess == <span class="keyword">null</span>))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;696</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;697</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                ArrayList&lt;OrgAccess&gt; list = <span class="keyword">new</span> ArrayList&lt;OrgAccess&gt;();</pre></td></tr>
@@ -1254,12 +1254,12 @@
 <tr>  <td class="numLineCover">&nbsp;752</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement(sql, get_TrxName());</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;753</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(1, getAD_Role_ID());</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;754</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;755</td>  <td class="nbHitsCovered"><a title="Line 755: Conditional coverage 100% (2/2).">&nbsp;7</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 755: Conditional coverage 100% (2/2).">                        <span class="keyword">while</span> (rs.next())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;755</td>  <td class="nbHitsCovered"><a title="Line 755: Conditional coverage 100% (2/2).">&nbsp;10</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 755: Conditional coverage 100% (2/2).">                        <span class="keyword">while</span> (rs.next())</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;756</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                                MRoleOrgAccess oa = <span class="keyword">new</span> MRoleOrgAccess(getCtx(), rs, get_TrxName());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;758</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getAD_Client_ID(), oa.getAD_Org_ID(), oa.isReadOnly()));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                                MRoleOrgAccess oa = <span class="keyword">new</span> MRoleOrgAccess(getCtx(), rs, get_TrxName());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;758</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getAD_Client_ID(), oa.getAD_Org_ID(), oa.isReadOnly()));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;760</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;761</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">catch</span> (Exception e)</span></pre></td></tr>
@@ -1293,13 +1293,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> loadOrgAccessAdd (ArrayList&lt;OrgAccess&gt; list, OrgAccess oa)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;778</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;779</td>  <td class="nbHitsUncovered"><a title="Line 779: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 779: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list.contains(oa))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;779</td>  <td class="nbHitsUncovered"><a title="Line 779: Conditional coverage 50% (1/2).">&nbsp;8</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 779: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list.contains(oa))</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;780</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;781</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                list.add(oa);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;781</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                list.add(oa);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;782</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Do we look for trees?</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;783</td>  <td class="nbHitsUncovered"><a title="Line 783: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 783: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (getAD_Tree_Org_ID() == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;784</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;783</td>  <td class="nbHitsUncovered"><a title="Line 783: Conditional coverage 50% (1/2).">&nbsp;8</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 783: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (getAD_Tree_Org_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;784</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MOrg org = MOrg.get(getCtx(), oa.AD_Org_ID);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsUncovered"><a title="Line 786: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 786: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (!org.isSummary())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;787</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span>;</span></pre></td></tr>
@@ -1376,8 +1376,8 @@
 <tr>  <td class="numLineCover">&nbsp;836</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement(sql, get_TrxName());</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;837</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(1, getAD_Role_ID());</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;838</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;839</td>  <td class="nbHitsCovered"><a title="Line 839: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 839: Conditional coverage 100% (2/2).">                        <span class="keyword">while</span> (rs.next())</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;840</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                list.add(<span class="keyword">new</span> MTableAccess(getCtx(), rs, get_TrxName()));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;839</td>  <td class="nbHitsCovered"><a title="Line 839: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 839: Conditional coverage 100% (2/2).">                        <span class="keyword">while</span> (rs.next())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;840</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                list.add(<span class="keyword">new</span> MTableAccess(getCtx(), rs, get_TrxName()));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;841</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;842</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">catch</span> (Exception e)</span></pre></td></tr>
@@ -1624,7 +1624,7 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1006</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        All Orgs - use Client of Role</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1007</td>  <td class="nbHitsUncovered"><a title="Line 1007: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1007: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (isAccessAllOrgs())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1007</td>  <td class="nbHitsUncovered"><a title="Line 1007: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1007: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (isAccessAllOrgs())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1008</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1009</td>  <td class="nbHitsUncovered"><a title="Line 1009: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1009: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (rw || getAD_Client_ID() == 0)</a></span></pre></td></tr>
@@ -1636,39 +1636,39 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1014</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Get Client from Org List</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1015</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                loadOrgAccess (<span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1015</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                loadOrgAccess (<span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1016</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Unique Strings</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1017</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;String&gt;();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1018</td>  <td class="nbHitsUncovered"><a title="Line 1018: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1018: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1019</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set.add(<span class="string">"0"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1017</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;String&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1018</td>  <td class="nbHitsUncovered"><a title="Line 1018: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1018: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1019</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        set.add(<span class="string">"0"</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1020</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Positive List</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1021</td>  <td class="nbHitsCovered"><a title="Line 1021: Conditional coverage 100% (2/2).">&nbsp;9</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1021: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1022</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        set.add(String.valueOf(m_orgAccess[i].AD_Client_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1021</td>  <td class="nbHitsCovered"><a title="Line 1021: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1021: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1022</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        set.add(String.valueOf(m_orgAccess[i].AD_Client_ID));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1023</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1024</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1025</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;String&gt; it = set.iterator();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1026</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> oneOnly = <span class="keyword">true</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1027</td>  <td class="nbHitsCovered"><a title="Line 1027: Conditional coverage 100% (2/2).">&nbsp;7</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1027: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1024</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1025</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;String&gt; it = set.iterator();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1026</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> oneOnly = <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1027</td>  <td class="nbHitsCovered"><a title="Line 1027: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1027: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1028</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1029</td>  <td class="nbHitsCovered"><a title="Line 1029: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1029: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1029</td>  <td class="nbHitsCovered"><a title="Line 1029: Conditional coverage 100% (2/2).">&nbsp;2</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1029: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1030</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1031</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                sb.append(<span class="string">","</span>);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1032</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                oneOnly = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1033</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1034</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(it.next());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1034</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(it.next());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1035</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsCovered"><a title="Line 1036: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1036: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (oneOnly)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsUncovered"><a title="Line 1036: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1036: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oneOnly)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1037</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1038</td>  <td class="nbHitsUncovered"><a title="Line 1038: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1038: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1039</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Client_ID="</span> + sb.toString();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1038</td>  <td class="nbHitsUncovered"><a title="Line 1038: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1038: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1039</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Client_ID="</span> + sb.toString();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1040</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="keyword">else</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1041</td>  <td class="nbHits">&nbsp;</td>
@@ -1700,13 +1700,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isClientAccess(<span class="keyword">int</span> AD_Client_ID, <span class="keyword">boolean</span> rw)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1056</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1057</td>  <td class="nbHitsUncovered"><a title="Line 1057: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1057: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                <span class="keyword">if</span> (AD_Client_ID == 0 &amp;&amp; !rw)        <span class="comment">//        can always read System</span></a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1057</td>  <td class="nbHitsUncovered"><a title="Line 1057: Conditional coverage 25% (1/4) [each condition: 50%, 0%].">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1057: Conditional coverage 25% (1/4) [each condition: 50%, 0%].">                <span class="keyword">if</span> (AD_Client_ID == 0 &amp;&amp; !rw)        <span class="comment">//        can always read System</span></a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1058</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">true</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1059</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1060</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">// Check Access All Orgs:</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1061</td>  <td class="nbHitsUncovered"><a title="Line 1061: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1061: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (isAccessAllOrgs()) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1061</td>  <td class="nbHitsUncovered"><a title="Line 1061: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1061: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (isAccessAllOrgs()) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1062</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">// User has access to given AD_Client_ID if the role is defined on that AD_Client_ID</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1063</td>  <td class="nbHitsUncovered"><a title="Line 1063: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1063: Conditional coverage 0% (0/2).">                        <span class="keyword">return</span> getAD_Client_ID() == AD_Client_ID;</a></span></pre></td></tr>
@@ -1714,19 +1714,19 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1065</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1066</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                loadOrgAccess(<span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1066</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                loadOrgAccess(<span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1067</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Positive List</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1068</td>  <td class="nbHitsUncovered"><a title="Line 1068: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1068: Conditional coverage 0% (0/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1068</td>  <td class="nbHitsUncovered"><a title="Line 1068: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1068: Conditional coverage 50% (1/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1069</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1070</td>  <td class="nbHitsUncovered"><a title="Line 1070: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1070: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (m_orgAccess[i].AD_Client_ID == AD_Client_ID)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1070</td>  <td class="nbHitsUncovered"><a title="Line 1070: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1070: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (m_orgAccess[i].AD_Client_ID == AD_Client_ID)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1071</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1072</td>  <td class="nbHitsUncovered"><a title="Line 1072: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1072: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1072</td>  <td class="nbHitsUncovered"><a title="Line 1072: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1072: Conditional coverage 50% (1/2).">                                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1073</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> <span class="keyword">true</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1074</td>  <td class="nbHitsUncovered"><a title="Line 1074: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1074: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (!m_orgAccess[i].readOnly)        <span class="comment">//        rw</span></a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1075</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> <span class="keyword">true</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1074</td>  <td class="nbHitsUncovered"><a title="Line 1074: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1074: Conditional coverage 50% (1/2).">                                <span class="keyword">if</span> (!m_orgAccess[i].readOnly)        <span class="comment">//        rw</span></a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1075</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                                        <span class="keyword">return</span> <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1076</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1077</td>  <td class="nbHits">&nbsp;</td>
@@ -1750,48 +1750,48 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getOrgWhere (<span class="keyword">boolean</span> rw)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1087</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1088</td>  <td class="nbHitsUncovered"><a title="Line 1088: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1088: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (isAccessAllOrgs())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1088</td>  <td class="nbHitsUncovered"><a title="Line 1088: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1088: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (isAccessAllOrgs())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1089</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1090</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                loadOrgAccess(<span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1090</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                loadOrgAccess(<span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1091</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Unique Strings</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1092</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;String&gt;();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsUncovered"><a title="Line 1093: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1093: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set.add(<span class="string">"0"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1092</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                HashSet&lt;String&gt; set = <span class="keyword">new</span> HashSet&lt;String&gt;();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsUncovered"><a title="Line 1093: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1093: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        set.add(<span class="string">"0"</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1095</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Positive List</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1096</td>  <td class="nbHitsCovered"><a title="Line 1096: Conditional coverage 100% (2/2).">&nbsp;9</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1096: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1096</td>  <td class="nbHitsCovered"><a title="Line 1096: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1096: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_orgAccess.length; i++)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1097</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1098</td>  <td class="nbHitsUncovered"><a title="Line 1098: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1098: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1099</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                                set.add(String.valueOf(m_orgAccess[i].AD_Org_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1098</td>  <td class="nbHitsUncovered"><a title="Line 1098: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1098: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (!rw)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1099</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                                set.add(String.valueOf(m_orgAccess[i].AD_Org_ID));</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1100</td>  <td class="nbHitsUncovered"><a title="Line 1100: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1100: Conditional coverage 0% (0/2).">                        <span class="keyword">else</span> <span class="keyword">if</span> (!m_orgAccess[i].readOnly)        <span class="comment">//        rw</span></a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1101</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                set.add(String.valueOf(m_orgAccess[i].AD_Org_ID));</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1102</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1103</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1104</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1105</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;String&gt; it = set.iterator();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1106</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> oneOnly = <span class="keyword">true</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1107</td>  <td class="nbHitsCovered"><a title="Line 1107: Conditional coverage 100% (2/2).">&nbsp;10</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1107: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1104</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1105</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;String&gt; it = set.iterator();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1106</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> oneOnly = <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1107</td>  <td class="nbHitsCovered"><a title="Line 1107: Conditional coverage 100% (2/2).">&nbsp;6</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1107: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1108</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1109</td>  <td class="nbHitsCovered"><a title="Line 1109: Conditional coverage 100% (2/2).">&nbsp;7</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1109: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1109</td>  <td class="nbHitsCovered"><a title="Line 1109: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1109: Conditional coverage 100% (2/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1110</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1111</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                                sb.append(<span class="string">","</span>);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1112</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                                oneOnly = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1113</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1114</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(it.next());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1114</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(it.next());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1115</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1116</td>  <td class="nbHitsCovered"><a title="Line 1116: Conditional coverage 100% (2/2).">&nbsp;3</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1116: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (oneOnly)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1116</td>  <td class="nbHitsUncovered"><a title="Line 1116: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1116: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oneOnly)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1117</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1118</td>  <td class="nbHitsUncovered"><a title="Line 1118: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1118: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1119</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Org_ID="</span> + sb.toString();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1118</td>  <td class="nbHitsUncovered"><a title="Line 1118: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1118: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (sb.length() &gt; 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1119</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Org_ID="</span> + sb.toString();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1120</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="keyword">else</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1121</td>  <td class="nbHits">&nbsp;</td>
@@ -2018,11 +2018,11 @@
 <tr>  <td class="numLine">&nbsp;1261</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//default to negative list, can access on all tables</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1262</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> hasAccess = <span class="keyword">true</span>;        <span class="comment">//        assuming exclusive rule</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1263</td>  <td class="nbHitsUncovered"><a title="Line 1263: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1263: Conditional coverage 50% (1/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_tableAccess.length; i++)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1263</td>  <td class="nbHitsCovered"><a title="Line 1263: Conditional coverage 100% (2/2).">&nbsp;2</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 1263: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; m_tableAccess.length; i++)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1264</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1265</td>  <td class="nbHitsUncovered"><a title="Line 1265: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1265: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (!X_AD_Table_Access.ACCESSTYPERULE_Accessing.equals(m_tableAccess[i].getAccessTypeRule()))</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1266</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">continue</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1265</td>  <td class="nbHitsUncovered"><a title="Line 1265: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1265: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (!X_AD_Table_Access.ACCESSTYPERULE_Accessing.equals(m_tableAccess[i].getAccessTypeRule()))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1266</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">continue</span>;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1267</td>  <td class="nbHitsUncovered"><a title="Line 1267: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1267: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (m_tableAccess[i].isExclude())                <span class="comment">//        Exclude</span></a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1268</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        If you Exclude Access to a table and select Read Only,</span></pre></td></tr>
@@ -3834,20 +3834,20 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                 */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2418</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> OrgAccess (<span class="keyword">int</span> ad_Client_ID, <span class="keyword">int</span> ad_Org_ID, <span class="keyword">boolean</span> readonly)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2419</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2420</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.AD_Client_ID = ad_Client_ID;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2421</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.AD_Org_ID = ad_Org_ID;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2422</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.readOnly = readonly;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2423</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2419</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2420</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.AD_Client_ID = ad_Client_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2421</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.AD_Org_ID = ad_Org_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2422</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">this</span>.readOnly = readonly;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2423</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2424</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">/** Client                                */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2425</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">int</span> AD_Client_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2425</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">int</span> AD_Client_ID = 0;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2426</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">/** Organization                */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2427</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">int</span> AD_Org_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2427</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">int</span> AD_Org_ID = 0;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2428</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">/** Read Only                        */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2429</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">boolean</span> readOnly = <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2429</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">boolean</span> readOnly = <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2430</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2431</td>  <td class="nbHits">&nbsp;</td>
@@ -3866,11 +3866,11 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">public</span> <span class="keyword">boolean</span> equals (Object obj)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2438</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2439</td>  <td class="nbHitsUncovered"><a title="Line 2439: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2439: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                        <span class="keyword">if</span> (obj != <span class="keyword">null</span> &amp;&amp; obj <span class="keyword">instanceof</span> OrgAccess)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2439</td>  <td class="nbHitsUncovered"><a title="Line 2439: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2439: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                        <span class="keyword">if</span> (obj != <span class="keyword">null</span> &amp;&amp; obj <span class="keyword">instanceof</span> OrgAccess)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2440</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2441</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                                OrgAccess comp = (OrgAccess)obj;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2442</td>  <td class="nbHitsUncovered"><a title="Line 2442: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2442: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                                <span class="keyword">return</span> comp.AD_Client_ID == AD_Client_ID</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2441</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                                OrgAccess comp = (OrgAccess)obj;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2442</td>  <td class="nbHitsUncovered"><a title="Line 2442: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2442: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                                <span class="keyword">return</span> comp.AD_Client_ID == AD_Client_ID</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2443</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        &amp;&amp; comp.AD_Org_ID == AD_Org_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2444</td>  <td class="nbHits">&nbsp;</td>
@@ -4442,10 +4442,10 @@
 <tr>  <td class="numLine">&nbsp;2812</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2813</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                List&lt;T&gt; list = <span class="keyword">new</span> ArrayList&lt;T&gt;();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2814</td>  <td class="nbHitsCovered"><a title="Line 2814: Conditional coverage 100% (2/2).">&nbsp;16</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 2814: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (T po : array1)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2814</td>  <td class="nbHitsCovered"><a title="Line 2814: Conditional coverage 100% (2/2).">&nbsp;20</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 2814: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (T po : array1)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2815</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2816</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        list.add(po);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2816</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        list.add(po);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2817</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2818</td>  <td class="nbHitsUncovered"><a title="Line 2818: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2818: Conditional coverage 50% (1/2).">                <span class="keyword">for</span> (T o2 : array2)</a></span></pre></td></tr>
@@ -5006,6 +5006,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MRole</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/14/18 9:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/14/18 9:27 PM.</div>
 </body>
 </html>
