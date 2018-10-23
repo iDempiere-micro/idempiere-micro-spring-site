@@ -1,6 +1,3 @@
-company.bigger.common.db
-org.adempiere.exceptions
-org.adempiere.install
 org.compiere.accounting
 org.compiere.bank
 org.compiere.bo
@@ -24,7 +21,6 @@ org.compiere.util
 org.compiere.validation
 org.compiere.wf
 org.eevolution.model
-org.idempiere.common.base
 org.idempiere.common.db
 org.idempiere.common.db.util
 org.idempiere.common.dbPort
@@ -38,9 +34,7 @@ org.idempiere.icommon.dbPort
 org.idempiere.icommon.distributed
 org.idempiere.icommon.model
 org.idempiere.orm
-pg.org.adempiere.db.postgresql.config
 pg.org.compiere.db
-pg.org.compiere.dbPort
 software.hsharp.api.icommon
 software.hsharp.business.core
 software.hsharp.business.models
