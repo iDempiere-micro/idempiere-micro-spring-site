@@ -34,6 +34,7 @@ org.idempiere.icommon.dbPort
 org.idempiere.icommon.distributed
 org.idempiere.icommon.model
 org.idempiere.orm
+org.idempiere.process
 pg.org.compiere.db
 software.hsharp.api.icommon
 software.hsharp.business.core

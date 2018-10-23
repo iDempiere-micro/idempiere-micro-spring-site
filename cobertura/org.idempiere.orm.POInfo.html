@@ -132,9 +132,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> POInfo getPOInfo (Properties ctx, <span class="keyword">int</span> AD_Table_ID, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;58</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;2782</td>  <td class="src"><pre class="src">&nbsp;                Integer key = AD_Table_ID;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;60</td>  <td class="nbHitsCovered">&nbsp;2782</td>  <td class="src"><pre class="src">&nbsp;                POInfo retValue = (POInfo)s_cache.get(key);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsCovered"><a title="Line 61: Conditional coverage 100% (2/2).">&nbsp;2782</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 61: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (retValue == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;2779</td>  <td class="src"><pre class="src">&nbsp;                Integer key = AD_Table_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;60</td>  <td class="nbHitsCovered">&nbsp;2779</td>  <td class="src"><pre class="src">&nbsp;                POInfo retValue = (POInfo)s_cache.get(key);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsCovered"><a title="Line 61: Conditional coverage 100% (2/2).">&nbsp;2779</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 61: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (retValue == <span class="keyword">null</span>)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;62</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;63</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;                        retValue = <span class="keyword">new</span> POInfo(ctx, AD_Table_ID, <span class="keyword">false</span>, trxName);</pre></td></tr>
@@ -147,7 +147,7 @@
 <tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsCovered">&nbsp;79</td>  <td class="src"><pre class="src">&nbsp;                                s_cache.put(key, retValue);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;69</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsCovered">&nbsp;2782</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> retValue;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsCovered">&nbsp;2779</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> retValue;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getPOInfo</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;72</td>  <td class="nbHits">&nbsp;</td>
@@ -424,7 +424,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getTableName()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;248</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;249</td>  <td class="nbHitsCovered">&nbsp;7178</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_TableName;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;249</td>  <td class="nbHitsCovered">&nbsp;7169</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_TableName;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getTableName</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;251</td>  <td class="nbHits">&nbsp;</td>
@@ -441,7 +441,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getAD_Table_ID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;29665</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_AD_Table_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;29626</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_AD_Table_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;259</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getAD_Table_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;260</td>  <td class="nbHits">&nbsp;</td>
@@ -492,7 +492,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getColumnCount()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;284</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;285</td>  <td class="nbHitsCovered">&nbsp;54784</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns.length;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;285</td>  <td class="nbHitsCovered">&nbsp;53506</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns.length;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;286</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getColumnCount</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;287</td>  <td class="nbHits">&nbsp;</td>
@@ -511,9 +511,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getColumnIndex (String ColumnName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;295</td>  <td class="nbHitsCovered">&nbsp;31471</td>  <td class="src"><pre class="src">&nbsp;                Integer i = m_columnNameMap.get(ColumnName.toUpperCase());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;296</td>  <td class="nbHitsCovered"><a title="Line 296: Conditional coverage 100% (2/2).">&nbsp;31471</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 296: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (i != <span class="keyword">null</span>)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;297</td>  <td class="nbHitsCovered">&nbsp;31319</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> i.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;295</td>  <td class="nbHitsCovered">&nbsp;30397</td>  <td class="src"><pre class="src">&nbsp;                Integer i = m_columnNameMap.get(ColumnName.toUpperCase());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;296</td>  <td class="nbHitsCovered"><a title="Line 296: Conditional coverage 100% (2/2).">&nbsp;30397</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 296: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (i != <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;297</td>  <td class="nbHitsCovered">&nbsp;30245</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> i.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;298</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;299</td>  <td class="nbHitsCovered">&nbsp;152</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> -1;</pre></td></tr>
@@ -604,9 +604,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getColumnName (<span class="keyword">int</span> index)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;349</td>  <td class="nbHitsUncovered"><a title="Line 349: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;128774</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 349: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;349</td>  <td class="nbHitsUncovered"><a title="Line 349: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;128582</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 349: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;350</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;351</td>  <td class="nbHitsCovered">&nbsp;128774</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].ColumnName;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;351</td>  <td class="nbHitsCovered">&nbsp;128582</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].ColumnName;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;352</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getColumnName</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;353</td>  <td class="nbHits">&nbsp;</td>
@@ -712,9 +712,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Class&lt;?&gt; getColumnClass (<span class="keyword">int</span> index)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;411</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsUncovered"><a title="Line 412: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;120201</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 412: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsUncovered"><a title="Line 412: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;120015</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 412: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;413</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsCovered">&nbsp;120201</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].ColumnClass;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsCovered">&nbsp;120015</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].ColumnClass;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;415</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getColumnClass</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;416</td>  <td class="nbHits">&nbsp;</td>
@@ -733,9 +733,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getColumnDisplayType (<span class="keyword">int</span> index)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;423</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;424</td>  <td class="nbHitsUncovered"><a title="Line 424: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;116341</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 424: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;424</td>  <td class="nbHitsUncovered"><a title="Line 424: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;116155</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 424: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;425</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> DisplayType.String;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;426</td>  <td class="nbHitsCovered">&nbsp;116341</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].DisplayType;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;426</td>  <td class="nbHitsCovered">&nbsp;116155</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].DisplayType;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;427</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getColumnDisplayType</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;428</td>  <td class="nbHits">&nbsp;</td>
@@ -877,9 +877,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isKey (<span class="keyword">int</span> index)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;506</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;507</td>  <td class="nbHitsUncovered"><a title="Line 507: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;6671</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 507: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;507</td>  <td class="nbHitsUncovered"><a title="Line 507: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;6668</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 507: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;508</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;509</td>  <td class="nbHitsCovered">&nbsp;6671</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].IsKey;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;509</td>  <td class="nbHitsCovered">&nbsp;6668</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].IsKey;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;510</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  isKey</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;511</td>  <td class="nbHits">&nbsp;</td>
@@ -971,9 +971,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isEncrypted (<span class="keyword">int</span> index)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;561</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsUncovered"><a title="Line 562: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;89017</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 562: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsUncovered"><a title="Line 562: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;88918</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 562: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (index &lt; 0 || index &gt;= m_columns.length)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsCovered">&nbsp;89017</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].IsEncrypted;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsCovered">&nbsp;88918</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_columns[index].IsEncrypted;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;565</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  isEncrypted</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;566</td>  <td class="nbHits">&nbsp;</td>
@@ -1274,6 +1274,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  POInfo</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 8:39 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
 </body>
 </html>
