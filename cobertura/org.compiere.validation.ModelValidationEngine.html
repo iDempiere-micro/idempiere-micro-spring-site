@@ -139,9 +139,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">synchronized</span> <span class="keyword">static</span> ModelValidationEngine get()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;61</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsCovered"><a title="Line 62: Conditional coverage 100% (2/2).">&nbsp;39</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 62: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (s_engine == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsCovered"><a title="Line 62: Conditional coverage 100% (2/2).">&nbsp;58</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 62: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (s_engine == <span class="keyword">null</span>)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;63</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        s_engine = <span class="keyword">new</span> ModelValidationEngine();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;64</td>  <td class="nbHitsCovered">&nbsp;39</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> s_engine;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;64</td>  <td class="nbHitsCovered">&nbsp;58</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> s_engine;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;65</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        get</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;66</td>  <td class="nbHits">&nbsp;</td>
@@ -814,13 +814,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String fireDocValidate (IPODoc po, <span class="keyword">int</span> docTiming)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;514</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;515</td>  <td class="nbHitsUncovered"><a title="Line 515: Conditional coverage 50% (1/2).">&nbsp;35</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 515: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (po == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;515</td>  <td class="nbHitsUncovered"><a title="Line 515: Conditional coverage 50% (1/2).">&nbsp;53</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 515: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (po == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;516</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;517</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;518</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                String propertyName = po.get_TableName() + <span class="string">"*"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;519</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                ArrayList&lt;ModelValidator&gt; list = m_docValidateListeners.get(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;520</td>  <td class="nbHitsUncovered"><a title="Line 520: Conditional coverage 50% (1/2).">&nbsp;35</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 520: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;518</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                String propertyName = po.get_TableName() + <span class="string">"*"</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;519</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                ArrayList&lt;ModelValidator&gt; list = m_docValidateListeners.get(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;520</td>  <td class="nbHitsUncovered"><a title="Line 520: Conditional coverage 50% (1/2).">&nbsp;53</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 520: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;521</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;522</td>  <td class="nbHits">&nbsp;</td>
@@ -832,9 +832,9 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;527</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;528</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                propertyName = po.get_TableName() + po.getAD_Client_ID();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;529</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                list = m_docValidateListeners.get(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;530</td>  <td class="nbHitsUncovered"><a title="Line 530: Conditional coverage 50% (1/2).">&nbsp;35</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 530: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;528</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                propertyName = po.get_TableName() + po.getAD_Client_ID();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;529</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                list = m_docValidateListeners.get(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;530</td>  <td class="nbHitsUncovered"><a title="Line 530: Conditional coverage 50% (1/2).">&nbsp;53</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 530: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;531</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;532</td>  <td class="nbHits">&nbsp;</td>
@@ -848,13 +848,13 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;538</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">// now process the script model validator for this event</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;539</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                List&lt;MTableScriptValidator&gt; scriptValidators =</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;540</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                        MTableScriptValidator.getModelValidatorRules(</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;541</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                                        po.getCtx(),</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;542</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                                        po.get_Table_ID(),</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;539</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                List&lt;MTableScriptValidator&gt; scriptValidators =</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;540</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                        MTableScriptValidator.getModelValidatorRules(</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;541</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                                        po.getCtx(),</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;542</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                                        po.get_Table_ID(),</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;543</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        ModelValidator.documentEventValidators[docTiming]);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;544</td>  <td class="nbHitsUncovered"><a title="Line 544: Conditional coverage 50% (1/2).">&nbsp;35</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 544: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (scriptValidators != <span class="keyword">null</span>) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;544</td>  <td class="nbHitsUncovered"><a title="Line 544: Conditional coverage 50% (1/2).">&nbsp;53</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 544: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (scriptValidators != <span class="keyword">null</span>) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;545</td>  <td class="nbHitsUncovered"><a title="Line 545: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 545: Conditional coverage 0% (0/2).">                        <span class="keyword">for</span> (MTableScriptValidator scriptValidator : scriptValidators) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;546</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MRule rule = MRule.get(po.getCtx(), scriptValidator.getAD_Rule_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;547</td>  <td class="nbHits">&nbsp;</td>
@@ -914,7 +914,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        return errors.get(0);*/</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;584</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;585</td>  <td class="nbHitsCovered">&nbsp;35</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;585</td>  <td class="nbHitsCovered">&nbsp;53</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;586</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        fireDocValidate</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;587</td>  <td class="nbHits">&nbsp;</td>
@@ -1097,13 +1097,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String fireFactsValidate (I_C_AcctSchema schema, List&lt;IFact&gt; facts, IPODoc po)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;701</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;702</td>  <td class="nbHitsUncovered"><a title="Line 702: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 702: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">                <span class="keyword">if</span> (schema == <span class="keyword">null</span> || facts == <span class="keyword">null</span> || po == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;702</td>  <td class="nbHitsUncovered"><a title="Line 702: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 702: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">                <span class="keyword">if</span> (schema == <span class="keyword">null</span> || facts == <span class="keyword">null</span> || po == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;703</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;704</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;705</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                String propertyName = po.get_TableName() + <span class="string">"*"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;706</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                ArrayList&lt;FactsValidator&gt; list = m_factsValidateListeners.get(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;707</td>  <td class="nbHitsUncovered"><a title="Line 707: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 707: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;705</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                String propertyName = po.get_TableName() + <span class="string">"*"</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;706</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                ArrayList&lt;FactsValidator&gt; list = m_factsValidateListeners.get(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;707</td>  <td class="nbHitsUncovered"><a title="Line 707: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 707: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;708</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;709</td>  <td class="nbHits">&nbsp;</td>
@@ -1115,9 +1115,9 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;714</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;715</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                propertyName = po.get_TableName() + po.getAD_Client_ID();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;716</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                list = m_factsValidateListeners.get(propertyName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;717</td>  <td class="nbHitsUncovered"><a title="Line 717: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 717: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;715</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                propertyName = po.get_TableName() + po.getAD_Client_ID();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;716</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                list = m_factsValidateListeners.get(propertyName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;717</td>  <td class="nbHitsUncovered"><a title="Line 717: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 717: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (list != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;718</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;719</td>  <td class="nbHits">&nbsp;</td>
@@ -1151,7 +1151,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        return errors.get(0);*/</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;735</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;736</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;736</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;737</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        fireFactsValidate</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;738</td>  <td class="nbHits">&nbsp;</td>
@@ -1499,6 +1499,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        ModelValidatorEngine</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>

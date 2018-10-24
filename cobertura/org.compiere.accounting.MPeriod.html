@@ -188,14 +188,14 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;91</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsUncovered"><a title="Line 92: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 92: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DateAcct == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsUncovered"><a title="Line 92: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 92: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DateAcct == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;93</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;94</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> C_Calendar_ID = getC_Calendar_ID(ctx,AD_Org_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> C_Calendar_ID = getC_Calendar_ID(ctx,AD_Org_ID);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;97</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> findByCalendar(ctx, DateAcct, C_Calendar_ID, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;97</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">return</span> findByCalendar(ctx, DateAcct, C_Calendar_ID, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;98</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        get</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;99</td>  <td class="nbHits">&nbsp;</td>
@@ -206,7 +206,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MPeriod get (Properties ctx, Timestamp DateAcct, <span class="keyword">int</span> AD_Org_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;102</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;103</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> get(ctx, DateAcct, AD_Org_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;103</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> get(ctx, DateAcct, AD_Org_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;104</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;105</td>  <td class="nbHits">&nbsp;</td>
@@ -254,17 +254,17 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MPeriod findByCalendar(Properties ctx, Timestamp DateAcct, <span class="keyword">int</span> C_Calendar_ID, String trxName) {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;127</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;128</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_Client_ID = Env.getAD_Client_ID(ctx);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;128</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> AD_Client_ID = Env.getAD_Client_ID(ctx);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;129</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Search in Cache first</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;130</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;MPeriod&gt; it = s_cache.values().iterator();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsCovered"><a title="Line 131: Conditional coverage 100% (2/2).">&nbsp;13</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 131: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;130</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                Iterator&lt;MPeriod&gt; it = s_cache.values().iterator();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsCovered"><a title="Line 131: Conditional coverage 100% (2/2).">&nbsp;19</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 131: Conditional coverage 100% (2/2).">                <span class="keyword">while</span> (it.hasNext())</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;132</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                        MPeriod period = (MPeriod)it.next();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsUncovered"><a title="Line 134: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 134: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">                        <span class="keyword">if</span> (period.getC_Calendar_ID() == C_Calendar_ID &amp;&amp; period.isStandardPeriod() &amp;&amp; period.isInPeriod(DateAcct) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;135</td>  <td class="nbHitsUncovered"><a title="Line 135: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 135: Conditional coverage 50% (1/2).">                                        &amp;&amp; period.getAD_Client_ID() == AD_Client_ID)  <span class="comment">// globalqss - CarlosRuiz - Fix [ 1820810 ] Wrong Period Assigned to Fact_Acct</span></a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> period;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                        MPeriod period = (MPeriod)it.next();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsUncovered"><a title="Line 134: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">&nbsp;18</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 134: Conditional coverage 50% (3/6) [each condition: 50%, 50%, 50%].">                        <span class="keyword">if</span> (period.getC_Calendar_ID() == C_Calendar_ID &amp;&amp; period.isStandardPeriod() &amp;&amp; period.isInPeriod(DateAcct) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;135</td>  <td class="nbHitsUncovered"><a title="Line 135: Conditional coverage 50% (1/2).">&nbsp;18</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 135: Conditional coverage 50% (1/2).">                                        &amp;&amp; period.getAD_Client_ID() == AD_Client_ID)  <span class="comment">// globalqss - CarlosRuiz - Fix [ 1820810 ] Wrong Period Assigned to Fact_Acct</span></a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                                <span class="keyword">return</span> period;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;138</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
@@ -426,34 +426,34 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> isOpen (Properties ctx, Timestamp DateAcct, String DocBaseType, <span class="keyword">int</span> AD_Org_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;234</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DateAcct == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DateAcct == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;236</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_log.warning(<span class="string">"No DateAcct"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;238</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;239</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;240</td>  <td class="nbHitsUncovered"><a title="Line 240: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 240: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DocBaseType == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;240</td>  <td class="nbHitsUncovered"><a title="Line 240: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 240: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (DocBaseType == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;241</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;242</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_log.warning(<span class="string">"No DocBaseType"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;243</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;244</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;245</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                MPeriod period = MPeriod.get (ctx, DateAcct, AD_Org_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsUncovered"><a title="Line 246: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 246: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (period == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;245</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                MPeriod period = MPeriod.get (ctx, DateAcct, AD_Org_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsUncovered"><a title="Line 246: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 246: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (period == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;248</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_log.warning(<span class="string">"No Period for "</span> + DateAcct + <span class="string">" ("</span> + DocBaseType + <span class="string">")"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;249</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;251</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> open = period.isOpen(DocBaseType, DateAcct);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsUncovered"><a title="Line 252: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 252: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!open)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;251</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">boolean</span> open = period.isOpen(DocBaseType, DateAcct);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsUncovered"><a title="Line 252: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 252: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!open)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;253</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_log.warning(period.getName()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                + <span class="string">": Not open for "</span> + DocBaseType + <span class="string">" ("</span> + DateAcct + <span class="string">")"</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> open;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> open;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;256</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        isOpen</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
@@ -918,16 +918,16 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isInPeriod (Timestamp date)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;552</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;553</td>  <td class="nbHitsUncovered"><a title="Line 553: Conditional coverage 50% (1/2).">&nbsp;25</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 553: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (date == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;553</td>  <td class="nbHitsUncovered"><a title="Line 553: Conditional coverage 50% (1/2).">&nbsp;37</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 553: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (date == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;554</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;555</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                Timestamp dateOnly = TimeUtil.getDay(date);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;556</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                Timestamp from = TimeUtil.getDay(getStartDate());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;557</td>  <td class="nbHitsUncovered"><a title="Line 557: Conditional coverage 50% (1/2).">&nbsp;25</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 557: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (dateOnly.before(from))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;555</td>  <td class="nbHitsCovered">&nbsp;37</td>  <td class="src"><pre class="src">&nbsp;                Timestamp dateOnly = TimeUtil.getDay(date);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;556</td>  <td class="nbHitsCovered">&nbsp;37</td>  <td class="src"><pre class="src">&nbsp;                Timestamp from = TimeUtil.getDay(getStartDate());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;557</td>  <td class="nbHitsUncovered"><a title="Line 557: Conditional coverage 50% (1/2).">&nbsp;37</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 557: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (dateOnly.before(from))</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;558</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;559</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                Timestamp to = TimeUtil.getDay(getEndDate());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;560</td>  <td class="nbHitsUncovered"><a title="Line 560: Conditional coverage 50% (1/2).">&nbsp;25</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 560: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (dateOnly.after(to))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;559</td>  <td class="nbHitsCovered">&nbsp;37</td>  <td class="src"><pre class="src">&nbsp;                Timestamp to = TimeUtil.getDay(getEndDate());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;560</td>  <td class="nbHitsUncovered"><a title="Line 560: Conditional coverage 50% (1/2).">&nbsp;37</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 560: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (dateOnly.after(to))</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;561</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsCovered">&nbsp;37</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;563</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        isInPeriod</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;564</td>  <td class="nbHits">&nbsp;</td>
@@ -977,7 +977,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isOpen (String DocBaseType, Timestamp dateAcct)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;587</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;588</td>  <td class="nbHitsUncovered"><a title="Line 588: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 588: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!isActive())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;588</td>  <td class="nbHitsUncovered"><a title="Line 588: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 588: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!isActive())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;589</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;590</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_log.warning(<span class="string">"Period not active: "</span> + getName());</span></pre></td></tr>
@@ -986,18 +986,18 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;593</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;594</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                MAcctSchema as = MClient.get(getCtx(), getAD_Client_ID()).getAcctSchema();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;595</td>  <td class="nbHitsUncovered"><a title="Line 595: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 595: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (as != <span class="keyword">null</span> &amp;&amp; as.isAutoPeriodControl())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;594</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                MAcctSchema as = MClient.get(getCtx(), getAD_Client_ID()).getAcctSchema();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;595</td>  <td class="nbHitsUncovered"><a title="Line 595: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 595: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (as != <span class="keyword">null</span> &amp;&amp; as.isAutoPeriodControl())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;596</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;597</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp today = TimeUtil.trunc(<span class="keyword">new</span> Timestamp (System.currentTimeMillis()), TimeUtil.TRUNC_DAY);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;598</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp first = TimeUtil.addDays(today, - as.getPeriod_OpenHistory()); </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;599</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp last = TimeUtil.addDays(today, as.getPeriod_OpenFuture());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;597</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp today = TimeUtil.trunc(<span class="keyword">new</span> Timestamp (System.currentTimeMillis()), TimeUtil.TRUNC_DAY);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;598</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp first = TimeUtil.addDays(today, - as.getPeriod_OpenHistory()); </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;599</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                        Timestamp last = TimeUtil.addDays(today, as.getPeriod_OpenFuture());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;600</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        Timestamp date1, date2;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;601</td>  <td class="nbHitsUncovered"><a title="Line 601: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 601: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (dateAcct != <span class="keyword">null</span>) {</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;602</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                                date1 = TimeUtil.trunc(dateAcct, TimeUtil.TRUNC_DAY);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;603</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                                date2 = date1;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;601</td>  <td class="nbHitsUncovered"><a title="Line 601: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 601: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (dateAcct != <span class="keyword">null</span>) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;602</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                                date1 = TimeUtil.trunc(dateAcct, TimeUtil.TRUNC_DAY);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;603</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                                date2 = date1;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;604</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;605</td>  <td class="nbHits">&nbsp;</td>
@@ -1008,14 +1008,14 @@
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;609</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;610</td>  <td class="nbHitsUncovered"><a title="Line 610: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 610: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (date1.before(first))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;610</td>  <td class="nbHitsUncovered"><a title="Line 610: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 610: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (date1.before(first))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;611</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;612</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                log.warning (<span class="string">"Automatic Period Control:"</span> + date1 + <span class="string">" before first day - "</span> + first);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;613</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;614</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;615</td>  <td class="nbHitsUncovered"><a title="Line 615: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 615: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (date2.after(last))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;615</td>  <td class="nbHitsUncovered"><a title="Line 615: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 615: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (date2.after(last))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;616</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;617</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                log.warning (<span class="string">"Automatic Period Control:"</span> + date2 + <span class="string">" after last day - "</span> + last);</span></pre></td></tr>
@@ -1024,14 +1024,14 @@
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;620</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        We are OK</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;621</td>  <td class="nbHitsUncovered"><a title="Line 621: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 621: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (isInPeriod(today))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;621</td>  <td class="nbHitsUncovered"><a title="Line 621: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 621: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (isInPeriod(today))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;622</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;623</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                                as.setC_Period_ID(getC_Period_ID());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;624</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                                as.saveEx();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;623</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                                as.setC_Period_ID(getC_Period_ID());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;624</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                                as.saveEx();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;625</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;626</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;626</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="keyword">true</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;627</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;628</td>  <td class="nbHits">&nbsp;</td>
@@ -1071,7 +1071,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isStandardPeriod()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;650</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;651</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> X_C_Period.PERIODTYPE_StandardCalendarPeriod.equals(getPeriodType());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;651</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> X_C_Period.PERIODTYPE_StandardCalendarPeriod.equals(getPeriodType());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;652</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        isStandardPeriod</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;653</td>  <td class="nbHits">&nbsp;</td>
@@ -1287,11 +1287,11 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">throws</span> PeriodClosedException </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;784</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsUncovered"><a title="Line 785: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 785: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!MPeriod.isOpen(ctx, dateAcct, docBaseType, AD_Org_ID)) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsUncovered"><a title="Line 785: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 785: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!MPeriod.isOpen(ctx, dateAcct, docBaseType, AD_Org_ID)) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> PeriodClosedException(dateAcct, docBaseType);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;787</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;788</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;788</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;789</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;790</td>  <td class="nbHits">&nbsp;</td>
@@ -1347,9 +1347,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">throws</span> PeriodClosedException</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;817</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;818</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                MDocType dt = MDocType.get(ctx, C_DocType_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;819</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                testPeriodOpen(ctx, dateAcct, dt.getDocBaseType(),  AD_Org_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;820</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;818</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                MDocType dt = MDocType.get(ctx, C_DocType_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;819</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                testPeriodOpen(ctx, dateAcct, dt.getDocBaseType(),  AD_Org_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;820</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;821</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;822</td>  <td class="nbHits">&nbsp;</td>
@@ -1364,7 +1364,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_Calendar_ID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;827</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;828</td>  <td class="nbHitsCovered"><a title="Line 828: Conditional coverage 100% (2/2).">&nbsp;12</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 828: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_C_Calendar_ID == 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;828</td>  <td class="nbHitsCovered"><a title="Line 828: Conditional coverage 100% (2/2).">&nbsp;18</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 828: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_C_Calendar_ID == 0)</a></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;829</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;830</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        MYear year = (MYear) getC_Year();</pre></td></tr>
@@ -1375,7 +1375,7 @@
 <tr>  <td class="numLineCover">&nbsp;834</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                log.severe(<span class="string">"@NotFound@ C_Year_ID="</span> + getC_Year_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;835</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;836</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_C_Calendar_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;836</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_C_Calendar_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;837</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getC_Calendar_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;838</td>  <td class="nbHits">&nbsp;</td>
@@ -1396,26 +1396,26 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> getC_Calendar_ID(Properties ctx,<span class="keyword">int</span> AD_Org_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;846</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;847</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> C_Calendar_ID = 0;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;848</td>  <td class="nbHitsUncovered"><a title="Line 848: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 848: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (AD_Org_ID != 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;847</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">int</span> C_Calendar_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;848</td>  <td class="nbHitsUncovered"><a title="Line 848: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 848: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (AD_Org_ID != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;849</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;850</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;            MOrgInfo info = MOrgInfo.get(ctx, AD_Org_ID, <span class="keyword">null</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;851</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;            C_Calendar_ID = info.getC_Calendar_ID();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;850</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;            MOrgInfo info = MOrgInfo.get(ctx, AD_Org_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;851</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;            C_Calendar_ID = info.getC_Calendar_ID();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;852</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;853</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;854</td>  <td class="nbHitsUncovered"><a title="Line 854: Conditional coverage 50% (1/2).">&nbsp;13</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 854: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (C_Calendar_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;854</td>  <td class="nbHitsUncovered"><a title="Line 854: Conditional coverage 50% (1/2).">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 854: Conditional coverage 50% (1/2).">        <span class="keyword">if</span> (C_Calendar_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;855</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;856</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;            MClientInfo cInfo = MClientInfo.get(ctx);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;857</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;            C_Calendar_ID = cInfo.getC_Calendar_ID();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;856</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;            MClientInfo cInfo = MClientInfo.get(ctx);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;857</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;            C_Calendar_ID = cInfo.getC_Calendar_ID();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;858</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;859</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;860</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> C_Calendar_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;860</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> C_Calendar_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;861</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }   <span class="comment">//  getC_Calendar_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;862</td>  <td class="nbHits">&nbsp;</td>
@@ -1424,6 +1424,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MPeriod</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>

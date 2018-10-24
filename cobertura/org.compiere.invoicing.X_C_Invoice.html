@@ -77,7 +77,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> X_C_Invoice (Properties ctx, <span class="keyword">int</span> C_Invoice_ID, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, C_Invoice_ID, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, C_Invoice_ID, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;      <span class="comment">/** if (C_Invoice_ID == 0)</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;33</td>  <td class="nbHits">&nbsp;</td>
@@ -164,7 +164,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        setTotalLines (Env.ZERO);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">        } */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;75</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
@@ -173,8 +173,8 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> X_C_Invoice (Properties ctx, ResultSet rs, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;79</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;80</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, rs, trxName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;81</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;80</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, rs, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;81</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;83</td>  <td class="nbHits">&nbsp;</td>
@@ -187,7 +187,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> <span class="keyword">int</span> get_AccessLevel()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;87</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> I_C_Invoice.accessLevel.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> I_C_Invoice.accessLevel.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;89</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;90</td>  <td class="nbHits">&nbsp;</td>
@@ -198,8 +198,8 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> POInfo initPO (Properties ctx)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;93</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;      POInfo poi = POInfo.getPOInfo (ctx, I_C_Invoice.Table_ID, get_TrxName());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> poi;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;16</td>  <td class="src"><pre class="src">&nbsp;      POInfo poi = POInfo.getPOInfo (ctx, I_C_Invoice.Table_ID, get_TrxName());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;16</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> poi;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;97</td>  <td class="nbHits">&nbsp;</td>
@@ -227,12 +227,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setAD_OrgTrx_ID (<span class="keyword">int</span> AD_OrgTrx_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsUncovered"><a title="Line 111: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 111: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (AD_OrgTrx_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;112</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_OrgTrx_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsUncovered"><a title="Line 111: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 111: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (AD_OrgTrx_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;112</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_OrgTrx_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;113</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;114</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_OrgTrx_ID, Integer.valueOf(AD_OrgTrx_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;115</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;116</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;117</td>  <td class="nbHits">&nbsp;</td>
@@ -273,12 +273,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setAD_User_ID (<span class="keyword">int</span> AD_User_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;138</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;139</td>  <td class="nbHitsUncovered"><a title="Line 139: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 139: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (AD_User_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;140</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_User_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;139</td>  <td class="nbHitsUncovered"><a title="Line 139: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 139: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (AD_User_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;140</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_User_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;141</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;142</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_AD_User_ID, Integer.valueOf(AD_User_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;143</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;143</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;144</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;145</td>  <td class="nbHits">&nbsp;</td>
@@ -291,9 +291,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getAD_User_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;149</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;150</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_AD_User_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;151</td>  <td class="nbHitsUncovered"><a title="Line 151: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 151: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;152</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;150</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_AD_User_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;151</td>  <td class="nbHitsUncovered"><a title="Line 151: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 151: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;152</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;153</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;154</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -319,12 +319,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_Activity_ID (<span class="keyword">int</span> C_Activity_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;166</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;167</td>  <td class="nbHitsUncovered"><a title="Line 167: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 167: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Activity_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;168</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Activity_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;167</td>  <td class="nbHitsUncovered"><a title="Line 167: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 167: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Activity_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;168</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Activity_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;169</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;170</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Activity_ID, Integer.valueOf(C_Activity_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;172</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;173</td>  <td class="nbHits">&nbsp;</td>
@@ -365,12 +365,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_BPartner_ID (<span class="keyword">int</span> C_BPartner_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;194</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;195</td>  <td class="nbHitsUncovered"><a title="Line 195: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 195: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_BPartner_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;195</td>  <td class="nbHitsUncovered"><a title="Line 195: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 195: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_BPartner_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;196</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;197</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;198</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_ID, Integer.valueOf(C_BPartner_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;199</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;198</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_ID, Integer.valueOf(C_BPartner_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;199</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;200</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;201</td>  <td class="nbHits">&nbsp;</td>
@@ -383,10 +383,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_BPartner_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;205</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;206</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_BPartner_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;207</td>  <td class="nbHitsUncovered"><a title="Line 207: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 207: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;206</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_BPartner_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;207</td>  <td class="nbHitsUncovered"><a title="Line 207: Conditional coverage 50% (1/2).">&nbsp;21</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 207: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;208</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;209</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;209</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;210</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;211</td>  <td class="nbHits">&nbsp;</td>
@@ -411,12 +411,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_BPartner_Location_ID (<span class="keyword">int</span> C_BPartner_Location_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;222</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered"><a title="Line 223: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 223: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_BPartner_Location_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered"><a title="Line 223: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 223: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_BPartner_Location_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;224</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_Location_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;225</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;226</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_Location_ID, Integer.valueOf(C_BPartner_Location_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;227</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;226</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_BPartner_Location_ID, Integer.valueOf(C_BPartner_Location_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;227</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;228</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
@@ -429,10 +429,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_BPartner_Location_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;233</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;234</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_BPartner_Location_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;8</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;234</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_BPartner_Location_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered"><a title="Line 235: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 235: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;236</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;239</td>  <td class="nbHits">&nbsp;</td>
@@ -457,12 +457,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_Campaign_ID (<span class="keyword">int</span> C_Campaign_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;250</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;251</td>  <td class="nbHitsUncovered"><a title="Line 251: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 251: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Campaign_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Campaign_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;251</td>  <td class="nbHitsUncovered"><a title="Line 251: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 251: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Campaign_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Campaign_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;253</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;254</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Campaign_ID, Integer.valueOf(C_Campaign_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;256</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
@@ -521,9 +521,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_CashLine_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;289</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;290</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_CashLine_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsUncovered"><a title="Line 291: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 291: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;290</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_CashLine_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsUncovered"><a title="Line 291: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 291: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -561,9 +561,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_CashPlanLine_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;314</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;315</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_CashPlanLine_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;316</td>  <td class="nbHitsUncovered"><a title="Line 316: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 316: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;317</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;315</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_CashPlanLine_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;316</td>  <td class="nbHitsUncovered"><a title="Line 316: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 316: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;317</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;318</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;319</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -635,12 +635,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_ConversionType_ID (<span class="keyword">int</span> C_ConversionType_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;359</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;360</td>  <td class="nbHitsUncovered"><a title="Line 360: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 360: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_ConversionType_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;361</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_ConversionType_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;360</td>  <td class="nbHitsUncovered"><a title="Line 360: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 360: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_ConversionType_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;361</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_ConversionType_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;362</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;363</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_ConversionType_ID, Integer.valueOf(C_ConversionType_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;364</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;364</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;365</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;366</td>  <td class="nbHits">&nbsp;</td>
@@ -653,9 +653,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_ConversionType_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;370</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_ConversionType_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;372</td>  <td class="nbHitsUncovered"><a title="Line 372: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 372: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;373</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_ConversionType_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;372</td>  <td class="nbHitsUncovered"><a title="Line 372: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 372: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;373</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;374</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;375</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -681,12 +681,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_Currency_ID (<span class="keyword">int</span> C_Currency_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;387</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;388</td>  <td class="nbHitsUncovered"><a title="Line 388: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 388: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Currency_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;388</td>  <td class="nbHitsUncovered"><a title="Line 388: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 388: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Currency_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;389</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Currency_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;390</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;391</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Currency_ID, Integer.valueOf(C_Currency_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;392</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;391</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Currency_ID, Integer.valueOf(C_Currency_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;392</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;393</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;394</td>  <td class="nbHits">&nbsp;</td>
@@ -699,10 +699,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_Currency_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;398</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;399</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Currency_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;400</td>  <td class="nbHitsUncovered"><a title="Line 400: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 400: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;399</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Currency_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;400</td>  <td class="nbHitsUncovered"><a title="Line 400: Conditional coverage 50% (1/2).">&nbsp;18</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 400: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;401</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;402</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;402</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;403</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;404</td>  <td class="nbHits">&nbsp;</td>
@@ -727,12 +727,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_DocType_ID (<span class="keyword">int</span> C_DocType_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;415</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;416</td>  <td class="nbHitsUncovered"><a title="Line 416: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 416: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_DocType_ID &lt; 0) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;416</td>  <td class="nbHitsUncovered"><a title="Line 416: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 416: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_DocType_ID &lt; 0) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;417</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_DocType_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;418</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;419</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_DocType_ID, Integer.valueOf(C_DocType_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;420</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;419</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_DocType_ID, Integer.valueOf(C_DocType_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;420</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;421</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;422</td>  <td class="nbHits">&nbsp;</td>
@@ -745,10 +745,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_DocType_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;426</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;427</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_DocType_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;428</td>  <td class="nbHitsCovered"><a title="Line 428: Conditional coverage 100% (2/2).">&nbsp;14</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 428: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;429</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;427</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_DocType_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;428</td>  <td class="nbHitsCovered"><a title="Line 428: Conditional coverage 100% (2/2).">&nbsp;21</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 428: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;429</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;430</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;431</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;432</td>  <td class="nbHits">&nbsp;</td>
@@ -757,8 +757,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> org.compiere.model.I_C_DocType getC_DocTypeTarget() <span class="keyword">throws</span> RuntimeException</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;434</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;435</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_C_DocType)MTable.get(getCtx(), org.compiere.model.I_C_DocType.Table_Name)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;436</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getC_DocTypeTarget_ID(), get_TrxName());        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;435</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_C_DocType)MTable.get(getCtx(), org.compiere.model.I_C_DocType.Table_Name)</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;436</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getC_DocTypeTarget_ID(), get_TrxName());        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;437</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;438</td>  <td class="nbHits">&nbsp;</td>
@@ -773,12 +773,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_DocTypeTarget_ID (<span class="keyword">int</span> C_DocTypeTarget_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;443</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;444</td>  <td class="nbHitsUncovered"><a title="Line 444: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 444: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_DocTypeTarget_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;444</td>  <td class="nbHitsUncovered"><a title="Line 444: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 444: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_DocTypeTarget_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;445</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_DocTypeTarget_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;446</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;447</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_DocTypeTarget_ID, Integer.valueOf(C_DocTypeTarget_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;448</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;447</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_DocTypeTarget_ID, Integer.valueOf(C_DocTypeTarget_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;448</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;449</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;450</td>  <td class="nbHits">&nbsp;</td>
@@ -791,10 +791,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_DocTypeTarget_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;454</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_DocTypeTarget_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;456</td>  <td class="nbHitsUncovered"><a title="Line 456: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 456: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_DocTypeTarget_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;456</td>  <td class="nbHitsUncovered"><a title="Line 456: Conditional coverage 50% (1/2).">&nbsp;21</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 456: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;457</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;458</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;458</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;459</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;460</td>  <td class="nbHits">&nbsp;</td>
@@ -851,8 +851,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setChargeAmt (BigDecimal ChargeAmt)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;491</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_ChargeAmt, ChargeAmt);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;493</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_ChargeAmt, ChargeAmt);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;493</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;494</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;495</td>  <td class="nbHits">&nbsp;</td>
@@ -865,10 +865,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getChargeAmt () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;499</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;500</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_ChargeAmt);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;501</td>  <td class="nbHitsUncovered"><a title="Line 501: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 501: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;500</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_ChargeAmt);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;501</td>  <td class="nbHitsUncovered"><a title="Line 501: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 501: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;502</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;503</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;503</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;504</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;505</td>  <td class="nbHits">&nbsp;</td>
@@ -903,10 +903,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_Invoice_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;522</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;523</td>  <td class="nbHitsCovered">&nbsp;27</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Invoice_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;524</td>  <td class="nbHitsUncovered"><a title="Line 524: Conditional coverage 50% (1/2).">&nbsp;27</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 524: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;523</td>  <td class="nbHitsCovered">&nbsp;40</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Invoice_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;524</td>  <td class="nbHitsUncovered"><a title="Line 524: Conditional coverage 50% (1/2).">&nbsp;40</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 524: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;525</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;526</td>  <td class="nbHitsCovered">&nbsp;27</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;526</td>  <td class="nbHitsCovered">&nbsp;40</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;527</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;528</td>  <td class="nbHits">&nbsp;</td>
@@ -971,8 +971,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> org.compiere.model.I_C_Order getC_Order() <span class="keyword">throws</span> RuntimeException</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;561</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_C_Order)MTable.get(getCtx(), org.compiere.model.I_C_Order.Table_Name)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getC_Order_ID(), get_TrxName());        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;562</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_C_Order)MTable.get(getCtx(), org.compiere.model.I_C_Order.Table_Name)</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;563</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getC_Order_ID(), get_TrxName());        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;564</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;565</td>  <td class="nbHits">&nbsp;</td>
@@ -987,12 +987,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_Order_ID (<span class="keyword">int</span> C_Order_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;570</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;571</td>  <td class="nbHitsUncovered"><a title="Line 571: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 571: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Order_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;571</td>  <td class="nbHitsUncovered"><a title="Line 571: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 571: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Order_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;572</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_Order_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;573</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;574</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_Order_ID, Integer.valueOf(C_Order_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;575</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;574</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_ValueNoCheck (I_C_Invoice.COLUMNNAME_C_Order_ID, Integer.valueOf(C_Order_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;575</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;576</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;577</td>  <td class="nbHits">&nbsp;</td>
@@ -1005,10 +1005,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_Order_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;581</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;582</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Order_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;583</td>  <td class="nbHitsUncovered"><a title="Line 583: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 583: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;582</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Order_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;583</td>  <td class="nbHitsUncovered"><a title="Line 583: Conditional coverage 50% (1/2).">&nbsp;18</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 583: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;584</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;585</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;585</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;586</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;587</td>  <td class="nbHits">&nbsp;</td>
@@ -1079,12 +1079,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_PaymentTerm_ID (<span class="keyword">int</span> C_PaymentTerm_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;626</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;627</td>  <td class="nbHitsUncovered"><a title="Line 627: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 627: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_PaymentTerm_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;627</td>  <td class="nbHitsUncovered"><a title="Line 627: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 627: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_PaymentTerm_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;628</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_PaymentTerm_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;629</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;630</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_PaymentTerm_ID, Integer.valueOf(C_PaymentTerm_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;631</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;630</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_PaymentTerm_ID, Integer.valueOf(C_PaymentTerm_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;631</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;632</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;633</td>  <td class="nbHits">&nbsp;</td>
@@ -1097,10 +1097,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_PaymentTerm_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;637</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;638</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_PaymentTerm_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;639</td>  <td class="nbHitsUncovered"><a title="Line 639: Conditional coverage 50% (1/2).">&nbsp;8</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 639: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;638</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_PaymentTerm_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;639</td>  <td class="nbHitsUncovered"><a title="Line 639: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 639: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;640</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;641</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;641</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;642</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;643</td>  <td class="nbHits">&nbsp;</td>
@@ -1125,12 +1125,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setC_Project_ID (<span class="keyword">int</span> C_Project_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;654</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;655</td>  <td class="nbHitsUncovered"><a title="Line 655: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 655: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Project_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;656</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Project_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;655</td>  <td class="nbHitsUncovered"><a title="Line 655: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 655: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (C_Project_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;656</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Project_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;657</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;658</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_C_Project_ID, Integer.valueOf(C_Project_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;659</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;659</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;660</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;661</td>  <td class="nbHits">&nbsp;</td>
@@ -1143,9 +1143,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_Project_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;665</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;666</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Project_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;667</td>  <td class="nbHitsUncovered"><a title="Line 667: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 667: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;668</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;666</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_C_Project_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;667</td>  <td class="nbHitsUncovered"><a title="Line 667: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 667: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;668</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;669</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;670</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -1194,8 +1194,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setDateAcct (Timestamp DateAcct)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;694</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DateAcct, DateAcct);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;696</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DateAcct, DateAcct);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;696</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;697</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;698</td>  <td class="nbHits">&nbsp;</td>
@@ -1208,7 +1208,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getDateAcct () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;702</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;703</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_Invoice.COLUMNNAME_DateAcct);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;703</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_Invoice.COLUMNNAME_DateAcct);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;704</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;705</td>  <td class="nbHits">&nbsp;</td>
@@ -1225,8 +1225,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setDateInvoiced (Timestamp DateInvoiced)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;711</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;712</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DateInvoiced, DateInvoiced);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;713</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;712</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DateInvoiced, DateInvoiced);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;713</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;714</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;715</td>  <td class="nbHits">&nbsp;</td>
@@ -1239,7 +1239,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getDateInvoiced () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;719</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;720</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_Invoice.COLUMNNAME_DateInvoiced);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;720</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_Invoice.COLUMNNAME_DateInvoiced);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;721</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;722</td>  <td class="nbHits">&nbsp;</td>
@@ -1256,8 +1256,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setDateOrdered (Timestamp DateOrdered)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;728</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_DateOrdered, DateOrdered);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_DateOrdered, DateOrdered);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;731</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;732</td>  <td class="nbHits">&nbsp;</td>
@@ -1318,8 +1318,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setDescription (String Description)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;762</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;763</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Description, Description);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;764</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;763</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Description, Description);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;764</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;765</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;766</td>  <td class="nbHits">&nbsp;</td>
@@ -1411,8 +1411,8 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;810</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DocAction, DocAction);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DocAction, DocAction);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;813</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;814</td>  <td class="nbHits">&nbsp;</td>
@@ -1425,7 +1425,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDocAction () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;818</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;819</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocAction);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;819</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocAction);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;820</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;821</td>  <td class="nbHits">&nbsp;</td>
@@ -1496,8 +1496,8 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;854</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;855</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DocStatus, DocStatus);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;856</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;855</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_DocStatus, DocStatus);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;856</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;857</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;858</td>  <td class="nbHits">&nbsp;</td>
@@ -1510,7 +1510,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDocStatus () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;862</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;863</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocStatus);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;863</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocStatus);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;864</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;865</td>  <td class="nbHits">&nbsp;</td>
@@ -1541,7 +1541,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDocumentNo () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;879</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;880</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocumentNo);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;880</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_DocumentNo);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;881</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;882</td>  <td class="nbHits">&nbsp;</td>
@@ -1629,8 +1629,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setGrandTotal (BigDecimal GrandTotal)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;927</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_GrandTotal, GrandTotal);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;929</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_GrandTotal, GrandTotal);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;929</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;930</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;931</td>  <td class="nbHits">&nbsp;</td>
@@ -1643,10 +1643,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getGrandTotal () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;935</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;936</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_GrandTotal);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;937</td>  <td class="nbHitsUncovered"><a title="Line 937: Conditional coverage 50% (1/2).">&nbsp;17</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 937: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;936</td>  <td class="nbHitsCovered">&nbsp;34</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_GrandTotal);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;937</td>  <td class="nbHitsUncovered"><a title="Line 937: Conditional coverage 50% (1/2).">&nbsp;34</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 937: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;938</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;939</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;939</td>  <td class="nbHitsCovered">&nbsp;34</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;940</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;941</td>  <td class="nbHits">&nbsp;</td>
@@ -1716,8 +1716,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsApproved (<span class="keyword">boolean</span> IsApproved)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;975</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;976</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsApproved, Boolean.valueOf(IsApproved));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;977</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;976</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsApproved, Boolean.valueOf(IsApproved));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;977</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;978</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;979</td>  <td class="nbHits">&nbsp;</td>
@@ -1730,12 +1730,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isApproved () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;983</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;984</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsApproved);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;985</td>  <td class="nbHitsUncovered"><a title="Line 985: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 985: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;984</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsApproved);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;985</td>  <td class="nbHitsUncovered"><a title="Line 985: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 985: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;986</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;987</td>  <td class="nbHitsUncovered"><a title="Line 987: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 987: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;988</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;987</td>  <td class="nbHitsUncovered"><a title="Line 987: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 987: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;988</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;989</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="string">"Y"</span>.equals(oo);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;990</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -1756,8 +1756,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsDiscountPrinted (<span class="keyword">boolean</span> IsDiscountPrinted)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;999</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1000</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsDiscountPrinted, Boolean.valueOf(IsDiscountPrinted));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1001</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1000</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsDiscountPrinted, Boolean.valueOf(IsDiscountPrinted));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1001</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1002</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1003</td>  <td class="nbHits">&nbsp;</td>
@@ -1830,8 +1830,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsInDispute (<span class="keyword">boolean</span> IsInDispute)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1044</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1045</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsInDispute, Boolean.valueOf(IsInDispute));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1046</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1045</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsInDispute, Boolean.valueOf(IsInDispute));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1046</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1047</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1048</td>  <td class="nbHits">&nbsp;</td>
@@ -1870,8 +1870,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsPaid (<span class="keyword">boolean</span> IsPaid)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1068</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1069</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsPaid, Boolean.valueOf(IsPaid));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1070</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1069</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsPaid, Boolean.valueOf(IsPaid));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1070</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1071</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1072</td>  <td class="nbHits">&nbsp;</td>
@@ -1910,8 +1910,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsPayScheduleValid (<span class="keyword">boolean</span> IsPayScheduleValid)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1092</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsPayScheduleValid, Boolean.valueOf(IsPayScheduleValid));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsPayScheduleValid, Boolean.valueOf(IsPayScheduleValid));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1095</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1096</td>  <td class="nbHits">&nbsp;</td>
@@ -1950,8 +1950,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsPrinted (<span class="keyword">boolean</span> IsPrinted)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1116</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1117</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsPrinted, Boolean.valueOf(IsPrinted));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1118</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1117</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsPrinted, Boolean.valueOf(IsPrinted));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1118</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1119</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1120</td>  <td class="nbHits">&nbsp;</td>
@@ -1990,8 +1990,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsSelfService (<span class="keyword">boolean</span> IsSelfService)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1140</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1141</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsSelfService, Boolean.valueOf(IsSelfService));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1142</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1141</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsSelfService, Boolean.valueOf(IsSelfService));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1142</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1143</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1144</td>  <td class="nbHits">&nbsp;</td>
@@ -2030,8 +2030,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsSOTrx (<span class="keyword">boolean</span> IsSOTrx)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1164</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1165</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1166</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1165</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1166</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1167</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1168</td>  <td class="nbHits">&nbsp;</td>
@@ -2044,12 +2044,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isSOTrx () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1172</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1173</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsSOTrx);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1174</td>  <td class="nbHitsUncovered"><a title="Line 1174: Conditional coverage 50% (1/2).">&nbsp;20</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1174: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1173</td>  <td class="nbHitsCovered">&nbsp;30</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsSOTrx);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1174</td>  <td class="nbHitsUncovered"><a title="Line 1174: Conditional coverage 50% (1/2).">&nbsp;30</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1174: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1175</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1176</td>  <td class="nbHitsUncovered"><a title="Line 1176: Conditional coverage 50% (1/2).">&nbsp;20</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1176: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1177</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1176</td>  <td class="nbHitsUncovered"><a title="Line 1176: Conditional coverage 50% (1/2).">&nbsp;30</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1176: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1177</td>  <td class="nbHitsCovered">&nbsp;30</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1178</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="string">"Y"</span>.equals(oo);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1179</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -2070,8 +2070,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsTaxIncluded (<span class="keyword">boolean</span> IsTaxIncluded)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1188</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1189</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsTaxIncluded, Boolean.valueOf(IsTaxIncluded));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1190</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1189</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_IsTaxIncluded, Boolean.valueOf(IsTaxIncluded));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1190</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1191</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1192</td>  <td class="nbHits">&nbsp;</td>
@@ -2084,12 +2084,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isTaxIncluded () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1196</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1197</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsTaxIncluded);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1198</td>  <td class="nbHitsUncovered"><a title="Line 1198: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1198: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1197</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                Object oo = get_Value(I_C_Invoice.COLUMNNAME_IsTaxIncluded);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1198</td>  <td class="nbHitsUncovered"><a title="Line 1198: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1198: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (oo != <span class="keyword">null</span>) </a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1199</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1200</td>  <td class="nbHitsUncovered"><a title="Line 1200: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1200: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1201</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1200</td>  <td class="nbHitsUncovered"><a title="Line 1200: Conditional coverage 50% (1/2).">&nbsp;9</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1200: Conditional coverage 50% (1/2).">                         <span class="keyword">if</span> (oo <span class="keyword">instanceof</span> Boolean) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1201</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                                 <span class="keyword">return</span> ((Boolean)oo).booleanValue(); </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1202</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="string">"Y"</span>.equals(oo);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1203</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -2110,8 +2110,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setIsTransferred (<span class="keyword">boolean</span> IsTransferred)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1212</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1213</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsTransferred, Boolean.valueOf(IsTransferred));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1214</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1213</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_IsTransferred, Boolean.valueOf(IsTransferred));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1214</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1215</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1216</td>  <td class="nbHits">&nbsp;</td>
@@ -2142,8 +2142,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> org.compiere.model.I_M_PriceList getM_PriceList() <span class="keyword">throws</span> RuntimeException</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1232</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1233</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_M_PriceList)MTable.get(getCtx(), org.compiere.model.I_M_PriceList.Table_Name)</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1234</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getM_PriceList_ID(), get_TrxName());        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1233</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (org.compiere.model.I_M_PriceList)MTable.get(getCtx(), org.compiere.model.I_M_PriceList.Table_Name)</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1234</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        .getPO(getM_PriceList_ID(), get_TrxName());        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1235</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1236</td>  <td class="nbHits">&nbsp;</td>
@@ -2158,12 +2158,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setM_PriceList_ID (<span class="keyword">int</span> M_PriceList_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1241</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1242</td>  <td class="nbHitsUncovered"><a title="Line 1242: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1242: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (M_PriceList_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1242</td>  <td class="nbHitsUncovered"><a title="Line 1242: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1242: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (M_PriceList_ID &lt; 1) </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1243</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_M_PriceList_ID, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1244</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1245</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_M_PriceList_ID, Integer.valueOf(M_PriceList_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1246</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1245</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_M_PriceList_ID, Integer.valueOf(M_PriceList_ID));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1246</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1247</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1248</td>  <td class="nbHits">&nbsp;</td>
@@ -2176,10 +2176,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getM_PriceList_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1252</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1253</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_M_PriceList_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1254</td>  <td class="nbHitsUncovered"><a title="Line 1254: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1254: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1253</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_M_PriceList_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1254</td>  <td class="nbHitsUncovered"><a title="Line 1254: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1254: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1255</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1256</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1256</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1257</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1258</td>  <td class="nbHits">&nbsp;</td>
@@ -2276,8 +2276,8 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1309</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1310</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_PaymentRule, PaymentRule);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1311</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1310</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_PaymentRule, PaymentRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1311</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1312</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1313</td>  <td class="nbHits">&nbsp;</td>
@@ -2290,7 +2290,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getPaymentRule () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1317</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1318</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_PaymentRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1318</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_Invoice.COLUMNNAME_PaymentRule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1319</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1320</td>  <td class="nbHits">&nbsp;</td>
@@ -2307,8 +2307,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setPOReference (String POReference)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1326</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1327</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_POReference, POReference);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1328</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1327</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_POReference, POReference);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1328</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1329</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1330</td>  <td class="nbHits">&nbsp;</td>
@@ -2338,8 +2338,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setPosted (<span class="keyword">boolean</span> Posted)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1343</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1344</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Posted, Boolean.valueOf(Posted));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1345</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1344</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Posted, Boolean.valueOf(Posted));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1345</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1346</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1347</td>  <td class="nbHits">&nbsp;</td>
@@ -2378,8 +2378,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setProcessed (<span class="keyword">boolean</span> Processed)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1367</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1368</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_Processed, Boolean.valueOf(Processed));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1369</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1368</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_Processed, Boolean.valueOf(Processed));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1369</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1370</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1371</td>  <td class="nbHits">&nbsp;</td>
@@ -2448,8 +2448,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setProcessing (<span class="keyword">boolean</span> Processing)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1409</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1410</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Processing, Boolean.valueOf(Processing));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1411</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1410</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_Processing, Boolean.valueOf(Processing));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1411</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1412</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1413</td>  <td class="nbHits">&nbsp;</td>
@@ -2498,9 +2498,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getRef_Invoice_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1440</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1441</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_Ref_Invoice_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1442</td>  <td class="nbHitsUncovered"><a title="Line 1442: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1442: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1443</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1441</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_Ref_Invoice_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1442</td>  <td class="nbHitsUncovered"><a title="Line 1442: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1442: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1443</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1444</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1445</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -2572,12 +2572,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setSalesRep_ID (<span class="keyword">int</span> SalesRep_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1485</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1486</td>  <td class="nbHitsUncovered"><a title="Line 1486: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1486: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (SalesRep_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1487</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_SalesRep_ID, <span class="keyword">null</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1486</td>  <td class="nbHitsUncovered"><a title="Line 1486: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1486: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (SalesRep_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1487</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_SalesRep_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1488</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1489</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_SalesRep_ID, Integer.valueOf(SalesRep_ID));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1490</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1489</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_SalesRep_ID, Integer.valueOf(SalesRep_ID));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1490</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1491</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1492</td>  <td class="nbHits">&nbsp;</td>
@@ -2590,10 +2590,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getSalesRep_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1496</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1497</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_SalesRep_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1498</td>  <td class="nbHitsUncovered"><a title="Line 1498: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1498: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1499</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1500</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1497</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_Invoice.COLUMNNAME_SalesRep_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1498</td>  <td class="nbHitsUncovered"><a title="Line 1498: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1498: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1499</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1500</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1501</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1502</td>  <td class="nbHits">&nbsp;</td>
@@ -2610,8 +2610,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setSendEMail (<span class="keyword">boolean</span> SendEMail)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1508</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1509</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_SendEMail, Boolean.valueOf(SendEMail));</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1510</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1509</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_Invoice.COLUMNNAME_SendEMail, Boolean.valueOf(SendEMail));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1510</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1511</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1512</td>  <td class="nbHits">&nbsp;</td>
@@ -2650,8 +2650,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setTotalLines (BigDecimal TotalLines)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1532</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1533</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_TotalLines, TotalLines);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1534</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1533</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_Invoice.COLUMNNAME_TotalLines, TotalLines);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1534</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1535</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1536</td>  <td class="nbHits">&nbsp;</td>
@@ -2664,10 +2664,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getTotalLines () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1540</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1541</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_TotalLines);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1542</td>  <td class="nbHitsUncovered"><a title="Line 1542: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1542: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1541</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_Invoice.COLUMNNAME_TotalLines);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1542</td>  <td class="nbHitsUncovered"><a title="Line 1542: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1542: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1543</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1544</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1544</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1545</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1546</td>  <td class="nbHits">&nbsp;</td>
@@ -2692,12 +2692,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUser1_ID (<span class="keyword">int</span> User1_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1557</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1558</td>  <td class="nbHitsUncovered"><a title="Line 1558: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1558: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (User1_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1559</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User1_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1558</td>  <td class="nbHitsUncovered"><a title="Line 1558: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1558: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (User1_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1559</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User1_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1560</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1561</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User1_ID, Integer.valueOf(User1_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1562</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1562</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1563</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1564</td>  <td class="nbHits">&nbsp;</td>
@@ -2738,12 +2738,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUser2_ID (<span class="keyword">int</span> User2_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1585</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1586</td>  <td class="nbHitsUncovered"><a title="Line 1586: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1586: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (User2_ID &lt; 1) </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1587</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User2_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1586</td>  <td class="nbHitsUncovered"><a title="Line 1586: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1586: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (User2_ID &lt; 1) </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1587</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User2_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1588</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span> </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1589</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        set_Value (I_C_Invoice.COLUMNNAME_User2_ID, Integer.valueOf(User2_ID));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1590</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1590</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1591</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1592</td>  <td class="nbHits">&nbsp;</td>
@@ -2766,6 +2766,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>

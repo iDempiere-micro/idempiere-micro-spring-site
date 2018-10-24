@@ -101,7 +101,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> X_C_BPartner (Properties ctx, <span class="keyword">int</span> C_BPartner_ID, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;42</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;43</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, C_BPartner_ID, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;43</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, C_BPartner_ID, trxName);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;      <span class="comment">/** if (C_BPartner_ID == 0)</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;45</td>  <td class="nbHits">&nbsp;</td>
@@ -146,7 +146,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        setValue (null);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;65</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">        } */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;66</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;66</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;67</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;68</td>  <td class="nbHits">&nbsp;</td>
@@ -155,8 +155,8 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> X_C_BPartner (Properties ctx, ResultSet rs, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;71</td>  <td class="nbHitsCovered">&nbsp;46</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, rs, trxName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;46</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;71</td>  <td class="nbHitsCovered">&nbsp;45</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">super</span> (ctx, rs, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsCovered">&nbsp;45</td>  <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;73</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
@@ -169,7 +169,7 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> <span class="keyword">int</span> get_AccessLevel()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;78</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsCovered">&nbsp;16</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> I_C_BPartner.accessLevel.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsCovered">&nbsp;17</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> I_C_BPartner.accessLevel.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
@@ -180,8 +180,8 @@
   <td class="src"><pre class="src">&nbsp;    <span class="keyword">protected</span> POInfo initPO (Properties ctx)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;67</td>  <td class="src"><pre class="src">&nbsp;      POInfo poi = POInfo.getPOInfo (ctx, I_C_BPartner.Table_ID, get_TrxName());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;67</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> poi;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;70</td>  <td class="src"><pre class="src">&nbsp;      POInfo poi = POInfo.getPOInfo (ctx, I_C_BPartner.Table_ID, get_TrxName());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;70</td>  <td class="src"><pre class="src">&nbsp;      <span class="keyword">return</span> poi;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;87</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;88</td>  <td class="nbHits">&nbsp;</td>
@@ -243,8 +243,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setActualLifeTimeValue (BigDecimal ActualLifeTimeValue)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_BPartner.COLUMNNAME_ActualLifeTimeValue, ActualLifeTimeValue);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;123</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_BPartner.COLUMNNAME_ActualLifeTimeValue, ActualLifeTimeValue);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;123</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;124</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;125</td>  <td class="nbHits">&nbsp;</td>
@@ -257,10 +257,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getActualLifeTimeValue () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;129</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;130</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_ActualLifeTimeValue);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsUncovered"><a title="Line 131: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 131: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;130</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_ActualLifeTimeValue);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsUncovered"><a title="Line 131: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 131: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;132</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;134</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;135</td>  <td class="nbHits">&nbsp;</td>
@@ -401,10 +401,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_BPartner_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;212</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;213</td>  <td class="nbHitsCovered">&nbsp;123</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_BPartner_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;214</td>  <td class="nbHitsUncovered"><a title="Line 214: Conditional coverage 50% (1/2).">&nbsp;123</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 214: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;213</td>  <td class="nbHitsCovered">&nbsp;122</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_BPartner_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;214</td>  <td class="nbHitsUncovered"><a title="Line 214: Conditional coverage 50% (1/2).">&nbsp;122</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 214: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;215</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;216</td>  <td class="nbHitsCovered">&nbsp;123</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;216</td>  <td class="nbHitsCovered">&nbsp;122</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;217</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
@@ -472,10 +472,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_BP_Group_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;254</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_BP_Group_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsUncovered"><a title="Line 256: Conditional coverage 50% (1/2).">&nbsp;20</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 256: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsCovered">&nbsp;22</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_BP_Group_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsUncovered"><a title="Line 256: Conditional coverage 50% (1/2).">&nbsp;22</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 256: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;257</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> 0;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsCovered">&nbsp;22</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> ii.intValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;259</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;260</td>  <td class="nbHits">&nbsp;</td>
@@ -656,9 +656,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_PaymentTerm_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;366</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;367</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_PaymentTerm_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;368</td>  <td class="nbHitsUncovered"><a title="Line 368: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 368: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;367</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_C_PaymentTerm_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;368</td>  <td class="nbHitsUncovered"><a title="Line 368: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 368: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;370</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;371</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -825,7 +825,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDeliveryRule () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;465</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;466</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_DeliveryRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;466</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_DeliveryRule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;467</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;468</td>  <td class="nbHits">&nbsp;</td>
@@ -874,7 +874,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDeliveryViaRule () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;491</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_DeliveryViaRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;492</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_DeliveryViaRule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;493</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;494</td>  <td class="nbHits">&nbsp;</td>
@@ -1026,7 +1026,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getFirstSale () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;576</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;577</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_BPartner.COLUMNNAME_FirstSale);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;577</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (Timestamp)get_Value(I_C_BPartner.COLUMNNAME_FirstSale);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;578</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;579</td>  <td class="nbHits">&nbsp;</td>
@@ -1057,9 +1057,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getFlatDiscount () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;593</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;594</td>  <td class="nbHitsCovered">&nbsp;34</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_FlatDiscount);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;595</td>  <td class="nbHitsCovered"><a title="Line 595: Conditional coverage 100% (2/2).">&nbsp;34</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 595: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;596</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;594</td>  <td class="nbHitsCovered">&nbsp;32</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_FlatDiscount);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;595</td>  <td class="nbHitsCovered"><a title="Line 595: Conditional coverage 100% (2/2).">&nbsp;32</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 595: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;596</td>  <td class="nbHitsCovered">&nbsp;19</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;597</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;598</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -1212,7 +1212,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getInvoiceRule () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;680</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;681</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_InvoiceRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;681</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_InvoiceRule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;682</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;683</td>  <td class="nbHits">&nbsp;</td>
@@ -1801,9 +1801,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getM_PriceList_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1035</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_M_PriceList_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1037</td>  <td class="nbHitsUncovered"><a title="Line 1037: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1037: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1038</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_M_PriceList_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1037</td>  <td class="nbHitsUncovered"><a title="Line 1037: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1037: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1038</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1039</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1040</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -1965,7 +1965,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getPaymentRule () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1126</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1127</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_PaymentRule);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1127</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_PaymentRule);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1128</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1129</td>  <td class="nbHits">&nbsp;</td>
@@ -2338,9 +2338,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getSalesRep_ID () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1340</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1341</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_SalesRep_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1342</td>  <td class="nbHitsUncovered"><a title="Line 1342: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1342: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1343</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1341</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                Integer ii = (Integer)get_Value(I_C_BPartner.COLUMNNAME_SalesRep_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1342</td>  <td class="nbHitsUncovered"><a title="Line 1342: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1342: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (ii == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1343</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                         <span class="keyword">return</span> 0;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> ii.intValue();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1345</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -2514,10 +2514,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getSO_CreditLimit () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1444</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1445</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_SO_CreditLimit);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1446</td>  <td class="nbHitsUncovered"><a title="Line 1446: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1446: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1445</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_SO_CreditLimit);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1446</td>  <td class="nbHitsUncovered"><a title="Line 1446: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1446: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1447</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1448</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1448</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1449</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1450</td>  <td class="nbHits">&nbsp;</td>
@@ -2574,7 +2574,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getSOCreditStatus () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1477</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1478</td>  <td class="nbHitsCovered">&nbsp;25</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_SOCreditStatus);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1478</td>  <td class="nbHitsCovered">&nbsp;34</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> (String)get_Value(I_C_BPartner.COLUMNNAME_SOCreditStatus);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1479</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1480</td>  <td class="nbHits">&nbsp;</td>
@@ -2591,8 +2591,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setSO_CreditUsed (BigDecimal SO_CreditUsed)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1486</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1487</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_BPartner.COLUMNNAME_SO_CreditUsed, SO_CreditUsed);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1488</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1487</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                set_ValueNoCheck (I_C_BPartner.COLUMNNAME_SO_CreditUsed, SO_CreditUsed);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1488</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1489</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1490</td>  <td class="nbHits">&nbsp;</td>
@@ -2605,10 +2605,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getSO_CreditUsed () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1494</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1495</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_SO_CreditUsed);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1496</td>  <td class="nbHitsUncovered"><a title="Line 1496: Conditional coverage 50% (1/2).">&nbsp;2</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1496: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1495</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_SO_CreditUsed);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1496</td>  <td class="nbHitsUncovered"><a title="Line 1496: Conditional coverage 50% (1/2).">&nbsp;3</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1496: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1497</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1498</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1498</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1499</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1500</td>  <td class="nbHits">&nbsp;</td>
@@ -2687,8 +2687,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setTotalOpenBalance (BigDecimal TotalOpenBalance)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1540</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1541</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_BPartner.COLUMNNAME_TotalOpenBalance, TotalOpenBalance);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1542</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1541</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                set_Value (I_C_BPartner.COLUMNNAME_TotalOpenBalance, TotalOpenBalance);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1542</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1543</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1544</td>  <td class="nbHits">&nbsp;</td>
@@ -2701,10 +2701,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getTotalOpenBalance () </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1548</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1549</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_TotalOpenBalance);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1550</td>  <td class="nbHitsUncovered"><a title="Line 1550: Conditional coverage 50% (1/2).">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1550: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1549</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal bd = (BigDecimal)get_Value(I_C_BPartner.COLUMNNAME_TotalOpenBalance);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1550</td>  <td class="nbHitsUncovered"><a title="Line 1550: Conditional coverage 50% (1/2).">&nbsp;7</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1550: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (bd == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1551</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                         <span class="keyword">return</span> Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1552</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1552</td>  <td class="nbHitsCovered">&nbsp;7</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1553</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1554</td>  <td class="nbHits">&nbsp;</td>
@@ -2744,6 +2744,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>

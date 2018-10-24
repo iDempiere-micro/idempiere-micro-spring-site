@@ -99,7 +99,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MAcctSchema get (Properties ctx, <span class="keyword">int</span> C_AcctSchema_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;41</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;42</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> get(ctx, C_AcctSchema_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;42</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> get(ctx, C_AcctSchema_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;43</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        get</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;44</td>  <td class="nbHits">&nbsp;</td>
@@ -124,10 +124,10 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;54</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//  Check Cache</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;55</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                Integer key = <span class="keyword">new</span> Integer(C_AcctSchema_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;56</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                MAcctSchema retValue = (MAcctSchema)s_cache.get(key);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;57</td>  <td class="nbHitsCovered"><a title="Line 57: Conditional coverage 100% (2/2).">&nbsp;14</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 57: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;58</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> retValue;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;55</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                Integer key = <span class="keyword">new</span> Integer(C_AcctSchema_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;56</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                MAcctSchema retValue = (MAcctSchema)s_cache.get(key);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;57</td>  <td class="nbHitsCovered"><a title="Line 57: Conditional coverage 100% (2/2).">&nbsp;21</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 57: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;58</td>  <td class="nbHitsCovered">&nbsp;20</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> retValue;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;59</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                retValue = <span class="keyword">new</span> MAcctSchema (ctx, C_AcctSchema_ID, trxName);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;60</td>  <td class="nbHitsUncovered"><a title="Line 60: Conditional coverage 50% (1/2).">&nbsp;1</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 60: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (trxName == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        s_cache.put(key, retValue);</pre></td></tr>
@@ -152,7 +152,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MAcctSchema[] getClientAcctSchema (Properties ctx, <span class="keyword">int</span> AD_Client_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;72</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> getClientAcctSchema(ctx, AD_Client_ID, <span class="keyword">null</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> getClientAcctSchema(ctx, AD_Client_ID, <span class="keyword">null</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;74</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getClientAcctSchema</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
@@ -177,9 +177,9 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;85</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//  Check Cache</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                Integer key = <span class="keyword">new</span> Integer(AD_Client_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered"><a title="Line 87: Conditional coverage 100% (2/2).">&nbsp;10</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 87: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (s_schema.containsKey(key))</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;9</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> (MAcctSchema[])s_schema.get(key);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;86</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                Integer key = <span class="keyword">new</span> Integer(AD_Client_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered"><a title="Line 87: Conditional coverage 100% (2/2).">&nbsp;14</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 87: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (s_schema.containsKey(key))</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;13</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> (MAcctSchema[])s_schema.get(key);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;89</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;90</td>  <td class="nbHits">&nbsp;</td>
@@ -373,7 +373,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MAcctSchemaElement[] getAcctSchemaElements()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;219</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> MAcctSchemaElement.getAcctSchemaElements(<span class="keyword">this</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;219</td>  <td class="nbHitsCovered">&nbsp;21</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> MAcctSchemaElement.getAcctSchemaElements(<span class="keyword">this</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;220</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getAcctSchemaElements</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;221</td>  <td class="nbHits">&nbsp;</td>
@@ -394,12 +394,12 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">/** Element List       */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;230</td>  <td class="nbHitsCovered"><a title="Line 230: Conditional coverage 100% (2/2).">&nbsp;60</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 230: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (MAcctSchemaElement ase : getAcctSchemaElements()) {</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;231</td>  <td class="nbHitsUncovered"><a title="Line 231: Conditional coverage 50% (1/2).">&nbsp;48</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 231: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (ase.getElementType().equals(elementType))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;230</td>  <td class="nbHitsCovered"><a title="Line 230: Conditional coverage 100% (2/2).">&nbsp;90</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 230: Conditional coverage 100% (2/2).">                <span class="keyword">for</span> (MAcctSchemaElement ase : getAcctSchemaElements()) {</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;231</td>  <td class="nbHitsUncovered"><a title="Line 231: Conditional coverage 50% (1/2).">&nbsp;72</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 231: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (ase.getElementType().equals(elementType))</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;232</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> ase;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;233</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;234</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;234</td>  <td class="nbHitsCovered">&nbsp;18</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;235</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }   <span class="comment">//  getAcctSchemaElement</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;236</td>  <td class="nbHits">&nbsp;</td>
@@ -477,10 +477,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String toString()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;278</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="string">"AcctSchema["</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(get_ID()).append(<span class="string">"-"</span>).append(getName())</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                                .append(<span class="string">"]"</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;282</td>  <td class="nbHitsCovered">&nbsp;2</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> sb.toString();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder(<span class="string">"AcctSchema["</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                        sb.append(get_ID()).append(<span class="string">"-"</span>).append(getName())</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                                .append(<span class="string">"]"</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;282</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> sb.toString();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        toString</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;284</td>  <td class="nbHits">&nbsp;</td>
@@ -497,9 +497,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isSuspenseBalancing()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsCovered"><a title="Line 291: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 291: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_gl == <span class="keyword">null</span>)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsCovered"><a title="Line 291: Conditional coverage 100% (2/2).">&nbsp;6</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 291: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_gl == <span class="keyword">null</span>)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        getAcctSchemaGL();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">return</span> m_gl.isUseSuspenseBalancing() &amp;&amp; m_gl.getSuspenseBalancing_Acct() != 0;</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;6</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">return</span> m_gl.isUseSuspenseBalancing() &amp;&amp; m_gl.getSuspenseBalancing_Acct() != 0;</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        isSuspenseBalancing</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;295</td>  <td class="nbHits">&nbsp;</td>
@@ -1040,6 +1040,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MAcctSchema</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>

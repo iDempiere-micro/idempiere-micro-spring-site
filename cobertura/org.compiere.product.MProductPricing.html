@@ -67,7 +67,7 @@
   <td class="src"><pre class="src">&nbsp;{</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;25</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;26</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> String trxName=<span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;26</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> String trxName=<span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;27</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;28</td>  <td class="nbHits">&nbsp;</td>
@@ -76,7 +76,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">         * New constructor to be used with the ProductPriceFactories</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;30</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered">&nbsp;22</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MProductPricing() {}</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;31</td>  <td class="nbHitsCovered">&nbsp;30</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> MProductPricing() {}</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;32</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;33</td>  <td class="nbHits">&nbsp;</td>
@@ -145,47 +145,47 @@
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;69</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> checkVendorBreak() {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> thereAreVendorBreakRecords = DB.getSQLValue(trxName, </pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> thereAreVendorBreakRecords = DB.getSQLValue(trxName, </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="string">"SELECT count(M_Product_ID) FROM M_ProductPriceVendorBreak WHERE M_Product_ID=? AND (C_BPartner_ID=? OR C_BPartner_ID is NULL)"</span>,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;72</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                m_M_Product_ID, m_C_BPartner_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsUncovered"><a title="Line 73: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 73: Conditional coverage 50% (1/2).">                m_useVendorBreak = thereAreVendorBreakRecords &gt; 0;</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;73</td>  <td class="nbHitsUncovered"><a title="Line 73: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 73: Conditional coverage 50% (1/2).">                m_useVendorBreak = thereAreVendorBreakRecords &gt; 0;</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;74</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;76</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_M_PriceList_Version_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;76</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_M_PriceList_Version_ID = 0;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> Timestamp         m_PriceDate;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;78</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Precision -1 = no rounding                */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                         m_precision = -1;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                         m_precision = -1;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;80</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;82</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>         m_calculated = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>         m_vendorbreak = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;82</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>         m_calculated = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>         m_vendorbreak = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>         m_useVendorBreak;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> Boolean                m_found = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> Boolean                m_found = <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceList = Env.ZERO;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceStd = Env.ZERO;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceLimit = Env.ZERO;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;90</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_C_Currency_ID = 0;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;91</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_enforcePriceLimit = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_C_UOM_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;87</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceList = Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;88</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceStd = Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;89</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal         m_PriceLimit = Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;90</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_C_Currency_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;91</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_enforcePriceLimit = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;92</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_C_UOM_ID = 0;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;93</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">int</span>                 m_M_Product_Category_ID;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_discountSchema = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_isTaxIncluded = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;94</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_discountSchema = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;95</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span>                m_isTaxIncluded = <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;96</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;97</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">/**        Logger                        */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;98</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> CLogger        log = CLogger.getCLogger(getClass());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;98</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> CLogger        log = CLogger.getCLogger(getClass());</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;99</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;100</td>  <td class="nbHits">&nbsp;</td>
@@ -202,12 +202,12 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> calculatePrice ()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;106</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;107</td>  <td class="nbHitsUncovered"><a title="Line 107: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 107: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (m_M_Product_ID == 0 </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;107</td>  <td class="nbHitsUncovered"><a title="Line 107: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;19</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 107: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                <span class="keyword">if</span> (m_M_Product_ID == 0 </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;108</td>  <td class="nbHitsUncovered"><a title="Line 108: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 108: Conditional coverage 50% (1/2).">                        || (m_found != <span class="keyword">null</span> &amp;&amp; !m_found.booleanValue()))        <span class="comment">//        previously not found</span></a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;109</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsUncovered"><a title="Line 111: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 111: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_useVendorBreak) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;111</td>  <td class="nbHitsUncovered"><a title="Line 111: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 111: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_useVendorBreak) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;112</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        Price List Version known - vendor break</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;113</td>  <td class="nbHitsUncovered"><a title="Line 113: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 113: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (!m_calculated) {</a></span></pre></td></tr>
@@ -238,29 +238,29 @@
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;132</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Price List Version known</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsUncovered"><a title="Line 133: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 133: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!m_calculated)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        m_calculated = calculatePLV ();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsUncovered"><a title="Line 133: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 133: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!m_calculated)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        m_calculated = calculatePLV ();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;135</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Price List known</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsUncovered"><a title="Line 136: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 136: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!m_calculated)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        m_calculated = calculatePL();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsUncovered"><a title="Line 136: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 136: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (!m_calculated)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        m_calculated = calculatePL();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;138</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Base Price List used</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;139</td>  <td class="nbHitsCovered"><a title="Line 139: Conditional coverage 100% (2/2).">&nbsp;11</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 139: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;139</td>  <td class="nbHitsCovered"><a title="Line 139: Conditional coverage 100% (2/2).">&nbsp;15</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 139: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;140</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        m_calculated = calculateBPL();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;141</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Set UOM, Prod.Category</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;142</td>  <td class="nbHitsCovered"><a title="Line 142: Conditional coverage 100% (2/2).">&nbsp;11</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 142: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;142</td>  <td class="nbHitsCovered"><a title="Line 142: Conditional coverage 100% (2/2).">&nbsp;15</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 142: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;143</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        setBaseInfo();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;144</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        User based Discount</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;145</td>  <td class="nbHitsUncovered"><a title="Line 145: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 145: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">                <span class="keyword">if</span> (m_calculated &amp;&amp; !m_vendorbreak)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;146</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        calculateDiscount();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;147</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                setPrecision();                <span class="comment">//        from Price List</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;145</td>  <td class="nbHitsUncovered"><a title="Line 145: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 145: Conditional coverage 75% (3/4) [each condition: 100%, 50%].">                <span class="keyword">if</span> (m_calculated &amp;&amp; !m_vendorbreak)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;146</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        calculateDiscount();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;147</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                setPrecision();                <span class="comment">//        from Price List</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;148</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;149</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                m_found = <span class="keyword">new</span> Boolean (m_calculated);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;150</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;149</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                m_found = <span class="keyword">new</span> Boolean (m_calculated);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;150</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;151</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        calculatePrice</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;152</td>  <td class="nbHits">&nbsp;</td>
@@ -277,8 +277,8 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span> calculatePLV()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;158</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;159</td>  <td class="nbHitsUncovered"><a title="Line 159: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 159: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (m_M_Product_ID == 0 || m_M_PriceList_Version_ID == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;160</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;159</td>  <td class="nbHitsUncovered"><a title="Line 159: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 159: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (m_M_Product_ID == 0 || m_M_PriceList_Version_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;160</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;161</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;162</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String sql = <span class="string">"SELECT bomPriceStd(p.M_Product_ID,pv.M_PriceList_Version_ID) AS PriceStd,"</span>        <span class="comment">//        1</span></span></pre></td></tr>
@@ -378,7 +378,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">boolean</span> calculatePL()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;226</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;227</td>  <td class="nbHitsUncovered"><a title="Line 227: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 227: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_Product_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;227</td>  <td class="nbHitsUncovered"><a title="Line 227: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 227: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_Product_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;228</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
@@ -464,7 +464,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;270</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                /** **/</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;271</td>  <td class="nbHitsUncovered"><a title="Line 271: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 271: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_PriceList_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;271</td>  <td class="nbHitsUncovered"><a title="Line 271: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 271: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_PriceList_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;272</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;273</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.log(Level.SEVERE, <span class="string">"No PriceList"</span>);</span></pre></td></tr>
@@ -476,7 +476,7 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;278</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Get Prices for Price List</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                String sql = <span class="string">"SELECT bomPriceStd(p.M_Product_ID,pv.M_PriceList_Version_ID) AS PriceStd,"</span>        <span class="comment">//        1</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;279</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                String sql = <span class="string">"SELECT bomPriceStd(p.M_Product_ID,pv.M_PriceList_Version_ID) AS PriceStd,"</span>        <span class="comment">//        1</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;280</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" bomPriceList(p.M_Product_ID,pv.M_PriceList_Version_ID) AS PriceList,"</span>                <span class="comment">//        2</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;281</td>  <td class="nbHits">&nbsp;</td>
@@ -501,54 +501,54 @@
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" AND pv.M_PriceList_ID=?"</span>                        <span class="comment">//        #2</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;291</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" ORDER BY pv.ValidFrom DESC"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                m_calculated = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_PriceDate == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;294</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        m_PriceDate = <span class="keyword">new</span> Timestamp (System.currentTimeMillis());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;295</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                PreparedStatement pstmt = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;296</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                ResultSet rs = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;292</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                m_calculated = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_PriceDate == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;294</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        m_PriceDate = <span class="keyword">new</span> Timestamp (System.currentTimeMillis());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;295</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                PreparedStatement pstmt = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;296</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                ResultSet rs = <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;297</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;298</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;299</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement(sql, trxName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;300</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(1, m_M_Product_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;301</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(2, m_M_PriceList_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;302</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;303</td>  <td class="nbHitsUncovered"><a title="Line 303: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 303: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                        <span class="keyword">while</span> (!m_calculated &amp;&amp; rs.next())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;299</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement(sql, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;300</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(1, m_M_Product_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;301</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt(2, m_M_PriceList_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;302</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;303</td>  <td class="nbHitsUncovered"><a title="Line 303: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 303: Conditional coverage 75% (3/4) [each condition: 50%, 100%].">                        <span class="keyword">while</span> (!m_calculated &amp;&amp; rs.next())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;304</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;305</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                Timestamp plDate = rs.getTimestamp(5);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;305</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                Timestamp plDate = rs.getTimestamp(5);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;306</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">//        we have the price list</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;307</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">//        if order date is after or equal PriceList validFrom</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;308</td>  <td class="nbHitsUncovered"><a title="Line 308: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 308: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                                <span class="keyword">if</span> (plDate == <span class="keyword">null</span> || !m_PriceDate.before(plDate))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;308</td>  <td class="nbHitsUncovered"><a title="Line 308: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 308: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                                <span class="keyword">if</span> (plDate == <span class="keyword">null</span> || !m_PriceDate.before(plDate))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;309</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;310</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        <span class="comment">//        Prices</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;311</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceStd = rs.getBigDecimal (1);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;312</td>  <td class="nbHitsUncovered"><a title="Line 312: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 312: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;311</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceStd = rs.getBigDecimal (1);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;312</td>  <td class="nbHitsUncovered"><a title="Line 312: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 312: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;313</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                m_PriceStd = Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;314</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceList = rs.getBigDecimal (2);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;315</td>  <td class="nbHitsUncovered"><a title="Line 315: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 315: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;314</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceList = rs.getBigDecimal (2);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;315</td>  <td class="nbHitsUncovered"><a title="Line 315: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 315: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;316</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                m_PriceList = Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;317</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceLimit = rs.getBigDecimal (3);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;318</td>  <td class="nbHitsUncovered"><a title="Line 318: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 318: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;317</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_PriceLimit = rs.getBigDecimal (3);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;318</td>  <td class="nbHitsUncovered"><a title="Line 318: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 318: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (rs.wasNull ())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;319</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                m_PriceLimit = Env.ZERO;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;320</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;321</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_C_UOM_ID = rs.getInt (4);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;322</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_C_Currency_ID = rs.getInt (6);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;323</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_M_Product_Category_ID = rs.getInt(7);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;324</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_enforcePriceLimit = <span class="string">"Y"</span>.equals(rs.getString(8));</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;321</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_C_UOM_ID = rs.getInt (4);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;322</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_C_Currency_ID = rs.getInt (6);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;323</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_M_Product_Category_ID = rs.getInt(7);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;324</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_enforcePriceLimit = <span class="string">"Y"</span>.equals(rs.getString(8));</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;325</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;326</td>  <td class="nbHitsUncovered"><a title="Line 326: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 326: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (log.isLoggable(Level.FINE)) log.fine(<span class="string">"M_PriceList_ID="</span> + m_M_PriceList_ID </a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;326</td>  <td class="nbHitsUncovered"><a title="Line 326: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 326: Conditional coverage 50% (1/2).">                                        <span class="keyword">if</span> (log.isLoggable(Level.FINE)) log.fine(<span class="string">"M_PriceList_ID="</span> + m_M_PriceList_ID </a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;327</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                + <span class="string">"("</span> + plDate + <span class="string">")"</span> + <span class="string">" - "</span> + m_PriceStd);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;328</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        m_calculated = <span class="keyword">true</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;329</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        <span class="keyword">break</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;328</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        m_calculated = <span class="keyword">true</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;329</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        <span class="keyword">break</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;330</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;331</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -565,13 +565,13 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">finally</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;339</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;340</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        DB.close(rs, pstmt);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;341</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        rs = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsCovered"><a title="Line 344: Conditional coverage 100% (2/2).">&nbsp;11</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 344: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;340</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        DB.close(rs, pstmt);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;341</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        rs = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsCovered"><a title="Line 344: Conditional coverage 100% (2/2).">&nbsp;15</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 344: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;345</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        log.finer(<span class="string">"Not found (PL)"</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;347</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        calculatePL</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
@@ -1203,14 +1203,14 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> calculateDiscount()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;752</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;753</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                m_discountSchema = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;754</td>  <td class="nbHitsUncovered"><a title="Line 754: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 754: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (m_C_BPartner_ID == 0 || m_M_Product_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;753</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                m_discountSchema = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;754</td>  <td class="nbHitsUncovered"><a title="Line 754: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 754: Conditional coverage 50% (2/4) [each condition: 50%, 50%].">                <span class="keyword">if</span> (m_C_BPartner_ID == 0 || m_M_Product_ID == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;755</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;756</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> M_DiscountSchema_ID = 0;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;758</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal FlatDiscount = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                String sql = <span class="string">"SELECT COALESCE(p.M_DiscountSchema_ID,g.M_DiscountSchema_ID),"</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">int</span> M_DiscountSchema_ID = 0;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;758</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal FlatDiscount = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                String sql = <span class="string">"SELECT COALESCE(p.M_DiscountSchema_ID,g.M_DiscountSchema_ID),"</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;760</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" COALESCE(p.PO_DiscountSchema_ID,g.PO_DiscountSchema_ID), p.FlatDiscount "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;761</td>  <td class="nbHits">&nbsp;</td>
@@ -1219,22 +1219,22 @@
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" INNER JOIN C_BP_Group g ON (p.C_BP_Group_ID=g.C_BP_Group_ID) "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;763</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">"WHERE p.C_BPartner_ID=?"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;764</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                PreparedStatement pstmt = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;765</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                ResultSet rs = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;764</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                PreparedStatement pstmt = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;765</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                ResultSet rs = <span class="keyword">null</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;766</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;767</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;768</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement (sql, trxName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;769</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt (1, m_C_BPartner_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;770</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery ();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;771</td>  <td class="nbHitsUncovered"><a title="Line 771: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 771: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (rs.next ())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;768</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = DB.prepareStatement (sql, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;769</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        pstmt.setInt (1, m_C_BPartner_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;770</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        rs = pstmt.executeQuery ();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;771</td>  <td class="nbHitsUncovered"><a title="Line 771: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 771: Conditional coverage 50% (1/2).">                        <span class="keyword">if</span> (rs.next ())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;772</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;773</td>  <td class="nbHitsUncovered"><a title="Line 773: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 773: Conditional coverage 50% (1/2).">                                M_DiscountSchema_ID = rs.getInt(m_isSOTrx ? 1 : 2);</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;774</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                FlatDiscount = rs.getBigDecimal(3);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;775</td>  <td class="nbHitsUncovered"><a title="Line 775: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 775: Conditional coverage 50% (1/2).">                                <span class="keyword">if</span> (FlatDiscount == <span class="keyword">null</span>)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;776</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                                        FlatDiscount = Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;773</td>  <td class="nbHitsUncovered"><a title="Line 773: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 773: Conditional coverage 50% (1/2).">                                M_DiscountSchema_ID = rs.getInt(m_isSOTrx ? 1 : 2);</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;774</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                FlatDiscount = rs.getBigDecimal(3);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;775</td>  <td class="nbHitsUncovered"><a title="Line 775: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 775: Conditional coverage 50% (1/2).">                                <span class="keyword">if</span> (FlatDiscount == <span class="keyword">null</span>)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;776</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                                        FlatDiscount = Env.ZERO;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;777</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;778</td>  <td class="nbHits">&nbsp;</td>
@@ -1249,14 +1249,14 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">finally</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;784</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        DB.close(rs, pstmt);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        rs = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;787</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = <span class="keyword">null</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;788</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        DB.close(rs, pstmt);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        rs = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;787</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        pstmt = <span class="keyword">null</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;788</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;789</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        No Discount Schema</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;790</td>  <td class="nbHitsUncovered"><a title="Line 790: Conditional coverage 50% (1/2).">&nbsp;10</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 790: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (M_DiscountSchema_ID == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;791</td>  <td class="nbHitsCovered">&nbsp;10</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;790</td>  <td class="nbHitsUncovered"><a title="Line 790: Conditional coverage 50% (1/2).">&nbsp;14</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 790: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (M_DiscountSchema_ID == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;791</td>  <td class="nbHitsCovered">&nbsp;14</td>  <td class="src"><pre class="src">&nbsp;                        <span class="keyword">return</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;792</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;793</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MDiscountSchema sd = MDiscountSchema.get(Env.getCtx(), M_DiscountSchema_ID);        <span class="comment">//        not correct</span></span></pre></td></tr>
@@ -1287,13 +1287,13 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getDiscount()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;809</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;810</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal Discount = Env.ZERO;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsCovered"><a title="Line 811: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 811: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_PriceList.intValue() != 0)</a></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsCovered">&nbsp;6</td>  <td class="src"><pre class="src">&nbsp;                        Discount = BigDecimal.valueOf((m_PriceList.doubleValue() - m_PriceStd.doubleValue())</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;813</td>  <td class="nbHitsCovered">&nbsp;3</td>  <td class="src"><pre class="src">&nbsp;                                / m_PriceList.doubleValue() * 100.0);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;814</td>  <td class="nbHitsUncovered"><a title="Line 814: Conditional coverage 50% (1/2).">&nbsp;4</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 814: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (Discount.scale() &gt; 2)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;810</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                BigDecimal Discount = Env.ZERO;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsCovered"><a title="Line 811: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 811: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (m_PriceList.intValue() != 0)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsCovered">&nbsp;8</td>  <td class="src"><pre class="src">&nbsp;                        Discount = BigDecimal.valueOf((m_PriceList.doubleValue() - m_PriceStd.doubleValue())</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;813</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                                / m_PriceList.doubleValue() * 100.0);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;814</td>  <td class="nbHitsUncovered"><a title="Line 814: Conditional coverage 50% (1/2).">&nbsp;5</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 814: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (Discount.scale() &gt; 2)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;815</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        Discount = Discount.setScale(2, BigDecimal.ROUND_HALF_UP);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;816</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> Discount;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;816</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> Discount;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;817</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getDiscount</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;818</td>  <td class="nbHits">&nbsp;</td>
@@ -1314,9 +1314,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setM_PriceList_ID( <span class="keyword">int</span> M_PriceList_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;826</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;827</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span>.setM_PriceList_ID(M_PriceList_ID);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;828</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                m_calculated = <span class="keyword">false</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;829</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        setM_PriceList_ID</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;827</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span>.setM_PriceList_ID(M_PriceList_ID);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;828</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                m_calculated = <span class="keyword">false</span>;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;829</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        setM_PriceList_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;830</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;831</td>  <td class="nbHits">&nbsp;</td>
@@ -1380,9 +1380,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> setPrecision ()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;864</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;865</td>  <td class="nbHitsUncovered"><a title="Line 865: Conditional coverage 50% (1/2).">&nbsp;11</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 865: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_PriceList_ID != 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;866</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                        m_precision = MPriceList.getPricePrecision(Env.getCtx(), getM_PriceList_ID());</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;867</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        setPrecision</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;865</td>  <td class="nbHitsUncovered"><a title="Line 865: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 865: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_M_PriceList_ID != 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;866</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                        m_precision = MPriceList.getPricePrecision(Env.getCtx(), getM_PriceList_ID());</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;867</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        setPrecision</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;868</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;869</td>  <td class="nbHits">&nbsp;</td>
@@ -1416,10 +1416,10 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> BigDecimal round (BigDecimal bd)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;884</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;885</td>  <td class="nbHitsUncovered"><a title="Line 885: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 885: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_precision &gt;= 0        <span class="comment">//        -1 = no rounding</span></a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;886</td>  <td class="nbHitsUncovered"><a title="Line 886: Conditional coverage 50% (1/2).">&nbsp;12</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 886: Conditional coverage 50% (1/2).">                        &amp;&amp; bd.scale() &gt; m_precision)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;885</td>  <td class="nbHitsUncovered"><a title="Line 885: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 885: Conditional coverage 50% (1/2).">                <span class="keyword">if</span> (m_precision &gt;= 0        <span class="comment">//        -1 = no rounding</span></a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;886</td>  <td class="nbHitsUncovered"><a title="Line 886: Conditional coverage 50% (1/2).">&nbsp;15</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 886: Conditional coverage 50% (1/2).">                        &amp;&amp; bd.scale() &gt; m_precision)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;887</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> bd.setScale(m_precision, BigDecimal.ROUND_HALF_UP);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;888</td>  <td class="nbHitsCovered">&nbsp;12</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;888</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> bd;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;889</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        round</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;890</td>  <td class="nbHits">&nbsp;</td>
@@ -1436,9 +1436,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getC_UOM_ID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;896</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;897</td>  <td class="nbHitsCovered"><a title="Line 897: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 897: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;897</td>  <td class="nbHitsCovered"><a title="Line 897: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 897: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;898</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        calculatePrice();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;899</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_C_UOM_ID;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;899</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_C_UOM_ID;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;900</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;901</td>  <td class="nbHits">&nbsp;</td>
@@ -1455,9 +1455,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getPriceList()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;907</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;908</td>  <td class="nbHitsCovered"><a title="Line 908: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 908: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;908</td>  <td class="nbHitsCovered"><a title="Line 908: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 908: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;909</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        calculatePrice();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;910</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceList);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;910</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceList);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;911</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;912</td>  <td class="nbHits">&nbsp;</td>
@@ -1472,9 +1472,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getPriceStd()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;917</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;918</td>  <td class="nbHitsCovered"><a title="Line 918: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 918: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;918</td>  <td class="nbHitsCovered"><a title="Line 918: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 918: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;919</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        calculatePrice();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;920</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceStd);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;920</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceStd);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;921</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;922</td>  <td class="nbHits">&nbsp;</td>
@@ -1489,9 +1489,9 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getPriceLimit()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;927</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsCovered"><a title="Line 928: Conditional coverage 100% (2/2).">&nbsp;4</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 928: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsCovered"><a title="Line 928: Conditional coverage 100% (2/2).">&nbsp;5</a></td>  <td class="src"><pre class="src">&nbsp;<a title="Line 928: Conditional coverage 100% (2/2).">                <span class="keyword">if</span> (!m_calculated)</a></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;929</td>  <td class="nbHitsCovered">&nbsp;1</td>  <td class="src"><pre class="src">&nbsp;                        calculatePrice();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;930</td>  <td class="nbHitsCovered">&nbsp;4</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceLimit);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;930</td>  <td class="nbHitsCovered">&nbsp;5</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> round(m_PriceLimit);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;931</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;932</td>  <td class="nbHits">&nbsp;</td>
@@ -1559,7 +1559,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isCalculated()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;967</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;968</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;968</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">return</span> m_calculated;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;969</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        isCalculated</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;970</td>  <td class="nbHits">&nbsp;</td>
@@ -1568,9 +1568,9 @@
   <td class="src"><pre class="src">&nbsp;        @Override</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;972</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setOrderLine(I_C_OrderLine orderLine, String trxName) {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;973</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span>.setOrderLine(orderLine, trxName);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;974</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;                checkVendorBreak();</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;975</td>  <td class="nbHitsCovered">&nbsp;11</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;973</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                <span class="keyword">super</span>.setOrderLine(orderLine, trxName);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;974</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;                checkVendorBreak();</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;975</td>  <td class="nbHitsCovered">&nbsp;15</td>  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;976</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;977</td>  <td class="nbHits">&nbsp;</td>
@@ -1613,6 +1613,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MProductPrice</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/23/18 10:01 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/24/18 8:18 PM.</div>
 </body>
 </html>
