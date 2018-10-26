@@ -977,262 +977,262 @@
 <tr>  <td class="numLineCover">&nbsp;652</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">catch</span> (Exception e) {</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;653</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = e.getLocalizedMessage();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;654</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            log.log(Level.SEVERE, err);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;655</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;656</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;657</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;658</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;659</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;660</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;655</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            e.printStackTrace();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;656</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;657</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;658</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;659</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;660</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;661</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;662</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//  GL Categories</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;662</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createGLCategory(<span class="string">"Standard"</span>, MGLCategory.CATEGORYTYPE_Manual, <span class="keyword">true</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;663</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_None = createGLCategory(<span class="string">"None"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;664</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_GL = createGLCategory(<span class="string">"Manual"</span>, MGLCategory.CATEGORYTYPE_Manual, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;665</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_ARI = createGLCategory(<span class="string">"AR Invoice"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;666</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_ARR = createGLCategory(<span class="string">"AR Receipt"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;667</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_MM = createGLCategory(<span class="string">"Material Management"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;668</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_API = createGLCategory(<span class="string">"AP Invoice"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;669</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_APP = createGLCategory(<span class="string">"AP Payment"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;670</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_CASH = createGLCategory(<span class="string">"Cash/Payments"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;671</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Manufacturing = createGLCategory(<span class="string">"Manufacturing"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;672</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Distribution = createGLCategory(<span class="string">"Distribution"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;673</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Payroll = createGLCategory(<span class="string">"Payroll"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;674</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;663</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createGLCategory(<span class="string">"Standard"</span>, MGLCategory.CATEGORYTYPE_Manual, <span class="keyword">true</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;664</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_None = createGLCategory(<span class="string">"None"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;665</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_GL = createGLCategory(<span class="string">"Manual"</span>, MGLCategory.CATEGORYTYPE_Manual, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;666</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_ARI = createGLCategory(<span class="string">"AR Invoice"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;667</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_ARR = createGLCategory(<span class="string">"AR Receipt"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;668</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_MM = createGLCategory(<span class="string">"Material Management"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;669</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_API = createGLCategory(<span class="string">"AP Invoice"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;670</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_APP = createGLCategory(<span class="string">"AP Payment"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;671</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_CASH = createGLCategory(<span class="string">"Cash/Payments"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;672</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Manufacturing = createGLCategory(<span class="string">"Manufacturing"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;673</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Distribution = createGLCategory(<span class="string">"Distribution"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;674</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> GL_Payroll = createGLCategory(<span class="string">"Payroll"</span>, MGLCategory.CATEGORYTYPE_Document, <span class="keyword">false</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;675</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;676</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        Base DocumentTypes</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;676</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> ii = createDocType(<span class="string">"GL Journal"</span>, Msg.getElement(m_ctx, <span class="string">"GL_Journal_ID"</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;677</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;677</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> ii = createDocType(<span class="string">"GL Journal"</span>, Msg.getElement(m_ctx, <span class="string">"GL_Journal_ID"</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;678</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_GLJournal, <span class="keyword">null</span>, 0, 0, 1000, GL_GL, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;678</td>  <td class="nbHitsUncovered"><a title="Line 678: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 678: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (ii == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;679</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;679</td>  <td class="nbHitsUncovered"><a title="Line 679: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 679: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (ii == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;680</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;680</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = <span class="string">"Document Type not created"</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;681</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;682</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;683</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;684</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;685</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;681</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = <span class="string">"Document Type not created"</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;682</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;683</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;684</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;685</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;686</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;686</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"GL Journal Batch"</span>, Msg.getElement(m_ctx, <span class="string">"GL_JournalBatch_ID"</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;687</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_GLJournal, <span class="keyword">null</span>, 0, 0, 100, GL_GL, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;687</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"GL Journal Batch"</span>, Msg.getElement(m_ctx, <span class="string">"GL_JournalBatch_ID"</span>),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;688</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">//        MDocType.DOCBASETYPE_GLDocument</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_GLJournal, <span class="keyword">null</span>, 0, 0, 100, GL_GL, <span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;689</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">//        MDocType.DOCBASETYPE_GLDocument</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;690</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;690</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_I = createDocType(<span class="string">"AR Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;691</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;691</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_I = createDocType(<span class="string">"AR Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;692</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ARInvoice, <span class="keyword">null</span>, 0, 0, 100000, GL_ARI, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;692</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_II = createDocType(<span class="string">"AR Invoice Indirect"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;693</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;693</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_II = createDocType(<span class="string">"AR Invoice Indirect"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;694</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ARInvoice, <span class="keyword">null</span>, 0, 0, 150000, GL_ARI, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;694</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_IC = createDocType(<span class="string">"AR Credit Memo"</span>, Msg.getMsg(m_ctx, <span class="string">"CreditMemo"</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;695</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ARCreditMemo, <span class="keyword">null</span>, 0, 0, 170000, GL_ARI, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_IC = createDocType(<span class="string">"AR Credit Memo"</span>, Msg.getMsg(m_ctx, <span class="string">"CreditMemo"</span>),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;696</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">//        MDocType.DOCBASETYPE_ARProFormaInvoice</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ARCreditMemo, <span class="keyword">null</span>, 0, 0, 170000, GL_ARI, <span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;697</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">//        MDocType.DOCBASETYPE_ARProFormaInvoice</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;698</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;698</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AP Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;699</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;699</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AP Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"C_Invoice_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;700</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_APInvoice, <span class="keyword">null</span>, 0, 0, 0, GL_API, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;700</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_IPC = createDocType(<span class="string">"AP CreditMemo"</span>, Msg.getMsg(m_ctx, <span class="string">"CreditMemo"</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;701</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;701</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_IPC = createDocType(<span class="string">"AP CreditMemo"</span>, Msg.getMsg(m_ctx, <span class="string">"CreditMemo"</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;702</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_APCreditMemo, <span class="keyword">null</span>, 0, 0, 0, GL_API, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;702</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Match Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"M_MatchInv_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;703</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MatchInvoice, <span class="keyword">null</span>, 0, 0, 390000, GL_API, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;703</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Match Invoice"</span>, Msg.getElement(m_ctx, <span class="string">"M_MatchInv_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;704</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MatchInvoice, <span class="keyword">null</span>, 0, 0, 390000, GL_API, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;705</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;705</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AR Receipt"</span>, Msg.getElement(m_ctx, <span class="string">"C_Payment_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;706</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;706</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AR Receipt"</span>, Msg.getElement(m_ctx, <span class="string">"C_Payment_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;707</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ARReceipt, <span class="keyword">null</span>, 0, 0, 0, GL_ARR, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;707</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AP Payment"</span>, Msg.getElement(m_ctx, <span class="string">"C_Payment_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;708</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;708</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"AP Payment"</span>, Msg.getElement(m_ctx, <span class="string">"C_Payment_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;709</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_APPayment, <span class="keyword">null</span>, 0, 0, 0, GL_APP, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;709</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Allocation"</span>, <span class="string">"Allocation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;710</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PaymentAllocation, <span class="keyword">null</span>, 0, 0, 490000, GL_CASH, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;710</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Allocation"</span>, <span class="string">"Allocation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;711</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PaymentAllocation, <span class="keyword">null</span>, 0, 0, 490000, GL_CASH, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;712</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;712</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_S  = createDocType(<span class="string">"MM Shipment"</span>, <span class="string">"Delivery Note"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;713</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;713</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_S  = createDocType(<span class="string">"MM Shipment"</span>, <span class="string">"Delivery Note"</span>,</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;714</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialDelivery, <span class="keyword">null</span>, 0, 0, 500000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;714</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_SI = createDocType(<span class="string">"MM Shipment Indirect"</span>, <span class="string">"Delivery Note"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;715</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;715</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_SI = createDocType(<span class="string">"MM Shipment Indirect"</span>, <span class="string">"Delivery Note"</span>,</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;716</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialDelivery, <span class="keyword">null</span>, 0, 0, 550000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;716</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_VRM = createDocType(<span class="string">"MM Vendor Return"</span>, <span class="string">"Vendor Return"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;717</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialDelivery, <span class="keyword">null</span>, 0, 0, 590000, GL_MM, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;717</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_VRM = createDocType(<span class="string">"MM Vendor Return"</span>, <span class="string">"Vendor Return"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;718</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialDelivery, <span class="keyword">null</span>, 0, 0, 590000, GL_MM, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;719</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;719</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"MM Receipt"</span>, <span class="string">"Vendor Delivery"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;720</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;720</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"MM Receipt"</span>, <span class="string">"Vendor Delivery"</span>,</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;721</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialReceipt, <span class="keyword">null</span>, 0, 0, 0, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;721</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_RM = createDocType(<span class="string">"MM Customer Return"</span>, <span class="string">"Customer Return"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;722</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialReceipt, <span class="keyword">null</span>, 0, 0, 570000, GL_MM, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;722</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT_RM = createDocType(<span class="string">"MM Customer Return"</span>, <span class="string">"Customer Return"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;723</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialReceipt, <span class="keyword">null</span>, 0, 0, 570000, GL_MM, <span class="keyword">true</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;724</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;724</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Purchase Order"</span>, Msg.getElement(m_ctx, <span class="string">"C_Order_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;725</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;725</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Purchase Order"</span>, Msg.getElement(m_ctx, <span class="string">"C_Order_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;726</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PurchaseOrder, <span class="keyword">null</span>, 0, 0, 800000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;726</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Match PO"</span>, Msg.getElement(m_ctx, <span class="string">"M_MatchPO_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;727</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;727</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Match PO"</span>, Msg.getElement(m_ctx, <span class="string">"M_MatchPO_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;728</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MatchPO, <span class="keyword">null</span>, 0, 0, 890000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;728</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Purchase Requisition"</span>, Msg.getElement(m_ctx, <span class="string">"M_Requisition_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;729</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Purchase Requisition"</span>, Msg.getElement(m_ctx, <span class="string">"M_Requisition_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;730</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PurchaseRequisition, <span class="keyword">null</span>, 0, 0, 900000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Vendor Return Material"</span>, <span class="string">"Vendor Return Material Authorization"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;731</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PurchaseOrder, MDocType.DOCSUBTYPESO_ReturnMaterial, DT_VRM,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;731</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Vendor Return Material"</span>, <span class="string">"Vendor Return Material Authorization"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;732</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            DT_IPC, 990000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_PurchaseOrder, MDocType.DOCSUBTYPESO_ReturnMaterial, DT_VRM,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;733</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            DT_IPC, 990000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;734</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;734</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Bank Statement"</span>, Msg.getElement(m_ctx, <span class="string">"C_BankStatemet_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;735</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;735</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Bank Statement"</span>, Msg.getElement(m_ctx, <span class="string">"C_BankStatemet_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;736</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_BankStatement, <span class="keyword">null</span>, 0, 0, 700000, GL_CASH, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;736</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Cash Journal"</span>, Msg.getElement(m_ctx, <span class="string">"C_Cash_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;737</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_CashJournal, <span class="keyword">null</span>, 0, 0, 750000, GL_CASH, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;737</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Cash Journal"</span>, Msg.getElement(m_ctx, <span class="string">"C_Cash_ID"</span>, <span class="keyword">true</span>),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;738</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_CashJournal, <span class="keyword">null</span>, 0, 0, 750000, GL_CASH, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;739</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;739</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Material Movement"</span>, Msg.getElement(m_ctx, <span class="string">"M_Movement_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;740</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;740</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Material Movement"</span>, Msg.getElement(m_ctx, <span class="string">"M_Movement_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;741</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialMovement, <span class="keyword">null</span>, 0, 0, 610000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;741</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Physical Inventory"</span>, Msg.getElement(m_ctx, <span class="string">"M_Inventory_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;742</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;742</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Physical Inventory"</span>, Msg.getElement(m_ctx, <span class="string">"M_Inventory_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;743</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialPhysicalInventory, MDocType.DOCSUBTYPEINV_PhysicalInventory, 0, 0, 620000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;743</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Material Production"</span>, Msg.getElement(m_ctx, <span class="string">"M_Production_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;744</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;744</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Material Production"</span>, Msg.getElement(m_ctx, <span class="string">"M_Production_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;745</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialProduction, <span class="keyword">null</span>, 0, 0, 630000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;745</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Project Issue"</span>, Msg.getElement(m_ctx, <span class="string">"C_ProjectIssue_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;746</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;746</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Project Issue"</span>, Msg.getElement(m_ctx, <span class="string">"C_ProjectIssue_ID"</span>, <span class="keyword">false</span>),</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;747</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ProjectIssue, <span class="keyword">null</span>, 0, 0, 640000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;747</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Internal Use Inventory"</span>, <span class="string">"Internal Use Inventory"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;748</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLineCover">&nbsp;748</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Internal Use Inventory"</span>, <span class="string">"Internal Use Inventory"</span>,</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;749</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialPhysicalInventory, MDocType.DOCSUBTYPEINV_InternalUseInventory, 0, 0, 650000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;749</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Cost Adjustment"</span>, <span class="string">"Cost Adjustment"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;750</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialPhysicalInventory, MDocType.DOCSUBTYPEINV_CostAdjustment, 0, 0, 660000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;750</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Cost Adjustment"</span>, <span class="string">"Cost Adjustment"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;751</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaterialPhysicalInventory, MDocType.DOCSUBTYPEINV_CostAdjustment, 0, 0, 660000, GL_MM, <span class="keyword">false</span>);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;752</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;753</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//  Order Entry</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;753</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Binding offer"</span>, <span class="string">"Quotation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;754</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_Quotation,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;754</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Binding offer"</span>, <span class="string">"Quotation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;755</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_Quotation,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;756</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 10000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;756</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Non binding offer"</span>, <span class="string">"Proposal"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;757</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_Proposal,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Non binding offer"</span>, <span class="string">"Proposal"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;758</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_Proposal,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;759</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 20000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Prepay Order"</span>, <span class="string">"Prepay Order"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;760</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_PrepayOrder,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;760</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Prepay Order"</span>, <span class="string">"Prepay Order"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;761</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_PrepayOrder,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;762</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            DT_S, DT_I, 30000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;762</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Customer Return Material"</span>, <span class="string">"Customer Return Material Authorization"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;763</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_ReturnMaterial,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;763</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Customer Return Material"</span>, <span class="string">"Customer Return Material Authorization"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;764</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_ReturnMaterial,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;765</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            DT_RM, DT_IC, 30000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;765</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Standard Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;766</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_StandardOrder,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;766</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Standard Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;767</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_StandardOrder,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;768</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            DT_S, DT_I, 50000, GL_None, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;768</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Credit Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;769</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_OnCreditOrder,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;769</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Credit Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;770</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_OnCreditOrder,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;771</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            DT_SI, DT_I, 60000, GL_None, <span class="keyword">false</span>);   <span class="comment">//  RE</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;771</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Warehouse Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;772</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_WarehouseOrder,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;772</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Warehouse Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;773</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            DT_S, DT_I,        70000, GL_None, <span class="keyword">false</span>);    <span class="comment">//  LS</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_WarehouseOrder,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;774</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            DT_S, DT_I,        70000, GL_None, <span class="keyword">false</span>);    <span class="comment">//  LS</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;775</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;776</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//Manufacturing Document</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;776</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Manufacturing Order"</span>, <span class="string">"Manufacturing Order"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;777</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ManufacturingOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;777</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Manufacturing Order"</span>, <span class="string">"Manufacturing Order"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;778</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ManufacturingOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;779</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 80000, GL_Manufacturing, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;779</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Manufacturing Cost Collector"</span>,<span class="string">"Cost Collector"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;780</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ManufacturingCostCollector, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;780</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Manufacturing Cost Collector"</span>,<span class="string">"Cost Collector"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;781</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_ManufacturingCostCollector, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;782</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 81000, GL_Manufacturing, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;782</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Maintenance Order"</span>,<span class="string">"Maintenance Order"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;783</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaintenanceOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;783</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Maintenance Order"</span>,<span class="string">"Maintenance Order"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;784</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_MaintenanceOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;785</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 86000, GL_Manufacturing, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Quality Order"</span>,<span class="string">"Quality Order"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;786</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_QualityOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Quality Order"</span>,<span class="string">"Quality Order"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;787</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_QualityOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;788</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            0, 0, 87000, GL_Manufacturing, <span class="keyword">false</span>);</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;788</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Distribution Order"</span>,<span class="string">"Distribution Order"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;789</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_DistributionOrder, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;789</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Distribution Order"</span>,<span class="string">"Distribution Order"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;790</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            0, 0, 88000, GL_Distribution, <span class="keyword">false</span>);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_DistributionOrder, <span class="keyword">null</span>,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;791</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            0, 0, 88000, GL_Distribution, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;792</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//Payroll</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;792</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Payroll"</span>,<span class="string">"Payroll"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;793</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_Payroll, <span class="keyword">null</span>,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;793</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createDocType(<span class="string">"Payroll"</span>,<span class="string">"Payroll"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;794</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            0, 0, 90000, GL_Payroll, <span class="keyword">false</span>);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_Payroll, <span class="keyword">null</span>,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;795</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            0, 0, 90000, GL_Payroll, <span class="keyword">false</span>);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;796</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;796</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT = createDocType(<span class="string">"POS Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;797</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_POSOrder,</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;797</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> DT = createDocType(<span class="string">"POS Order"</span>, <span class="string">"Order Confirmation"</span>,</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;798</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;            DT_SI, DT_II, 80000, GL_None, <span class="keyword">false</span>);    <span class="comment">// Bar</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;            MDocType.DOCBASETYPE_SalesOrder, MDocType.DOCSUBTYPESO_POSOrder,</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;799</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;            DT_SI, DT_II, 80000, GL_None, <span class="keyword">false</span>);    <span class="comment">// Bar</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;800</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        POS As Default for window SO</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;800</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createPreference(<span class="string">"C_DocTypeTarget_ID"</span>, String.valueOf(DT), 143);</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;801</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;801</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        createPreference(<span class="string">"C_DocTypeTarget_ID"</span>, String.valueOf(DT), 143);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;802</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">//  Update ClientInfo</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;803</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        sqlCmd = <span class="keyword">new</span> StringBuffer (<span class="string">"UPDATE AD_ClientInfo SET "</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;804</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        sqlCmd.append(<span class="string">"C_AcctSchema1_ID="</span>).append(m_as.getC_AcctSchema_ID())</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;805</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            .append(<span class="string">", C_Calendar_ID="</span>).append(m_calendar.getC_Calendar_ID())</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;806</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            .append(<span class="string">" WHERE AD_Client_ID="</span>).append(m_client.getAD_Client_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;807</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        no = DB.executeUpdateEx(sqlCmd.toString(), m_trx.getTrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;808</td>  <td class="nbHitsUncovered"><a title="Line 808: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 808: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (no != 1)</a></span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;809</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;810</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = <span class="string">"ClientInfo not updated"</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            log.log(Level.SEVERE, err);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;813</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;814</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;815</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;816</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;817</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;803</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">//  Update ClientInfo</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;804</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        sqlCmd = <span class="keyword">new</span> StringBuffer (<span class="string">"UPDATE AD_ClientInfo SET "</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;805</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        sqlCmd.append(<span class="string">"C_AcctSchema1_ID="</span>).append(m_as.getC_AcctSchema_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;806</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            .append(<span class="string">", C_Calendar_ID="</span>).append(m_calendar.getC_Calendar_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;807</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            .append(<span class="string">" WHERE AD_Client_ID="</span>).append(m_client.getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;808</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        no = DB.executeUpdateEx(sqlCmd.toString(), m_trx.getTrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;809</td>  <td class="nbHitsUncovered"><a title="Line 809: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 809: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (no != 1)</a></span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;810</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;811</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = <span class="string">"ClientInfo not updated"</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;812</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            log.log(Level.SEVERE, err);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;813</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_info.append(err);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;814</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.rollback();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;815</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            m_trx.close();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;816</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;817</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;818</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;819</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        Validate Completeness</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;819</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        ProcessInfo processInfo = <span class="keyword">new</span> ProcessInfo(<span class="string">"Document Type Verify"</span>, 0);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;820</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setAD_Client_ID(getAD_Client_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;821</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setAD_User_ID(getAD_User_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;822</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setParameter(<span class="keyword">new</span> ProcessInfoParameter[0]);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;823</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setClassName(<span class="string">"org.compiere.process.DocumentTypeVerify"</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;824</td>  <td class="nbHitsUncovered"><a title="Line 824: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 824: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (!ProcessUtil.startJavaProcess(m_ctx, processInfo, m_trx, <span class="keyword">false</span>))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;820</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        ProcessInfo processInfo = <span class="keyword">new</span> ProcessInfo(<span class="string">"Document Type Verify"</span>, 0);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;821</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setAD_Client_ID(getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;822</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setAD_User_ID(getAD_User_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;823</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        processInfo.setParameter(<span class="keyword">new</span> ProcessInfoParameter[0]);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;824</td>  <td class="nbHitsUncovered"><a title="Line 824: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 824: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (!ProcessUtil.startJavaProcess(m_ctx, processInfo, m_trx, <span class="keyword">false</span>, <span class="keyword">null</span>, <span class="keyword">new</span> DocumentTypeVerify()))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;825</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;826</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            String err = <span class="string">"Document type verification failed. Message="</span>+processInfo.getSummary();</span></pre></td></tr>
@@ -1256,7 +1256,7 @@
 <tr>  <td class="numLine">&nbsp;839</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;840</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        MTable table = MTable.get(m_ctx, tableName);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;841</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        PO acct = (PO)table.getPO(0, m_trx.getTrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;841</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        PO acct = (PO)table.getPO(-1, m_trx.getTrxName()); <span class="comment">// Note this should create a new Acct; ugly hack, because we return null for 0</span></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;842</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;843</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        MColumn[] cols = table.getColumns(<span class="keyword">false</span>);</span></pre></td></tr>
@@ -2205,6 +2205,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  MSetup</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/26/18 7:13 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 10/26/18 6:33 PM.</div>
 </body>
 </html>
