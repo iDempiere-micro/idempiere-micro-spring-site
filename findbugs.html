@@ -89,8 +89,8 @@
 <th>Errors</th>
 <th>Missing Classes</th></tr>
 <tr class="b">
-<td>2124</td>
-<td>792</td>
+<td>2131</td>
+<td>794</td>
 <td>0</td>
 <td>0</td></tr></table></div>
 <div class="section">
@@ -116,6 +116,12 @@
 <td>1</td></tr>
 <tr class="a">
 <td><a href="#company.bigger.service.UserService">company.bigger.service.UserService</a></td>
+<td>1</td></tr>
+<tr class="b">
+<td><a href="#company.bigger.web.controller.UserController">company.bigger.web.controller.UserController</a></td>
+<td>1</td></tr>
+<tr class="a">
+<td><a href="#company.bigger.web.jwt.AnonAuthentication">company.bigger.web.jwt.AnonAuthentication</a></td>
 <td>1</td></tr>
 <tr class="b">
 <td><a href="#company.bigger.web.jwt.SecuredApi">company.bigger.web.jwt.SecuredApi</a></td>
@@ -1105,7 +1111,7 @@
 <td>Write to static field company.bigger.Micro.singleton from instance method new company.bigger.Micro()</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD">ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD</a></td>
-<td>65</td>
+<td>86</td>
 <td>High</td></tr></table></div><a name="company.bigger.common.db.CConnection"></a>
 <div class="section">
 <h3>company.bigger.common.db.CConnection<a name="company.bigger.common.db.CConnection"></a></h3>
@@ -1297,7 +1303,7 @@
 <td>Redundant nullcheck of rs, which is known to be non-null in company.bigger.service.LoginService.checkUserAccess(int, int, int, INameKeyPair)</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE">RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE</a></td>
-<td>394</td>
+<td>339</td>
 <td>Medium</td></tr></table></div><a name="company.bigger.service.UserService"></a>
 <div class="section">
 <h3>company.bigger.service.UserService<a name="company.bigger.service.UserService"></a></h3>
@@ -1312,7 +1318,37 @@
 <td>Questionable cast from Collection to abstract class java.util.List in company.bigger.service.UserService.getUsers()</td>
 <td>STYLE</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_BAD_CAST_TO_ABSTRACT_COLLECTION">BC_BAD_CAST_TO_ABSTRACT_COLLECTION</a></td>
-<td>79</td>
+<td>90</td>
+<td>Medium</td></tr></table></div><a name="company.bigger.web.controller.UserController"></a>
+<div class="section">
+<h3>company.bigger.web.controller.UserController<a name="company.bigger.web.controller.UserController"></a></h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th></tr>
+<tr class="b">
+<td>Questionable cast from Collection to abstract class java.util.List in company.bigger.web.controller.UserController.all()</td>
+<td>STYLE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#BC_BAD_CAST_TO_ABSTRACT_COLLECTION">BC_BAD_CAST_TO_ABSTRACT_COLLECTION</a></td>
+<td>41</td>
+<td>Medium</td></tr></table></div><a name="company.bigger.web.jwt.AnonAuthentication"></a>
+<div class="section">
+<h3>company.bigger.web.jwt.AnonAuthentication<a name="company.bigger.web.jwt.AnonAuthentication"></a></h3>
+<table border="0" class="bodyTable">
+<tr class="a">
+<th>Bug</th>
+<th>Category</th>
+<th>Details</th>
+<th>Line</th>
+<th>Priority</th></tr>
+<tr class="b">
+<td>company.bigger.web.jwt.AnonAuthentication.equals(Object) is unusual</td>
+<td>STYLE</td>
+<td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#EQ_UNUSUAL">EQ_UNUSUAL</a></td>
+<td>24</td>
 <td>Medium</td></tr></table></div><a name="company.bigger.web.jwt.SecuredApi"></a>
 <div class="section">
 <h3>company.bigger.web.jwt.SecuredApi<a name="company.bigger.web.jwt.SecuredApi"></a></h3>
@@ -5275,7 +5311,7 @@
 <td>value could be null and is guaranteed to be dereferenced in org.compiere.server.Scheduler.fillParameter(MPInstance)</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_GUARANTEED_DEREF">NP_GUARANTEED_DEREF</a></td>
-<td>376</td>
+<td>336</td>
 <td>Medium</td></tr>
 <tr class="b">
 <td>Redundant nullcheck of variable, which is known to be non-null in org.compiere.server.Scheduler.parseVariable(MSchedulerPara, String)</td>
@@ -7684,7 +7720,7 @@
 <td>null could be null and is guaranteed to be dereferenced in org.idempiere.process.InvoiceNGL.createGLJournal()</td>
 <td>CORRECTNESS</td>
 <td><a class="externalLink" href="http://findbugs.sourceforge.net/bugDescriptions.html#NP_GUARANTEED_DEREF">NP_GUARANTEED_DEREF</a></td>
-<td>284</td>
+<td>289</td>
 <td>High</td></tr>
 <tr class="b">
 <td>Redundant nullcheck of cat, which is known to be non-null in org.idempiere.process.InvoiceNGL.createGLJournal()</td>
