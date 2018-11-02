@@ -1487,7 +1487,7 @@
 <tr>  <td class="numLine">&nbsp;888</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Org Element</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;889</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> Org_ID = getAD_Org_ID();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;890</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> M_ASI_ID = getM_AttributeSetInstance_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;890</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> M_ASI_ID = getMAttributeSetInstance_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;891</td>  <td class="nbHitsUncovered"><a title="Line 891: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 891: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_Client.equals(CostingLevel))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;892</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
@@ -1645,7 +1645,7 @@
 <tr>  <td class="numLine">&nbsp;993</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//save history for m_cost</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;994</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                X_M_CostHistory history = <span class="keyword">new</span> X_M_CostHistory(getCtx(), 0, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;995</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                history.setM_AttributeSetInstance_ID(cost.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;995</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                history.setM_AttributeSetInstance_ID(cost.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;996</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                history.setM_CostDetail_ID(<span class="keyword">this</span>.getM_CostDetail_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;997</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                history.setM_CostElement_ID(ce.getM_CostElement_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;998</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                history.setM_CostType_ID(cost.getM_CostType_ID());</span></pre></td></tr>
@@ -1838,7 +1838,7 @@
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1122</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">//        Real ASI - costing level Org</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1123</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MCostQueue cq = MCostQueue.get(product, getM_AttributeSetInstance_ID(), </span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1123</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MCostQueue cq = MCostQueue.get(product, getMAttributeSetInstance_ID(), </span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1124</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        as, Org_ID, ce.getM_CostElement_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1125</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                cq.setCosts(amt, qty, precision);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1126</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                cq.saveEx();</span></pre></td></tr>
@@ -2059,7 +2059,7 @@
   <td class="src"><pre class="src">&nbsp;                                        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1272</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="comment">//        Real ASI - costing level Org</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1273</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MCostQueue cq = MCostQueue.get(product, getM_AttributeSetInstance_ID(), </span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1273</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MCostQueue cq = MCostQueue.get(product, getMAttributeSetInstance_ID(), </span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1274</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        as, Org_ID, ce.getM_CostElement_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1275</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                cq.setCosts(amt, qty, precision);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1276</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                cq.saveEx();</span></pre></td></tr>
@@ -2242,6 +2242,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MCostDetail</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

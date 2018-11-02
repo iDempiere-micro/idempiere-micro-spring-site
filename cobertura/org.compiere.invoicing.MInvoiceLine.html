@@ -387,7 +387,7 @@
 <tr>  <td class="numLine">&nbsp;224</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;225</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_Product_ID(oLine.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;226</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_AttributeSetInstance_ID(oLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;226</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_AttributeSetInstance_ID(oLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;227</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setS_ResourceAssignment_ID(oLine.getS_ResourceAssignment_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;228</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setC_UOM_ID(oLine.getC_UOM_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
@@ -453,7 +453,7 @@
 <tr>  <td class="numLine">&nbsp;272</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">// use product UOM if the shipment hasn't the same uom than the order</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;273</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setC_UOM_ID(getProduct().getC_UOM_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;274</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_AttributeSetInstance_ID(sLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;274</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_AttributeSetInstance_ID(sLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;275</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        setS_ResourceAssignment_ID(sLine.getS_ResourceAssignment_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;276</td>  <td class="nbHitsUncovered"><a title="Line 276: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 276: Conditional coverage 0% (0/2).">                <span class="keyword">if</span>(getM_Product_ID() == 0)</a></span></pre></td></tr>
@@ -1692,7 +1692,7 @@
 <tr>  <td class="numLineCover">&nbsp;1065</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        MLandedCostAllocation lca = <span class="keyword">new</span> MLandedCostAllocation (<span class="keyword">this</span>, lc.getM_CostElement_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1066</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        lca.setM_Product_ID(iol.getM_Product_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1067</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        lca.setM_InOutLine_ID(iol.getM_InOutLine_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1068</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        lca.setM_AttributeSetInstance_ID(iol.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1068</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        lca.setM_AttributeSetInstance_ID(iol.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1069</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        BigDecimal base = iol.getBase(lc.getLandedCostDistribution());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1070</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        lca.setBase(base);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1071</td>  <td class="nbHits">&nbsp;</td>
@@ -1736,7 +1736,7 @@
   <td class="src"><pre class="src">&nbsp;                                }        </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1099</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MLandedCostAllocation lca = <span class="keyword">new</span> MLandedCostAllocation (<span class="keyword">this</span>, lc.getM_CostElement_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1100</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lca.setM_Product_ID(iol.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1101</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lca.setM_AttributeSetInstance_ID(iol.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1101</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lca.setM_AttributeSetInstance_ID(iol.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1102</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lca.setM_InOutLine_ID(iol.getM_InOutLine_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1103</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal base = iol.getBase(lc.getLandedCostDistribution()); </span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1104</td>  <td class="nbHitsUncovered"><a title="Line 1104: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1104: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (base.signum() == 0)</a></span></pre></td></tr>
@@ -1870,7 +1870,7 @@
 <tr>  <td class="numLineCover">&nbsp;1199</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInOutLine iol = (MInOutLine)list.get(i);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1200</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MLandedCostAllocation lca = <span class="keyword">new</span> MLandedCostAllocation (<span class="keyword">this</span>, lcs[0].getM_CostElement_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1201</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        lca.setM_Product_ID(iol.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1202</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        lca.setM_AttributeSetInstance_ID(iol.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1202</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        lca.setM_AttributeSetInstance_ID(iol.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1203</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        lca.setM_InOutLine_ID(iol.getM_InOutLine_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1204</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        BigDecimal base = iol.getBase(LandedCostDistribution);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1205</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        lca.setBase(base);</span></pre></td></tr>
@@ -2122,6 +2122,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MInvoiceLine</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

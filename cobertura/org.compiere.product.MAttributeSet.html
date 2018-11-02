@@ -230,7 +230,7 @@
 <tr>  <td class="numLine">&nbsp;122</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;123</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt = DB.prepareStatement(sql, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getM_AttributeSet_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getMAttributeSet_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;125</td>  <td class="nbHitsUncovered"><a title="Line 125: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 125: Conditional coverage 0% (0/2).">                                pstmt.setString(2, instanceAttributes ? <span class="string">"Y"</span> : <span class="string">"N"</span>);</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;126</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                rs = pstmt.executeQuery();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;127</td>  <td class="nbHitsUncovered"><a title="Line 127: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 127: Conditional coverage 0% (0/2).">                                <span class="keyword">while</span> (rs.next())</a></span></pre></td></tr>
@@ -662,7 +662,7 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;391</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder sql = <span class="keyword">new</span> StringBuilder(<span class="string">"UPDATE M_AttributeSet mas"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;392</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" SET IsInstanceAttribute='Y' "</span>)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;393</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"WHERE M_AttributeSet_ID="</span>).append(getM_AttributeSet_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;393</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"WHERE M_AttributeSet_ID="</span>).append(getMAttributeSet_ID())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;394</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" AND IsInstanceAttribute='N'"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;395</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" AND (IsSerNo='Y' OR IsLot='Y' OR IsGuaranteeDate='Y'"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;396</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        .append(<span class="string">" OR EXISTS (SELECT * FROM M_AttributeUse mau"</span>)</span></pre></td></tr>
@@ -688,7 +688,7 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder sql = <span class="keyword">new</span> StringBuilder(<span class="string">"UPDATE M_AttributeSet mas"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;413</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" SET IsInstanceAttribute='N' "</span>)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"WHERE M_AttributeSet_ID="</span>).append(getM_AttributeSet_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;414</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"WHERE M_AttributeSet_ID="</span>).append(getMAttributeSet_ID())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;415</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" AND IsInstanceAttribute='Y'"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;416</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"        AND IsSerNo='N' AND IsLot='N' AND IsGuaranteeDate='N'"</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;417</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">" AND NOT EXISTS (SELECT * FROM M_AttributeUse mau"</span>)</span></pre></td></tr>
@@ -715,6 +715,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MAttributeSet</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

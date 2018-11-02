@@ -447,7 +447,7 @@
 <tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> 0;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;292</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        Same ASI and Date</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 0% (0/14) [each condition: 0%, 0%, 0%, 0%, 0%, 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 0% (0/14) [each condition: 0%, 0%, 0%, 0%, 0%, 0%, 0%].">                        <span class="keyword">if</span> (m_line.getM_AttributeSetInstance_ID() == M_AttributeSetInstance_ID &amp;&amp; ((dateMPolicy==<span class="keyword">null</span> &amp;&amp; oldDateMPolicy==<span class="keyword">null</span>) || (dateMPolicy!=<span class="keyword">null</span> &amp;&amp; dateMPolicy.equals(oldDateMPolicy)) || (oldDateMPolicy!=<span class="keyword">null</span> &amp;&amp; oldDateMPolicy.equals(dateMPolicy))))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;293</td>  <td class="nbHitsUncovered"><a title="Line 293: Conditional coverage 0% (0/14) [each condition: 0%, 0%, 0%, 0%, 0%, 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 293: Conditional coverage 0% (0/14) [each condition: 0%, 0%, 0%, 0%, 0%, 0%, 0%].">                        <span class="keyword">if</span> (m_line.getMAttributeSetInstance_ID() == M_AttributeSetInstance_ID &amp;&amp; ((dateMPolicy==<span class="keyword">null</span> &amp;&amp; oldDateMPolicy==<span class="keyword">null</span>) || (dateMPolicy!=<span class="keyword">null</span> &amp;&amp; dateMPolicy.equals(oldDateMPolicy)) || (oldDateMPolicy!=<span class="keyword">null</span> &amp;&amp; oldDateMPolicy.equals(dateMPolicy))))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;294</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;295</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                m_line.setQtyBook(m_line.getQtyBook().add(QtyOnHand));</span></pre></td></tr>
@@ -458,11 +458,11 @@
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;300</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        Save Old Line info</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;301</td>  <td class="nbHitsUncovered"><a title="Line 301: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 301: Conditional coverage 0% (0/2).">                        <span class="keyword">else</span> <span class="keyword">if</span> (m_line.getM_AttributeSetInstance_ID() != 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;301</td>  <td class="nbHitsUncovered"><a title="Line 301: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 301: Conditional coverage 0% (0/2).">                        <span class="keyword">else</span> <span class="keyword">if</span> (m_line.getMAttributeSetInstance_ID() != 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;302</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;303</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MInventoryLineMA ma = <span class="keyword">new</span> MInventoryLineMA (m_line,</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;304</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        m_line.getM_AttributeSetInstance_ID(), m_line.getQtyBook(),oldDateMPolicy,<span class="keyword">true</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;304</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        m_line.getMAttributeSetInstance_ID(), m_line.getQtyBook(),oldDateMPolicy,<span class="keyword">true</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;305</td>  <td class="nbHitsUncovered"><a title="Line 305: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 305: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (!ma.save())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;306</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        log.warning(<span class="string">"Could not save "</span> + ma);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;307</td>  <td class="nbHits">&nbsp;</td>
@@ -642,6 +642,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        InventoryCountCreate</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

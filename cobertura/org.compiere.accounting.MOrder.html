@@ -886,7 +886,7 @@
 <tr>  <td class="numLine">&nbsp;563</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        Mandatory Product Attribute Set Instance</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;564</td>  <td class="nbHitsUncovered"><a title="Line 564: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 564: Conditional coverage 0% (0/2).">        <span class="keyword">for</span> (MOrderLine line : getLines()) {</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;565</td>  <td class="nbHitsUncovered"><a title="Line 565: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 565: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">            <span class="keyword">if</span> (line.getM_Product_ID() &gt; 0 &amp;&amp; line.getM_AttributeSetInstance_ID() == 0) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;565</td>  <td class="nbHitsUncovered"><a title="Line 565: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 565: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">            <span class="keyword">if</span> (line.getM_Product_ID() &gt; 0 &amp;&amp; line.getMAttributeSetInstance_ID() == 0) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;566</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MProduct product = line.getProduct();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;567</td>  <td class="nbHitsUncovered"><a title="Line 567: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 567: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (product.isASIMandatory(isSOTrx())) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;568</td>  <td class="nbHitsUncovered"><a title="Line 568: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 568: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span>(product.getAttributeSet()==<span class="keyword">null</span>){</a></span></pre></td></tr>
@@ -1160,7 +1160,7 @@
   <td class="src"><pre class="src">&nbsp;                    <span class="comment">//        Update Reservation Storage</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;753</td>  <td class="nbHitsUncovered"><a title="Line 753: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 753: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (!MStorageReservation.add(getCtx(), line.getM_Warehouse_ID(),</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;754</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.getM_Product_ID(),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;755</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;755</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;756</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        difference, isSOTrx, get_TrxName()))</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;757</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;758</td>  <td class="nbHits">&nbsp;</td>
@@ -1631,7 +1631,7 @@
 <tr>  <td class="numLine">&nbsp;1092</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//        Location</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">int</span> M_Locator_ID = MStorageOnHand.getM_Locator_ID (oLine.getM_Warehouse_ID(),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                oLine.getM_Product_ID(), oLine.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                oLine.getM_Product_ID(), oLine.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1095</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MovementQty, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1096</td>  <td class="nbHitsUncovered"><a title="Line 1096: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1096: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (M_Locator_ID == 0)                <span class="comment">//        Get default Location</span></a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1097</td>  <td class="nbHits">&nbsp;</td>
@@ -2445,7 +2445,7 @@
 <tr>  <td class="numLine">&nbsp;1634</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1635</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MCostDetail cd = MCostDetail.get(getCtx(), <span class="string">"C_OrderLine_ID=?"</span>,</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1636</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    line.getC_OrderLine_ID(), line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1636</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    line.getC_OrderLine_ID(), line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1637</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    as.getC_AcctSchema_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1638</td>  <td class="nbHitsUncovered"><a title="Line 1638: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1638: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (cd !=  <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1639</td>  <td class="nbHits">&nbsp;</td>
@@ -2490,6 +2490,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

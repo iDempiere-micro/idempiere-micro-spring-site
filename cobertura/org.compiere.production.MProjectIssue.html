@@ -283,7 +283,7 @@
 <tr>  <td class="numLineCover">&nbsp;151</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MTransaction mTrx = <span class="keyword">new</span> MTransaction (getCtx(), getAD_Org_ID(), </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;152</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        MTransaction.MOVEMENTTYPE_WorkOrderPlus,</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;153</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        getM_Locator_ID(), getM_Product_ID(), getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;153</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        getM_Locator_ID(), getM_Product_ID(), getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;154</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        getMovementQty().negate(), getMovementDate(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;155</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                mTrx.setC_ProjectIssue_ID(getC_ProjectIssue_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;156</td>  <td class="nbHits">&nbsp;</td>
@@ -294,8 +294,8 @@
 <tr>  <td class="numLineCover">&nbsp;159</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                Timestamp dateMPolicy = getMovementDate();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;160</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;161</td>  <td class="nbHitsUncovered"><a title="Line 161: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 161: Conditional coverage 0% (0/2).">                <span class="keyword">if</span>(getM_AttributeSetInstance_ID()&gt;0){</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;162</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        Timestamp t = MStorageOnHand.getDateMaterialPolicy(getM_Product_ID(), getM_AttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;161</td>  <td class="nbHitsUncovered"><a title="Line 161: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 161: Conditional coverage 0% (0/2).">                <span class="keyword">if</span>(getMAttributeSetInstance_ID()&gt;0){</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;162</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        Timestamp t = MStorageOnHand.getDateMaterialPolicy(getM_Product_ID(), getMAttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;163</td>  <td class="nbHitsUncovered"><a title="Line 163: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 163: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (t != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;164</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                dateMPolicy = t;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;165</td>  <td class="nbHits">&nbsp;</td>
@@ -313,7 +313,7 @@
 <tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                String MMPolicy = product.getMMPolicy();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;173</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                Timestamp minGuaranteeDate = getMovementDate();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;174</td>  <td class="nbHitsUncovered"><a title="Line 174: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 174: Conditional coverage 0% (0/2).">                                <span class="keyword">int</span> M_Warehouse_ID = getM_Locator_ID() &gt; 0 ? getM_Locator().getM_Warehouse_ID() : getC_Project().getM_Warehouse_ID();</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;175</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MStorageOnHand[] storages = MStorageOnHand.getWarehouse(getCtx(), M_Warehouse_ID, getM_Product_ID(), getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;175</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MStorageOnHand[] storages = MStorageOnHand.getWarehouse(getCtx(), M_Warehouse_ID, getM_Product_ID(), getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;176</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                minGuaranteeDate, MClient.MMPOLICY_FiFo.equals(MMPolicy), <span class="keyword">true</span>, getM_Locator_ID(), get_TrxName(), <span class="keyword">true</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal qtyToIssue = getMovementQty();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;178</td>  <td class="nbHitsUncovered"><a title="Line 178: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 178: Conditional coverage 0% (0/2).">                                <span class="keyword">for</span> (MStorageOnHand storage: storages)</a></span></pre></td></tr>
@@ -344,7 +344,7 @@
 <tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;196</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        ok = MStorageOnHand.add(getCtx(), loc.getM_Warehouse_ID(), getM_Locator_ID(), </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;197</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getM_Product_ID(), getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;197</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getM_Product_ID(), getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;198</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        qtyToIssue.negate(),dateMPolicy, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;199</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                }</pre></td></tr>
@@ -354,7 +354,7 @@
 <tr>  <td class="numLine">&nbsp;202</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;203</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                ok = MStorageOnHand.add(getCtx(), loc.getM_Warehouse_ID(), getM_Locator_ID(), </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;204</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getM_Product_ID(), getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;204</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getM_Product_ID(), getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;205</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getMovementQty().negate(),dateMPolicy, get_TrxName());                                </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;206</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
@@ -404,6 +404,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MProjectIssue</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

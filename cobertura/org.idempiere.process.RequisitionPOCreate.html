@@ -463,7 +463,7 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;286</td>  <td class="nbHitsUncovered"><a title="Line 286: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 286: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (m_orderLine == <span class="keyword">null</span></a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;287</td>  <td class="nbHitsUncovered"><a title="Line 287: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 287: Conditional coverage 0% (0/2).">                        || rLine.getM_Product_ID() != m_M_Product_ID</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;288</td>  <td class="nbHitsUncovered"><a title="Line 288: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 288: Conditional coverage 0% (0/2).">                        || rLine.getM_AttributeSetInstance_ID() != m_M_AttributeSetInstance_ID</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;288</td>  <td class="nbHitsUncovered"><a title="Line 288: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 288: Conditional coverage 0% (0/2).">                        || rLine.getMAttributeSetInstance_ID() != m_M_AttributeSetInstance_ID</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;289</td>  <td class="nbHitsUncovered"><a title="Line 289: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 289: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        || rLine.getC_Charge_ID() != 0                <span class="comment">//        single line per charge</span></a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;290</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        || m_order == <span class="keyword">null</span></pre></td></tr>
@@ -715,7 +715,7 @@
 <tr>  <td class="numLine">&nbsp;450</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;451</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        m_orderLine.setProduct(product);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        m_orderLine.setM_AttributeSetInstance_ID(rLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        m_orderLine.setM_AttributeSetInstance_ID(rLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;453</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;454</td>  <td class="nbHits">&nbsp;</td>
@@ -734,7 +734,7 @@
 <tr>  <td class="numLine">&nbsp;462</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Prepare Save</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;463</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_M_Product_ID = rLine.getM_Product_ID();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;464</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_M_AttributeSetInstance_ID = rLine.getM_AttributeSetInstance_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;464</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_M_AttributeSetInstance_ID = rLine.getMAttributeSetInstance_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;465</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_orderLine.saveEx();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;466</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }        <span class="comment">//        newLine</span></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;467</td>  <td class="nbHits">&nbsp;</td>
@@ -782,6 +782,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        RequisitionPOCreate</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

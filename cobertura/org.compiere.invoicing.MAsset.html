@@ -124,7 +124,7 @@
 <tr>  <td class="numLine">&nbsp;60</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;61</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setA_Asset_Group_ID(A_Asset_Group_ID);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getAD_Language(), <span class="string">"CreatedFromInvoiceLine"</span>,</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;62</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getADLanguage(), <span class="string">"CreatedFromInvoiceLine"</span>,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;63</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">new</span> Object[] {invoiceLine.getC_Invoice().getDocumentNo(), invoiceLine.getLine()}));</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;64</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
@@ -134,7 +134,7 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            name += product.getName() + <span class="string">"-"</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;69</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_Product_ID(inoutLine.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(inoutLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;70</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(inoutLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;71</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;72</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        MBPartner bp = <span class="keyword">new</span> MBPartner(getCtx(), invoiceLine.getC_Invoice().getC_BPartner_ID(), <span class="keyword">null</span>);</span></pre></td></tr>
@@ -187,7 +187,7 @@
 <tr>  <td class="numLineCover">&nbsp;105</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_Product_ID(product.getM_Product_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;106</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setA_Asset_Group_ID(ifa.getA_Asset_Group_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;107</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            MAttributeSetInstance asi = MAttributeSetInstance.create(getCtx(), product, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;108</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(asi.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;108</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(asi.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;109</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;110</td>  <td class="nbHits">&nbsp;</td>
@@ -214,7 +214,7 @@
 <tr>  <td class="numLineCover">&nbsp;123</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setIsOwned(<span class="keyword">true</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;124</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setIsInPosession(<span class="keyword">true</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;125</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setA_Asset_CreateDate(<span class="keyword">new</span> Timestamp(System.currentTimeMillis()));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;126</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getAD_Language(), <span class="string">"CreatedFromProject"</span>, <span class="keyword">new</span> Object[] { project.getName()}));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;126</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getADLanguage(), <span class="string">"CreatedFromProject"</span>, <span class="keyword">new</span> Object[] { project.getName()}));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;127</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setDateAcct(<span class="keyword">new</span> Timestamp(System.currentTimeMillis()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;128</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setDescription(project.getDescription());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;129</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;    }</span></pre></td></tr>
@@ -226,7 +226,7 @@
 <tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setIsOwned(<span class="keyword">false</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setIsInPosession(<span class="keyword">false</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;135</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setA_Asset_CreateDate(<span class="keyword">new</span> Timestamp(System.currentTimeMillis()));</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getAD_Language(), <span class="string">"CreatedFromShipment: "</span>, <span class="keyword">new</span> Object[] { mInOut.getDocumentNo()}));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;136</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setHelp(Msg.getMsg(MClient.get(getCtx()).getADLanguage(), <span class="string">"CreatedFromShipment: "</span>, <span class="keyword">new</span> Object[] { mInOut.getDocumentNo()}));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setDateAcct(<span class="keyword">new</span> Timestamp(System.currentTimeMillis()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;138</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setDescription(sLine.getDescription());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;139</td>  <td class="nbHits">&nbsp;</td>
@@ -290,10 +290,10 @@
 <tr>  <td class="numLineCover">&nbsp;175</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        setVersionNo(product.getVersionNo());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;176</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">// ASI</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsUncovered"><a title="Line 177: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 177: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (invLine.getM_AttributeSetInstance_ID() != 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsUncovered"><a title="Line 177: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 177: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (invLine.getMAttributeSetInstance_ID() != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;178</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;179</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            MAttributeSetInstance asi = <span class="keyword">new</span> MAttributeSetInstance (getCtx(), invLine.getM_AttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;179</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            MAttributeSetInstance asi = <span class="keyword">new</span> MAttributeSetInstance (getCtx(), invLine.getMAttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;180</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setASI(asi);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;181</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -611,6 +611,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

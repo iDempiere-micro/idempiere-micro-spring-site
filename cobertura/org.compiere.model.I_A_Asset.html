@@ -38,7 +38,7 @@
 <tr>  <td class="numLine">&nbsp;10</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment"> */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;11</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">interface</span> I_A_Asset </pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="keyword">public</span> <span class="keyword">interface</span> I_A_Asset <span class="keyword">extends</span> HasName</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;12</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;{</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;13</td>  <td class="nbHits">&nbsp;</td>
@@ -1248,11 +1248,11 @@
 <tr>  <td class="numLine">&nbsp;615</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;616</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getM_AttributeSetInstance_ID();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getMAttributeSetInstance_ID();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;617</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;618</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> I_M_AttributeSetInstance getM_AttributeSetInstance() <span class="keyword">throws</span> RuntimeException;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> I_M_AttributeSetInstance getMAttributeSetInstance() <span class="keyword">throws</span> RuntimeException;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;619</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;620</td>  <td class="nbHits">&nbsp;</td>
@@ -1346,343 +1346,317 @@
 <tr>  <td class="numLine">&nbsp;664</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;665</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Name */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name NextMaintenenceDate */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;666</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Name = <span class="string">"Name"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_NextMaintenenceDate = <span class="string">"NextMaintenenceDate"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;667</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;668</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Name.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Next Maintenence.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;669</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Alphanumeric identifier of the entity</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Date</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;670</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;671</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setName (String Name);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setNextMaintenenceDate (Timestamp NextMaintenenceDate);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;672</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;673</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Name.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Next Maintenence.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;674</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Alphanumeric identifier of the entity</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Date</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;675</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;676</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getName();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getNextMaintenenceDate();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;677</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;678</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name NextMaintenenceDate */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name NextMaintenenceUnit */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;679</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_NextMaintenenceDate = <span class="string">"NextMaintenenceDate"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_NextMaintenenceUnit = <span class="string">"NextMaintenenceUnit"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;680</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;681</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Next Maintenence.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Next Unit.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;682</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Date</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Unit</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;683</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;684</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setNextMaintenenceDate (Timestamp NextMaintenenceDate);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setNextMaintenenceUnit (<span class="keyword">int</span> NextMaintenenceUnit);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;685</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;686</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Next Maintenence.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Next Unit.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;687</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Date</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Unit</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;688</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;689</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getNextMaintenenceDate();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getNextMaintenenceUnit();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;690</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;691</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name NextMaintenenceUnit */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Processed */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;692</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_NextMaintenenceUnit = <span class="string">"NextMaintenenceUnit"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Processed = <span class="string">"Processed"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;693</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;694</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Next Unit.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Processed.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;695</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Unit</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * The document has been processed</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;696</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;697</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setNextMaintenenceUnit (<span class="keyword">int</span> NextMaintenenceUnit);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setProcessed (<span class="keyword">boolean</span> Processed);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;698</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;699</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Next Unit.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Processed.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;700</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Next Maintenence Unit</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * The document has been processed</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;701</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;702</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getNextMaintenenceUnit();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isProcessed();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;703</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;704</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Processed */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Processing */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;705</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Processed = <span class="string">"Processed"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Processing = <span class="string">"Processing"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;706</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;707</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Processed.</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;708</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * The document has been processed</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;709</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;710</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setProcessed (<span class="keyword">boolean</span> Processed);</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;711</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;712</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Processed.</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;713</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * The document has been processed</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;714</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;715</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isProcessed();</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;716</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;717</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Processing */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;718</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Processing = <span class="string">"Processing"</span>;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;719</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;720</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Process Now          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;721</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLine">&nbsp;708</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setProcessing (<span class="keyword">boolean</span> Processing);</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;722</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLine">&nbsp;709</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;723</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLine">&nbsp;710</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Process Now          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;724</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLine">&nbsp;711</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">boolean</span> isProcessing();</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;712</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;713</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Qty */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;714</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Qty = <span class="string">"Qty"</span>;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;715</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;716</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Quantity.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;717</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Quantity</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;718</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;719</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setQty (BigDecimal Qty);</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;720</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;721</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Quantity.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;722</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Quantity</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;723</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;724</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getQty();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;725</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;726</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Qty */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name SerNo */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;727</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Qty = <span class="string">"Qty"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_SerNo = <span class="string">"SerNo"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;728</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;729</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Quantity.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Serial No.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;730</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Quantity</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Product Serial Number </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;731</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;732</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setQty (BigDecimal Qty);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setSerNo (String SerNo);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;733</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;734</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Quantity.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Serial No.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;735</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Quantity</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Product Serial Number </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;736</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;737</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> BigDecimal getQty();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getSerNo();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;738</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;739</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name SerNo */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Updated */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;740</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_SerNo = <span class="string">"SerNo"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Updated = <span class="string">"Updated"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;741</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;742</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Serial No.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Updated.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;743</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Product Serial Number </span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Date this record was updated</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;744</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;745</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setSerNo (String SerNo);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getUpdated();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;746</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;747</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Serial No.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UpdatedBy */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;748</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Product Serial Number </span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UpdatedBy = <span class="string">"UpdatedBy"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;749</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;750</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getSerNo();</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;751</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;750</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Updated By.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;751</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * User who updated this records</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;752</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Updated */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;753</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Updated = <span class="string">"Updated"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUpdatedBy();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;754</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;755</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Updated.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseLifeMonths */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;756</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Date this record was updated</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseLifeMonths = <span class="string">"UseLifeMonths"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;757</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;758</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> Timestamp getUpdated();</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;759</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
+<tr>  <td class="numLine">&nbsp;758</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Usable Life - Months.</span></pre></td></tr>
+<tr>  <td class="numLine">&nbsp;759</td>  <td class="nbHits">&nbsp;</td>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Months of the usable life of the asset</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;760</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UpdatedBy */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;761</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UpdatedBy = <span class="string">"UpdatedBy"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseLifeMonths (<span class="keyword">int</span> UseLifeMonths);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;762</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;763</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Updated By.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Usable Life - Months.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;764</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * User who updated this records</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Months of the usable life of the asset</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;765</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;766</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUpdatedBy();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseLifeMonths();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;767</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;768</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseLifeMonths */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseLifeYears */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;769</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseLifeMonths = <span class="string">"UseLifeMonths"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseLifeYears = <span class="string">"UseLifeYears"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;770</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;771</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Usable Life - Months.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Usable Life - Years.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;772</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Months of the usable life of the asset</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Years of the usable life of the asset</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;773</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;774</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseLifeMonths (<span class="keyword">int</span> UseLifeMonths);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseLifeYears (<span class="keyword">int</span> UseLifeYears);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;775</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;776</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Usable Life - Months.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Usable Life - Years.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;777</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Months of the usable life of the asset</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Years of the usable life of the asset</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;778</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;779</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseLifeMonths();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseLifeYears();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;780</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;781</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseLifeYears */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseUnits */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;782</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseLifeYears = <span class="string">"UseLifeYears"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseUnits = <span class="string">"UseUnits"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;783</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;784</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Usable Life - Years.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Use units.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;785</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Years of the usable life of the asset</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Currently used units of the assets</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;786</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;787</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseLifeYears (<span class="keyword">int</span> UseLifeYears);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseUnits (<span class="keyword">int</span> UseUnits);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;788</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;789</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Usable Life - Years.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Use units.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;790</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Years of the usable life of the asset</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Currently used units of the assets</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;791</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;792</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseLifeYears();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseUnits();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;793</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;794</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name UseUnits */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Value */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;795</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_UseUnits = <span class="string">"UseUnits"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Value = <span class="string">"Value"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;796</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;797</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Use units.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Search Key.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;798</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Currently used units of the assets</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Search key for the record in the format required - must be unique</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;799</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;800</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setUseUnits (<span class="keyword">int</span> UseUnits);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setValue (String Value);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;801</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;802</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Use units.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Search Key.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;803</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Currently used units of the assets</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Search key for the record in the format required - must be unique</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;804</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;805</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getUseUnits();</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getValue();</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;806</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;807</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name Value */</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name VersionNo */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;808</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_Value = <span class="string">"Value"</span>;</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_VersionNo = <span class="string">"VersionNo"</span>;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;809</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;810</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Search Key.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Version No.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;811</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Search key for the record in the format required - must be unique</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Version Number</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;812</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;813</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setValue (String Value);</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setVersionNo (String VersionNo);</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;814</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;815</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Search Key.</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Version No.</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;816</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Search key for the record in the format required - must be unique</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Version Number</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;817</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;818</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getValue();</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;819</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;820</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="comment">/** Column name VersionNo */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;821</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> String COLUMNNAME_VersionNo = <span class="string">"VersionNo"</span>;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;822</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;823</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Set Version No.</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;824</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Version Number</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;825</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;826</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setVersionNo (String VersionNo);</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;827</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;828</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="comment">/** Get Version No.</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;829</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          * Version Number</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;830</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">          */</span></pre></td></tr>
-<tr>  <td class="numLine">&nbsp;831</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getVersionNo();</pre></td></tr>
-<tr>  <td class="numLine">&nbsp;832</td>  <td class="nbHits">&nbsp;</td>
+<tr>  <td class="numLine">&nbsp;819</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

@@ -391,7 +391,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;222</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">// Check Attribute Set settings</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> M_AttributeSet_ID = getM_AttributeSet_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> M_AttributeSet_ID = getMAttributeSet_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;224</td>  <td class="nbHitsUncovered"><a title="Line 224: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 224: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (M_AttributeSet_ID != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;225</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
@@ -582,11 +582,11 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;345</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">// AttributeSetInstance reset</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsUncovered"><a title="Line 346: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 346: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">        <span class="keyword">if</span> (getM_AttributeSetInstance_ID() &gt; 0 &amp;&amp; is_ValueChanged(I_M_Product.COLUMNNAME_M_AttributeSet_ID))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsUncovered"><a title="Line 346: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 346: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">        <span class="keyword">if</span> (getMAttributeSetInstance_ID() &gt; 0 &amp;&amp; is_ValueChanged(I_M_Product.COLUMNNAME_M_AttributeSet_ID))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;347</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;348</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            MAttributeSetInstance asi = <span class="keyword">new</span> MAttributeSetInstance(getCtx(), getM_AttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;349</td>  <td class="nbHitsUncovered"><a title="Line 349: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 349: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (asi.getM_AttributeSet_ID() != getM_AttributeSet_ID())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;348</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            MAttributeSetInstance asi = <span class="keyword">new</span> MAttributeSetInstance(getCtx(), getMAttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;349</td>  <td class="nbHitsUncovered"><a title="Line 349: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 349: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (asi.getMAttributeSet_ID() != getMAttributeSet_ID())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;350</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setM_AttributeSetInstance_ID(0);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;351</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
@@ -598,7 +598,7 @@
 <tr>  <td class="numLineCover">&nbsp;355</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            <span class="keyword">int</span> oldasiid = get_ValueOldAsInt(I_M_Product.COLUMNNAME_M_AttributeSetInstance_ID);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;356</td>  <td class="nbHitsUncovered"><a title="Line 356: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 356: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (oldasiid &gt; 0) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;357</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MAttributeSetInstance oldasi = <span class="keyword">new</span> MAttributeSetInstance(getCtx(), get_ValueOldAsInt(I_M_Product.COLUMNNAME_M_AttributeSetInstance_ID), get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;358</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> cnt = DB.getSQLValueEx(get_TrxName(), <span class="string">"SELECT COUNT(*) FROM M_Product WHERE M_AttributeSetInstance_ID=?"</span>, oldasi.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;358</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> cnt = DB.getSQLValueEx(get_TrxName(), <span class="string">"SELECT COUNT(*) FROM M_Product WHERE M_AttributeSetInstance_ID=?"</span>, oldasi.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;359</td>  <td class="nbHitsUncovered"><a title="Line 359: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 359: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (cnt == 1) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;360</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    <span class="comment">// Delete the old m_attributesetinstance</span></pre></td></tr>
@@ -675,6 +675,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

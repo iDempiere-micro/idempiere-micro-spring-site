@@ -113,7 +113,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> I_AD_Language get (Properties ctx, Language lang)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;48</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;49</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> get (ctx, lang.getAD_Language());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;49</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> get (ctx, lang.getADLanguage());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;50</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getMLanguage</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;51</td>  <td class="nbHits">&nbsp;</td>
@@ -238,7 +238,7 @@
 <tr>  <td class="numLine">&nbsp;116</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">super</span>(ctx, 0, trxName);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;118</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setAD_Language (AD_Language);        <span class="comment">//        en_US</span></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;118</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setADLanguage (AD_Language);        <span class="comment">//        en_US</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;119</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setIsBaseLanguage (<span class="keyword">false</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setIsSystemLanguage (<span class="keyword">false</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;121</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                setName (Name);</span></pre></td></tr>
@@ -267,7 +267,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String toString()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;136</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder str = <span class="keyword">new</span> StringBuilder(<span class="string">"MLanguage["</span>).append(getAD_Language()).append(<span class="string">"-"</span>).append(getName())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;137</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder str = <span class="keyword">new</span> StringBuilder(<span class="string">"MLanguage["</span>).append(getADLanguage()).append(<span class="string">"-"</span>).append(getName())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;138</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">",Language="</span>).append(getLanguageISO()).append(<span class="string">",Country="</span>).append(getCountryCode())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;139</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">"]"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;140</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> str.toString();</span></pre></td></tr>
@@ -412,7 +412,7 @@
 <tr>  <td class="numLine">&nbsp;229</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;230</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> setAD_Language_ID()</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">private</span> <span class="keyword">void</span> setADLanguage_ID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;231</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;232</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> AD_Language_ID = getAD_Language_ID();</span></pre></td></tr>
@@ -421,10 +421,10 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;235</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        String sql = <span class="string">"SELECT NVL(MAX(AD_Language_ID), 999999) FROM AD_Language WHERE AD_Language_ID &gt; 1000"</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;236</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        AD_Language_ID = DB.getSQLValue (get_TrxName(), sql);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setAD_Language_ID(AD_Language_ID+1);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;237</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setADLanguage_ID(AD_Language_ID+1);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;238</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;239</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }        <span class="comment">//        setAD_Language_ID</span></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;239</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        }        <span class="comment">//        setADLanguage_ID</span></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;240</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;241</td>  <td class="nbHits">&nbsp;</td>
@@ -487,7 +487,7 @@
 <tr>  <td class="numLine">&nbsp;279</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsUncovered"><a title="Line 280: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 280: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (newRecord)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setAD_Language_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;281</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setADLanguage_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;282</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> <span class="keyword">true</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;283</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        beforeSae</span></pre></td></tr>
@@ -587,7 +587,7 @@
 <tr>  <td class="numLine">&nbsp;340</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;341</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder sql = <span class="keyword">new</span> StringBuilder(<span class="string">"DELETE  FROM  "</span>).append(tableName).append(<span class="string">" WHERE AD_Language=?"</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> no = DB.executeUpdateEx(sql.toString(), <span class="keyword">new</span> Object[]{getAD_Language()}, get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> no = DB.executeUpdateEx(sql.toString(), <span class="keyword">new</span> Object[]{getADLanguage()}, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsUncovered"><a title="Line 343: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 343: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (log.isLoggable(Level.FINE)) log.fine(tableName + <span class="string">" #"</span> + no);</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> no;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;345</td>  <td class="nbHits">&nbsp;</td>
@@ -673,15 +673,15 @@
 <tr>  <td class="numLineCover">&nbsp;397</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">"(AD_Language,IsTranslated, AD_Client_ID,AD_Org_ID, "</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;398</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">"Createdby,UpdatedBy,Created,Updated, "</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;399</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(keyColumn).append(cols).append(<span class="string">") "</span>)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;400</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">"SELECT '"</span>).append(getAD_Language()).append(<span class="string">"','N', AD_Client_ID,AD_Org_ID, "</span>)</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;400</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">"SELECT '"</span>).append(getADLanguage()).append(<span class="string">"','N', AD_Client_ID,AD_Org_ID, "</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;401</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(AD_User_ID).append(<span class="string">","</span>).append(AD_User_ID).append(<span class="string">", SysDate, SysDate, "</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;402</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(keyColumn).append(cols)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;403</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">" FROM "</span>).append(baseTable)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;404</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">" WHERE "</span>).append(keyColumn).append(<span class="string">" NOT IN (SELECT "</span>).append(keyColumn)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;405</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">" FROM "</span>).append(tableName)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;406</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">" WHERE AD_Language='"</span>).append(getAD_Language()).append(<span class="string">"')"</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;406</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        .append(<span class="string">" WHERE AD_Language='"</span>).append(getADLanguage()).append(<span class="string">"')"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;407</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        + " WHERE (" + keyColumn + ",'" + getAD_Language()+ "') NOT IN (SELECT " </span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;                <span class="comment">//        + " WHERE (" + keyColumn + ",'" + getADLanguage()+ "') NOT IN (SELECT " </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;408</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//                + keyColumn + ",AD_Language FROM " + tableName + ")";</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;409</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> no = DB.executeUpdateEx(insert.toString(), <span class="keyword">null</span>, get_TrxName());</span></pre></td></tr>
@@ -698,6 +698,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MLanguage</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

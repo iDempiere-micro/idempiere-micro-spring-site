@@ -550,9 +550,9 @@
 <tr>  <td class="numLine">&nbsp;362</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;363</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                <span class="keyword">int</span> loc = storages[sl].getM_Locator_ID();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;364</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                <span class="keyword">int</span> slASI = storages[sl].getM_AttributeSetInstance_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;364</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                <span class="keyword">int</span> slASI = storages[sl].getMAttributeSetInstance_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;365</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                <span class="keyword">int</span> locAttribSet = <span class="keyword">new</span> MAttributeSetInstance(getCtx(), asi,</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;366</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                                get_TrxName()).getM_AttributeSet_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;366</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                                get_TrxName()).getMAttributeSet_ID();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;367</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;368</td>  <td class="nbHits">&nbsp;</td>
@@ -1094,7 +1094,7 @@
   <td class="src"><pre class="src">&nbsp;                {                </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;733</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//        We need to copy MA</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;734</td>  <td class="nbHitsUncovered"><a title="Line 734: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 734: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (sLines[i].getM_AttributeSetInstance_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;734</td>  <td class="nbHitsUncovered"><a title="Line 734: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 734: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (sLines[i].getMAttributeSetInstance_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;735</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;736</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MProductionLineMA mas[] = MProductionLineMA.get(getCtx(), sLines[i].get_ID(), get_TrxName());</span></pre></td></tr>
@@ -1102,7 +1102,7 @@
 <tr>  <td class="numLine">&nbsp;738</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;739</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        MProductionLineMA ma = <span class="keyword">new</span> MProductionLineMA (tLines[i],</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;740</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                mas[j].getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;740</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                mas[j].getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;741</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                mas[j].getMovementQty().negate(),mas[j].getDateMaterialPolicy());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;742</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        ma.saveEx(get_TrxName());                                        </span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;743</td>  <td class="nbHits">&nbsp;</td>
@@ -1392,6 +1392,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

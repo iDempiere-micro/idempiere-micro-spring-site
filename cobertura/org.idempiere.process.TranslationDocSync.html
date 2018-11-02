@@ -141,7 +141,7 @@
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;66</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MClient client = MClient.get(getCtx());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;67</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String baselang = Language.getBaseAD_Language();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsUncovered"><a title="Line 68: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 68: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                <span class="keyword">if</span> (client.isMultiLingualDocument() &amp;&amp; client.getAD_Language().equals(baselang)) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;68</td>  <td class="nbHitsUncovered"><a title="Line 68: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 68: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                <span class="keyword">if</span> (client.isMultiLingualDocument() &amp;&amp; client.getADLanguage().equals(baselang)) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;69</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> AdempiereUserError(<span class="string">"@AD_Client_ID@: @IsMultiLingualDocument@"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;70</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -199,7 +199,7 @@
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;108</td>  <td class="nbHitsUncovered"><a title="Line 108: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 108: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (client.isMultiLingualDocument()) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;109</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        String baselang = Language.getBaseAD_Language();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;110</td>  <td class="nbHitsUncovered"><a title="Line 110: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 110: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (client.getAD_Language().equals(baselang)) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;110</td>  <td class="nbHitsUncovered"><a title="Line 110: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 110: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (client.getADLanguage().equals(baselang)) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;111</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">// tenant language = base language</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;112</td>  <td class="nbHits">&nbsp;</td>
@@ -214,7 +214,7 @@
 <tr>  <td class="numLineCover">&nbsp;117</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                .append(columnNames).append(<span class="string">",IsTranslated) = (SELECT "</span>).append(columnNames)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;118</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                .append(<span class="string">",'Y' FROM "</span>).append(baseTable).append(<span class="string">" b WHERE "</span>).append(trlTable).append(<span class="string">"."</span>)</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;119</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                .append(baseTable).append(<span class="string">"_ID=b."</span>).append(baseTable).append(<span class="string">"_ID) WHERE AD_Client_ID="</span>)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                .append(getAD_Client_ID()).append(<span class="string">" AND AD_Language="</span>).append(DB.TO_STRING(client.getAD_Language()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;120</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                .append(getAD_Client_ID()).append(<span class="string">" AND AD_Language="</span>).append(DB.TO_STRING(client.getADLanguage()));</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;121</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;122</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> no = DB.executeUpdate(sql.toString(), get_TrxName());</span></pre></td></tr>
@@ -244,6 +244,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        TranslationDocSync</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

@@ -153,15 +153,15 @@
 <tr>  <td class="numLine">&nbsp;75</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    @Override</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;76</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">int</span> getM_AttributeSetInstanceTo_ID ()</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    <span class="keyword">public</span> <span class="keyword">int</span> getMAttributeSetInstanceTo_ID ()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;77</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;78</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> M_AttributeSetInstanceTo_ID = <span class="keyword">super</span>.getM_AttributeSetInstanceTo_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;78</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">int</span> M_AttributeSetInstanceTo_ID = <span class="keyword">super</span>.getMAttributeSetInstanceTo_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;79</td>  <td class="nbHitsUncovered"><a title="Line 79: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 79: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">        <span class="keyword">if</span> (M_AttributeSetInstanceTo_ID == 0 &amp;&amp; (getM_Locator_ID() == getM_LocatorTo_ID()))</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;80</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            M_AttributeSetInstanceTo_ID = <span class="keyword">super</span>.getM_AttributeSetInstance_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;80</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            M_AttributeSetInstanceTo_ID = <span class="keyword">super</span>.getMAttributeSetInstance_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;81</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">return</span> M_AttributeSetInstanceTo_ID;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;82</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;    }        <span class="comment">//        getM_AttributeSetInstanceTo_ID</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;    }        <span class="comment">//        getMAttributeSetInstanceTo_ID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;83</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;84</td>  <td class="nbHits">&nbsp;</td>
@@ -296,7 +296,7 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;162</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//either movement between locator or movement between lot</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;163</td>  <td class="nbHitsUncovered"><a title="Line 163: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 163: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">        <span class="keyword">if</span> (getM_Locator_ID() == getM_LocatorTo_ID() &amp;&amp; getM_AttributeSetInstance_ID() == getM_AttributeSetInstanceTo_ID())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;163</td>  <td class="nbHitsUncovered"><a title="Line 163: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 163: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">        <span class="keyword">if</span> (getM_Locator_ID() == getM_LocatorTo_ID() &amp;&amp; getMAttributeSetInstance_ID() == getMAttributeSetInstanceTo_ID())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;164</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;165</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            log.saveError(<span class="string">"Error"</span>, Msg.parseTranslation(getCtx(), <span class="string">"@M_Locator_ID@ == @M_LocatorTo_ID@ and @M_AttributeSetInstance_ID@ == @M_AttributeSetInstanceTo_ID@"</span>));</span></pre></td></tr>
@@ -347,7 +347,7 @@
 <tr>  <td class="numLine">&nbsp;194</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                MProduct product = getProduct();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                if (getM_AttributeSetInstance_ID() == 0) {</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                if (getMAttributeSetInstance_ID() == 0) {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;196</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        if (product != null &amp;&amp; product.isASIMandatory(true)) {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;197</td>  <td class="nbHits">&nbsp;</td>
@@ -372,7 +372,7 @@
   <td class="src"><pre class="src">&nbsp;<span class="comment">                }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;207</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                */</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;208</td>  <td class="nbHitsUncovered"><a title="Line 208: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 208: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (getM_AttributeSetInstanceTo_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;208</td>  <td class="nbHitsUncovered"><a title="Line 208: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 208: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (getMAttributeSetInstanceTo_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;209</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;210</td>  <td class="nbHits">&nbsp;</td>
@@ -380,8 +380,8 @@
 <tr>  <td class="numLineCover">&nbsp;211</td>  <td class="nbHitsUncovered"><a title="Line 211: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 211: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (getM_Locator_ID() != getM_LocatorTo_ID())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;212</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;213</td>  <td class="nbHitsUncovered"><a title="Line 213: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 213: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getM_AttributeSetInstance_ID() != 0)        <span class="comment">//set to from</span></a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;214</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    setM_AttributeSetInstanceTo_ID(getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;213</td>  <td class="nbHitsUncovered"><a title="Line 213: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 213: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getMAttributeSetInstance_ID() != 0)        <span class="comment">//set to from</span></a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;214</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    setM_AttributeSetInstanceTo_ID(getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;215</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;216</td>  <td class="nbHits">&nbsp;</td>
@@ -389,7 +389,7 @@
 <tr>  <td class="numLine">&nbsp;217</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">/* IDEMPIERE-1770 - ASI validation must be moved to MMovement.prepareIt, saving a line without ASI is ok on draft</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;218</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                        if (product != null &amp;&amp; product.isASIMandatory(false) &amp;&amp; getM_AttributeSetInstanceTo_ID() == 0)</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                        if (product != null &amp;&amp; product.isASIMandatory(false) &amp;&amp; getMAttributeSetInstanceTo_ID() == 0)</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;219</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;220</td>  <td class="nbHits">&nbsp;</td>
@@ -459,8 +459,8 @@
 <tr>  <td class="numLine">&nbsp;257</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;258</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_Product_ID(oLine.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(oLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstanceTo_ID(oLine.getM_AttributeSetInstanceTo_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstance_ID(oLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            setM_AttributeSetInstanceTo_ID(oLine.getMAttributeSetInstanceTo_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;261</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsUncovered"><a title="Line 262: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 262: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (product.isItem())</a></span></pre></td></tr>
@@ -594,8 +594,8 @@
   <td class="src"><pre class="src">&nbsp;    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">return</span> Table_Name + <span class="string">"["</span> + get_ID()</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_Product_ID="</span> + getM_Product_ID()</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_ASI_ID="</span> + getM_AttributeSetInstance_ID()</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;345</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_ASITo_ID="</span> + getM_AttributeSetInstanceTo_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_ASI_ID="</span> + getMAttributeSetInstance_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;345</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_ASITo_ID="</span> + getMAttributeSetInstanceTo_ID()</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;346</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_Locator_ID="</span> + getM_Locator_ID()</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;347</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;            + <span class="string">", M_LocatorTo_ID="</span> + getM_LocatorTo_ID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;348</td>  <td class="nbHits">&nbsp;</td>
@@ -608,6 +608,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MMovementLine</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

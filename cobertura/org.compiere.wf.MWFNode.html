@@ -118,7 +118,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">static</span> MWFNode get (Properties ctx, <span class="keyword">int</span> AD_WF_Node_ID)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;51</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;52</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String key = Env.getAD_Language(ctx) + <span class="string">"_"</span> + AD_WF_Node_ID;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;52</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String key = Env.getADLanguage(ctx) + <span class="string">"_"</span> + AD_WF_Node_ID;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;53</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MWFNode retValue = (MWFNode) s_cache.get (key);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;54</td>  <td class="nbHitsUncovered"><a title="Line 54: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 54: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;55</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> retValue;</span></pre></td></tr>
@@ -237,7 +237,7 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span> {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;129</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        Integer wfnodeid = <span class="keyword">new</span> Integer (rs.getInt(<span class="string">"AD_WF_Node_ID"</span>));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;130</td>  <td class="nbHitsUncovered"><a title="Line 130: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 130: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (wfnodeid != <span class="keyword">null</span> &amp;&amp; wfnodeid.intValue() &gt; 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                key = Env.getAD_Language(ctx) + <span class="string">"_"</span> + wfnodeid;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;131</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                key = Env.getADLanguage(ctx) + <span class="string">"_"</span> + wfnodeid;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;132</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                } <span class="keyword">catch</span> (SQLException e) {</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;133</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">throw</span> <span class="keyword">new</span> AdempiereException(e);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;134</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                }</span></pre></td></tr>
@@ -342,7 +342,7 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;199</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt = DB.prepareStatement(sql, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;200</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt.setInt(1, get_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;201</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt.setString(2, Env.getAD_Language(getCtx()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;201</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt.setString(2, Env.getADLanguage(getCtx()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;202</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        rs = pstmt.executeQuery();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;203</td>  <td class="nbHitsUncovered"><a title="Line 203: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 203: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (rs.next())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;204</td>  <td class="nbHits">&nbsp;</td>
@@ -1142,6 +1142,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        M_WFNext</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

@@ -287,7 +287,7 @@
 <tr>  <td class="numLineCover">&nbsp;157</td>  <td class="nbHitsUncovered"><a title="Line 157: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 157: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;158</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;159</td>  <td class="nbHitsUncovered"><a title="Line 159: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 159: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;159</td>  <td class="nbHitsUncovered"><a title="Line 159: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 159: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;160</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;161</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            MInOutLine ioLine = (MInOutLine) line.getPO();</span></pre></td></tr>
@@ -303,7 +303,7 @@
 <tr>  <td class="numLineCover">&nbsp;169</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    BigDecimal QtyMA = ma.getMovementQty();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;170</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    ProductCost pc = line.getProductCost();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setQty(QtyMA);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setM_M_AttributeSetInstance_ID(ma.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setM_M_AttributeSetInstance_ID(ma.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;173</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    BigDecimal maCosts = line.getProductCosts(as, line.getAD_Org_ID(), <span class="keyword">true</span>, <span class="string">"M_InOutLine_ID=?"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;174</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
@@ -461,7 +461,7 @@
 <tr>  <td class="numLineCover">&nbsp;276</td>  <td class="nbHitsUncovered"><a title="Line 276: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 276: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;277</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;278</td>  <td class="nbHitsUncovered"><a title="Line 278: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 278: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;278</td>  <td class="nbHitsUncovered"><a title="Line 278: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 278: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;279</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;280</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInOutLine ioLine = (MInOutLine) line.getPO();</span></pre></td></tr>
@@ -474,7 +474,7 @@
   <td class="src"><pre class="src">&nbsp;                            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;286</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MInOutLineMA ma = mas[j];</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;287</td>  <td class="nbHitsUncovered"><a title="Line 287: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 287: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;288</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getM_Product_ID(), ma.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;288</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getM_Product_ID(), ma.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;289</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;290</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    costs, ma.getMovementQty().negate(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;291</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -499,7 +499,7 @@
 <tr>  <td class="numLine">&nbsp;303</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;304</td>  <td class="nbHitsUncovered"><a title="Line 304: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 304: Conditional coverage 0% (0/2).">                            <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;305</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getM_Product_ID(), line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;305</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getM_Product_ID(), line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;306</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;307</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                costs, line.getQty(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;308</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -525,7 +525,7 @@
 <tr>  <td class="numLine">&nbsp;320</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;321</td>  <td class="nbHitsUncovered"><a title="Line 321: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 321: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;322</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getM_Product_ID(), line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;322</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getM_Product_ID(), line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;323</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;324</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            costs, line.getQty(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;325</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -581,7 +581,7 @@
 <tr>  <td class="numLineCover">&nbsp;358</td>  <td class="nbHitsUncovered"><a title="Line 358: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 358: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;359</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;360</td>  <td class="nbHitsUncovered"><a title="Line 360: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 360: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;360</td>  <td class="nbHitsUncovered"><a title="Line 360: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 360: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;361</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;362</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            MInOutLine ioLine = (MInOutLine) line.getPO();</span></pre></td></tr>
@@ -597,7 +597,7 @@
 <tr>  <td class="numLineCover">&nbsp;370</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    BigDecimal QtyMA = ma.getMovementQty();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    ProductCost pc = line.getProductCost();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;372</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setQty(QtyMA);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;373</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setM_M_AttributeSetInstance_ID(ma.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;373</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    pc.setM_M_AttributeSetInstance_ID(ma.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;374</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    BigDecimal maCosts = line.getProductCosts(as, line.getAD_Org_ID(), <span class="keyword">true</span>, <span class="string">"M_InOutLine_ID=?"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;375</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
@@ -697,7 +697,7 @@
 <tr>  <td class="numLineCover">&nbsp;437</td>  <td class="nbHitsUncovered"><a title="Line 437: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 437: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;438</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;439</td>  <td class="nbHitsUncovered"><a title="Line 439: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 439: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;439</td>  <td class="nbHitsUncovered"><a title="Line 439: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 439: Conditional coverage 0% (0/2).">                    <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;440</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;441</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInOutLine ioLine = (MInOutLine) line.getPO();</span></pre></td></tr>
@@ -710,7 +710,7 @@
   <td class="src"><pre class="src">&nbsp;                            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;447</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MInOutLineMA ma = mas[j];</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;448</td>  <td class="nbHitsUncovered"><a title="Line 448: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 448: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;449</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getM_Product_ID(), ma.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;449</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getM_Product_ID(), ma.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;450</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;451</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    costs, ma.getMovementQty(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                    line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -731,7 +731,7 @@
 <tr>  <td class="numLine">&nbsp;462</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;463</td>  <td class="nbHitsUncovered"><a title="Line 463: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 463: Conditional coverage 0% (0/2).">                            <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;464</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getM_Product_ID(), line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;464</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getM_Product_ID(), line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;465</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;466</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                costs, line.getQty(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;467</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -755,7 +755,7 @@
 <tr>  <td class="numLine">&nbsp;478</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;479</td>  <td class="nbHitsUncovered"><a title="Line 479: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 479: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;480</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getM_Product_ID(), line.getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;480</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getM_Product_ID(), line.getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;481</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.get_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;482</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            costs, line.getQty(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;483</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getDescription(), <span class="keyword">true</span>, getTrxName()))</span></pre></td></tr>
@@ -1169,7 +1169,7 @@
 <tr>  <td class="numLineCover">&nbsp;765</td>  <td class="nbHitsUncovered"><a title="Line 765: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 765: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;766</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;767</td>  <td class="nbHitsUncovered"><a title="Line 767: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 767: Conditional coverage 0% (0/2).">                            <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;767</td>  <td class="nbHitsUncovered"><a title="Line 767: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 767: Conditional coverage 0% (0/2).">                            <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;768</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;769</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MInOutLineMA mas[] = MInOutLineMA.get(getCtx(), ioLine.get_ID(), getTrxName());</span></pre></td></tr>
@@ -1184,7 +1184,7 @@
 <tr>  <td class="numLineCover">&nbsp;776</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        BigDecimal QtyMA = ma.getMovementQty();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;777</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        ProductCost pc = line.getProductCost();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;778</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        pc.setQty(QtyMA);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;779</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        pc.setM_M_AttributeSetInstance_ID(ma.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;779</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        pc.setM_M_AttributeSetInstance_ID(ma.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;780</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        BigDecimal maCosts = line.getProductCosts(as, line.getAD_Org_ID(), <span class="keyword">true</span>, <span class="string">"M_InOutLine_ID=?"</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;781</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
@@ -1380,7 +1380,7 @@
 <tr>  <td class="numLineCover">&nbsp;906</td>  <td class="nbHitsUncovered"><a title="Line 906: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 906: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(as)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;907</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;908</td>  <td class="nbHitsUncovered"><a title="Line 908: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 908: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (line.getM_AttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;908</td>  <td class="nbHitsUncovered"><a title="Line 908: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 908: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (line.getMAttributeSetInstance_ID() == 0 )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;909</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;910</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MInOutLineMA mas[] = MInOutLineMA.get(getCtx(), line.get_ID(), getTrxName());</span></pre></td></tr>
@@ -1392,7 +1392,7 @@
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;915</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInOutLineMA ma = mas[j];</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;916</td>  <td class="nbHitsUncovered"><a title="Line 916: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 916: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(), line.getM_Product_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;917</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            ma.getM_AttributeSetInstance_ID(), line.get_ID(), 0, tAmt, ma.getMovementQty().negate(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;917</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            ma.getMAttributeSetInstance_ID(), line.get_ID(), 0, tAmt, ma.getMovementQty().negate(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;918</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            line.getDescription(), <span class="keyword">false</span>, getTrxName()))</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;919</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            <span class="keyword">return</span> <span class="string">"SaveError"</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;920</td>  <td class="nbHits">&nbsp;</td>
@@ -1405,7 +1405,7 @@
 <tr>  <td class="numLine">&nbsp;924</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;925</td>  <td class="nbHitsUncovered"><a title="Line 925: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 925: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(), line.getM_Product_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;926</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    line.getM_AttributeSetInstance_ID(), line.get_ID(), 0, tAmt, tQty,</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;926</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    line.getMAttributeSetInstance_ID(), line.get_ID(), 0, tAmt, tQty,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;927</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    line.getDescription(), <span class="keyword">false</span>, getTrxName()))</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    <span class="keyword">return</span> <span class="string">"SaveError"</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;929</td>  <td class="nbHits">&nbsp;</td>
@@ -1417,7 +1417,7 @@
 <tr>  <td class="numLine">&nbsp;932</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;933</td>  <td class="nbHitsUncovered"><a title="Line 933: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 933: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (!MCostDetail.createShipment(as, line.getAD_Org_ID(), line.getM_Product_ID(),</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;934</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                line.getM_AttributeSetInstance_ID(), line.get_ID(), 0, tAmt, tQty,</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;934</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                line.getMAttributeSetInstance_ID(), line.get_ID(), 0, tAmt, tQty,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;935</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                line.getDescription(), <span class="keyword">false</span>, getTrxName()))</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;936</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> <span class="string">"SaveError"</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;937</td>  <td class="nbHits">&nbsp;</td>
@@ -1429,6 +1429,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  Doc_InOut</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

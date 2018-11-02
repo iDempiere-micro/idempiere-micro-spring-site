@@ -324,7 +324,7 @@
 <tr>  <td class="numLine">&nbsp;175</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;176</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setM_Product_ID(oLine.getM_Product_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setM_AttributeSetInstance_ID(oLine.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;177</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setM_AttributeSetInstance_ID(oLine.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;178</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;179</td>  <td class="nbHitsUncovered"><a title="Line 179: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 179: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (product.isItem())</a></span></pre></td></tr>
@@ -808,16 +808,16 @@
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;477</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                I_M_AttributeSet attributeset = getM_Product().getM_AttributeSet();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                I_M_AttributeSet attributeset = getM_Product().getMAttributeSet();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;479</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">boolean</span> isAutoGenerateLot = <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;480</td>  <td class="nbHitsUncovered"><a title="Line 480: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 480: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (attributeset != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;481</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        isAutoGenerateLot = attributeset.isAutoGenerateLot();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;482</td>  <td class="nbHitsUncovered"><a title="Line 482: Conditional coverage 0% (0/8) [each condition: 0%, 0%, 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 482: Conditional coverage 0% (0/8) [each condition: 0%, 0%, 0%, 0%].">                <span class="keyword">if</span> (getReversalLine_ID() == 0 &amp;&amp; !getParent().isSOTrx() &amp;&amp; !getParent().getMovementType().equals(MInOut.MOVEMENTTYPE_VendorReturns) &amp;&amp; isAutoGenerateLot</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;483</td>  <td class="nbHitsUncovered"><a title="Line 483: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 483: Conditional coverage 0% (0/2).">                                &amp;&amp; getM_AttributeSetInstance_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;483</td>  <td class="nbHitsUncovered"><a title="Line 483: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 483: Conditional coverage 0% (0/2).">                                &amp;&amp; getMAttributeSetInstance_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;484</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;485</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MAttributeSetInstance asi = MAttributeSetInstance.generateLot(getCtx(), (MProduct)getM_Product(), get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;486</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setM_AttributeSetInstance_ID(asi.getM_AttributeSetInstance_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;486</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setM_AttributeSetInstance_ID(asi.getMAttributeSetInstance_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;487</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;488</td>  <td class="nbHits">&nbsp;</td>
@@ -829,13 +829,13 @@
 <tr>  <td class="numLine">&nbsp;491</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">/**         Qty on instance ASI</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;492</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                if (getM_AttributeSetInstance_ID() != 0)</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                if (getMAttributeSetInstance_ID() != 0)</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;493</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                {</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;494</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        MProduct product = getProduct();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;495</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                        int M_AttributeSet_ID = product.getM_AttributeSet_ID();</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                        int M_AttributeSet_ID = product.getMAttributeSet_ID();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;496</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        boolean isInstance = M_AttributeSet_ID != 0;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;497</td>  <td class="nbHits">&nbsp;</td>
@@ -857,7 +857,7 @@
 <tr>  <td class="numLine">&nbsp;505</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                MStorage storage = MStorage.get(getCtx(), getM_Locator_ID(),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;506</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        getM_Product_ID(), getM_AttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        getM_Product_ID(), getMAttributeSetInstance_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;507</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                if (storage != null)</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;508</td>  <td class="nbHits">&nbsp;</td>
@@ -941,7 +941,7 @@
 <tr>  <td class="numLineCover">&nbsp;552</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",M_Product_ID="</span>).append(getM_Product_ID())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;553</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",QtyEntered="</span>).append(getQtyEntered())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;554</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",MovementQty="</span>).append(getMovementQty())</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;555</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",M_AttributeSetInstance_ID="</span>).append(getM_AttributeSetInstance_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;555</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",M_AttributeSetInstance_ID="</span>).append(getMAttributeSetInstance_ID())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;556</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append (<span class="string">"]"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;557</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> sb.toString ();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;558</td>  <td class="nbHits">&nbsp;</td>
@@ -1008,6 +1008,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MInOutLine</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

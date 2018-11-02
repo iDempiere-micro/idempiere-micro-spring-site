@@ -288,7 +288,7 @@
 <tr>  <td class="numLine">&nbsp;170</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        Qty on instance ASI for SO</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsUncovered"><a title="Line 171: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 171: Conditional coverage 0% (0/2).">        <span class="keyword">if</span> (m_IsSOTrx</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered"><a title="Line 172: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 172: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">            &amp;&amp; getM_AttributeSetInstance_ID() != 0</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered"><a title="Line 172: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 172: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">            &amp;&amp; getMAttributeSetInstance_ID() != 0</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;173</td>  <td class="nbHitsUncovered"><a title="Line 173: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 173: Conditional coverage 0% (0/2).">            &amp;&amp; (newRecord || is_ValueChanged(<span class="string">"M_Product_ID"</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;174</td>  <td class="nbHitsUncovered"><a title="Line 174: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 174: Conditional coverage 0% (0/2).">            || is_ValueChanged(<span class="string">"M_AttributeSetInstance_ID"</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;175</td>  <td class="nbHitsUncovered"><a title="Line 175: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 175: Conditional coverage 0% (0/2).">            || is_ValueChanged(<span class="string">"M_Warehouse_ID"</span>)))</a></span></pre></td></tr>
@@ -298,7 +298,7 @@
 <tr>  <td class="numLineCover">&nbsp;178</td>  <td class="nbHitsUncovered"><a title="Line 178: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 178: Conditional coverage 0% (0/2).">            <span class="keyword">if</span> (product.isStocked())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;179</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;            {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;180</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> M_AttributeSet_ID = product.getM_AttributeSet_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;180</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> M_AttributeSet_ID = product.getMAttributeSet_ID();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;181</td>  <td class="nbHitsUncovered"><a title="Line 181: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 181: Conditional coverage 0% (0/2).">                <span class="keyword">boolean</span> isInstance = M_AttributeSet_ID != 0;</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;182</td>  <td class="nbHitsUncovered"><a title="Line 182: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 182: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (isInstance)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;183</td>  <td class="nbHits">&nbsp;</td>
@@ -313,13 +313,13 @@
 <tr>  <td class="numLine">&nbsp;189</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;190</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    MStorageOnHand[] storages = MStorageOnHand.getWarehouse(getCtx(),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;191</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        getM_Warehouse_ID(), getM_Product_ID(), getM_AttributeSetInstance_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;191</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        getM_Warehouse_ID(), getM_Product_ID(), getMAttributeSetInstance_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;192</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">null</span>, <span class="keyword">true</span>, <span class="keyword">false</span>, 0, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;193</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                    BigDecimal qty = Env.ZERO;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;194</td>  <td class="nbHitsUncovered"><a title="Line 194: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 194: Conditional coverage 0% (0/2).">                    <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; storages.length; i++)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;195</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;196</td>  <td class="nbHitsUncovered"><a title="Line 196: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 196: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (storages[i].getM_AttributeSetInstance_ID() == getM_AttributeSetInstance_ID())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;196</td>  <td class="nbHitsUncovered"><a title="Line 196: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 196: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (storages[i].getMAttributeSetInstance_ID() == getMAttributeSetInstance_ID())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;197</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                            qty = qty.add(storages[i].getQtyOnHand());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;198</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                    }</pre></td></tr>
@@ -528,6 +528,6 @@
   <td class="src"><pre class="src">&nbsp;}</pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>

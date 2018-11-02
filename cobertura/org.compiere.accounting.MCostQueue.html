@@ -288,7 +288,7 @@
 <tr>  <td class="numLine">&nbsp;170</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsUncovered"><a title="Line 171: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 171: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (s_log.isLoggable(Level.FINE)) s_log.fine(<span class="string">"Qty="</span> + remainingQty </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                + <span class="string">"(!), ASI="</span> + queue.getM_AttributeSetInstance_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;172</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                + <span class="string">"(!), ASI="</span> + queue.getMAttributeSetInstance_ID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;173</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                + <span class="string">" - "</span> + oldQty + <span class="string">" -&gt; "</span> + newQty);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;174</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> queue.getCurrentCostPrice();</span></pre></td></tr>
@@ -316,7 +316,7 @@
 <tr>  <td class="numLine">&nbsp;190</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;191</td>  <td class="nbHitsUncovered"><a title="Line 191: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 191: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (s_log.isLoggable(Level.FINE)) s_log.fine(<span class="string">"Qty="</span> + reduction </a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;192</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                + <span class="string">", ASI="</span> + queue.getM_AttributeSetInstance_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;192</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                + <span class="string">", ASI="</span> + queue.getMAttributeSetInstance_ID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;193</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                + <span class="string">" - "</span> + oldQty + <span class="string">" -&gt; "</span> + newQty);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;194</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        remainingQty = remainingQty.subtract(reduction);</span></pre></td></tr>
@@ -403,7 +403,7 @@
 <tr>  <td class="numLineCover">&nbsp;243</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lastPrice = queue.getCurrentCostPrice();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;244</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal costBatch = lastPrice.multiply(remainingQty);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;245</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                cost = cost.add(costBatch);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsUncovered"><a title="Line 246: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 246: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (s_log.isLoggable(Level.CONFIG)) s_log.config(<span class="string">"ASI="</span> + queue.getM_AttributeSetInstance_ID()</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;246</td>  <td class="nbHitsUncovered"><a title="Line 246: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 246: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (s_log.isLoggable(Level.CONFIG)) s_log.config(<span class="string">"ASI="</span> + queue.getMAttributeSetInstance_ID()</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;247</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">" - Cost="</span> + lastPrice + <span class="string">" * Qty="</span> + remainingQty + <span class="string">"(!) = "</span> + costBatch);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;248</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> cost;</span></pre></td></tr>
@@ -425,7 +425,7 @@
 <tr>  <td class="numLineCover">&nbsp;259</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                lastPrice = queue.getCurrentCostPrice();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;260</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal costBatch = lastPrice.multiply(reduction);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;261</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                cost = cost.add(costBatch);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsUncovered"><a title="Line 262: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 262: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (s_log.isLoggable(Level.FINE)) s_log.fine(<span class="string">"ASI="</span> + queue.getM_AttributeSetInstance_ID()</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;262</td>  <td class="nbHitsUncovered"><a title="Line 262: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 262: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (s_log.isLoggable(Level.FINE)) s_log.fine(<span class="string">"ASI="</span> + queue.getMAttributeSetInstance_ID()</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;263</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">" - Cost="</span> + lastPrice + <span class="string">" * Qty="</span> + reduction + <span class="string">" = "</span> + costBatch);</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;264</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                remainingQty = remainingQty.subtract(reduction);</span></pre></td></tr>
@@ -610,6 +610,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MCostQueue</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 7:36 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/2/18 11:37 PM.</div>
 </body>
 </html>
