@@ -453,7 +453,7 @@
 <tr>  <td class="numLineCover">&nbsp;252</td>  <td class="nbHitsUncovered"><a title="Line 252: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 252: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;253</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> retValue;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;254</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                retValue = <span class="keyword">new</span> MInvoice (ctx, C_Invoice_ID, <span class="keyword">null</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsUncovered"><a title="Line 255: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 255: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue.get_ID () != 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;255</td>  <td class="nbHitsUncovered"><a title="Line 255: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 255: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (retValue.getId() != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;256</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        s_cache.put (key, retValue);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;257</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> retValue;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;258</td>  <td class="nbHits">&nbsp;</td>
@@ -1324,7 +1324,7 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;834</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">final</span> String whereClause = MInvoiceTax.COLUMNNAME_C_Invoice_ID+<span class="string">"=?"</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;835</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                List&lt;MInvoiceTax&gt; list = <span class="keyword">new</span> Query(getCtx(), I_C_InvoiceTax.Table_Name, whereClause, get_TrxName())</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;836</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                                .setParameters(get_ID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;836</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                                .setParameters(getId())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;837</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                                .list();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;838</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_taxes = list.toArray(<span class="keyword">new</span> MInvoiceTax[list.size()]);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;839</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> m_taxes;</span></pre></td></tr>
@@ -1391,7 +1391,7 @@
 <tr>  <td class="numLine">&nbsp;875</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;876</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">super</span>.setProcessed (processed);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;877</td>  <td class="nbHitsUncovered"><a title="Line 877: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 877: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (get_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;877</td>  <td class="nbHitsUncovered"><a title="Line 877: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 877: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getId() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;878</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;879</td>  <td class="nbHitsUncovered"><a title="Line 879: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 879: Conditional coverage 0% (0/2).">                StringBuilder set = <span class="keyword">new</span> StringBuilder(<span class="string">"SET Processed='"</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;880</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                .append((processed ? <span class="string">"Y"</span> : <span class="string">"N"</span>))</span></pre></td></tr>
@@ -1713,7 +1713,7 @@
 <tr>  <td class="numLine">&nbsp;1092</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1093</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder (<span class="string">"MInvoice["</span>)</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(get_ID()).append(<span class="string">"-"</span>).append(getDocumentNo())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1094</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(getId()).append(<span class="string">"-"</span>).append(getDocumentNo())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1095</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",GrandTotal="</span>).append(getGrandTotal());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1096</td>  <td class="nbHitsUncovered"><a title="Line 1096: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1096: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (m_lines != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1097</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        sb.append(<span class="string">" (#"</span>).append(m_lines.length).append(<span class="string">")"</span>);</span></pre></td></tr>
@@ -2089,7 +2089,7 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1328</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1329</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder msgfile = <span class="keyword">new</span> StringBuilder().append(get_TableName()).append(get_ID()).append(<span class="string">"_"</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1329</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder msgfile = <span class="keyword">new</span> StringBuilder().append(get_TableName()).append(getId()).append(<span class="string">"_"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1330</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        File temp = File.createTempFile(msgfile.toString(), <span class="string">".pdf"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1331</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> createPDF (temp);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1332</td>  <td class="nbHits">&nbsp;</td>
@@ -4219,6 +4219,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MInvoice</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/6/18 4:24 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/7/18 8:41 PM.</div>
 </body>
 </html>

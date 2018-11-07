@@ -1043,7 +1043,7 @@
 <tr>  <td class="numLineCover">&nbsp;633</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">boolean</span> retValue = <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;634</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;635</td>  <td class="nbHitsUncovered"><a title="Line 635: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 635: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (pi.getRecord_ID() != get_ID())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;635</td>  <td class="nbHitsUncovered"><a title="Line 635: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 635: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (pi.getRecord_ID() != getId())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;636</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;637</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.log(Level.SEVERE, <span class="string">"startProcess - Not same Payment - "</span> + pi.getRecord_ID());</span></pre></td></tr>
@@ -3203,7 +3203,7 @@
 <tr>  <td class="numLine">&nbsp;2031</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2032</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MCash cash = MCash.get (getCtx(), getAD_Org_ID(), getDateAcct(), getC_Currency_ID(), get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2033</td>  <td class="nbHitsUncovered"><a title="Line 2033: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2033: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (cash == <span class="keyword">null</span> || cash.get_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2033</td>  <td class="nbHitsUncovered"><a title="Line 2033: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2033: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (cash == <span class="keyword">null</span> || cash.getId() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2034</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2035</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                m_processMsg = <span class="string">"@NoCashBook@"</span>;</span></pre></td></tr>
@@ -3684,7 +3684,7 @@
 <tr>  <td class="numLineCover">&nbsp;2370</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        .subtract(DiscountAmt).subtract(WriteOffAmt);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2371</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2372</td>  <td class="nbHitsUncovered"><a title="Line 2372: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2372: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                                <span class="keyword">if</span> (alloc.get_ID() == 0 &amp;&amp; !alloc.save(get_TrxName()))</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2372</td>  <td class="nbHitsUncovered"><a title="Line 2372: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2372: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                                <span class="keyword">if</span> (alloc.getId() == 0 &amp;&amp; !alloc.save(get_TrxName()))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2373</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2374</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        log.log(Level.SEVERE, <span class="string">"Could not create Allocation Hdr"</span>);</span></pre></td></tr>
@@ -3726,7 +3726,7 @@
 <tr>  <td class="numLine">&nbsp;2401</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Should start WF</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2402</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">boolean</span> ok = <span class="keyword">true</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2403</td>  <td class="nbHitsUncovered"><a title="Line 2403: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2403: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (alloc.get_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2403</td>  <td class="nbHitsUncovered"><a title="Line 2403: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2403: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (alloc.getId() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2404</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2405</td>  <td class="nbHitsUncovered"><a title="Line 2405: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2405: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (log.isLoggable(Level.FINE)) log.fine(<span class="string">"No Allocation created - C_Payment_ID="</span> </a></span></pre></td></tr>
@@ -4294,7 +4294,7 @@
 <tr>  <td class="numLine">&nbsp;2788</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2789</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuilder sb = <span class="keyword">new</span> StringBuilder (<span class="string">"MPayment["</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2790</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                sb.append(get_ID()).append(<span class="string">"-"</span>).append(getDocumentNo())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2790</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                sb.append(getId()).append(<span class="string">"-"</span>).append(getDocumentNo())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2791</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",Receipt="</span>).append(isReceipt())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2792</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",PayAmt="</span>).append(getPayAmt())</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2793</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        .append(<span class="string">",Discount="</span>).append(getDiscountAmt())</span></pre></td></tr>
@@ -4339,7 +4339,7 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2816</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2817</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        File temp = File.createTempFile(get_TableName()+get_ID()+<span class="string">"_"</span>, <span class="string">".pdf"</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2817</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        File temp = File.createTempFile(get_TableName()+ getId()+<span class="string">"_"</span>, <span class="string">".pdf"</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2818</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> createPDF (temp);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2819</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -4656,6 +4656,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  MPayment</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/6/18 4:24 PM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/7/18 8:41 PM.</div>
 </body>
 </html>
