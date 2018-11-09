@@ -27,7 +27,6 @@ org.idempiere.common.dbPort
 org.idempiere.common.distributed
 org.idempiere.common.exceptions
 org.idempiere.common.util
-org.idempiere.icommon
 org.idempiere.icommon.base
 org.idempiere.icommon.db
 org.idempiere.icommon.dbPort
@@ -36,12 +35,3 @@ org.idempiere.icommon.model
 org.idempiere.orm
 org.idempiere.process
 pg.org.compiere.db
-software.hsharp.api.icommon
-software.hsharp.business.core
-software.hsharp.business.models
-software.hsharp.business.services
-software.hsharp.core.models
-software.hsharp.core.services
-software.hsharp.core.util
-software.hsharp.db.postgresql.provider
-software.hsharp.woocommerce
