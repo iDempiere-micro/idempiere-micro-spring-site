@@ -758,7 +758,7 @@
 <tr>  <td class="numLine">&nbsp;448</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;449</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                BigDecimal currentCost = line.getCurrentCostPrice();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;450</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MClient client = MClient.get(getCtx(), getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;450</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MClient client = MClient.get(getCtx(), getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;451</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MAcctSchema as = client.getAcctSchema();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;452</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MAcctSchema[] ass = MAcctSchema.getClientAcctSchema(getCtx(), client.getId());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;453</td>  <td class="nbHits">&nbsp;</td>
@@ -1162,7 +1162,7 @@
 <tr>  <td class="numLineCover">&nbsp;726</td>  <td class="nbHitsUncovered"><a title="Line 726: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 726: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span>(qtyDiff.compareTo(Env.ZERO)&gt;0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;727</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;728</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MClientInfo m_clientInfo = MClientInfo.get(getCtx(), getAD_Client_ID(), get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;728</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MClientInfo m_clientInfo = MClientInfo.get(getCtx(), getADClientID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                MAcctSchema acctSchema = <span class="keyword">new</span> MAcctSchema(getCtx(), m_clientInfo.getC_AcctSchema1_ID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsUncovered"><a title="Line 730: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 730: Conditional coverage 0% (0/2).">                                                <span class="keyword">if</span> (MAcctSchema.COSTINGLEVEL_BatchLot.equals(product.getCostingLevel(acctSchema)) )</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;731</td>  <td class="nbHits">&nbsp;</td>
@@ -1477,7 +1477,7 @@
 <tr>  <td class="numLine">&nbsp;946</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        Deep Copy</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;947</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MInventory reversal = <span class="keyword">new</span> MInventory(getCtx(), 0, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;948</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                PO.copyValues(<span class="keyword">this</span>, reversal, getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;948</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                PO.copyValues(<span class="keyword">this</span>, reversal, getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;949</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                reversal.setDocumentNo(getDocumentNo() + REVERSE_INDICATOR);        <span class="comment">//        indicate reversals</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;950</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                reversal.setMovementDate(reversalDate);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;951</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                reversal.setDocStatus(X_M_Inventory.DOCSTATUS_Drafted);</span></pre></td></tr>
@@ -1502,7 +1502,7 @@
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;967</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInventoryLine oLine = oLines[i];</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;968</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MInventoryLine rLine = <span class="keyword">new</span> MInventoryLine(getCtx(), 0, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;969</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        PO.copyValues(oLine, rLine, oLine.getAD_Client_ID(), oLine.getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;969</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        PO.copyValues(oLine, rLine, oLine.getADClientID(), oLine.getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;970</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        rLine.setM_Inventory_ID(reversal.getM_Inventory_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;971</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        rLine.setParent(reversal);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;972</td>  <td class="nbHits">&nbsp;</td>
@@ -1788,6 +1788,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MInventory</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

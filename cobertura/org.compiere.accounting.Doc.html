@@ -604,7 +604,7 @@
 <tr>  <td class="numLineCover">&nbsp;311</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                p_Status = STATUS_Error;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;312</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_as = as;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;313</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_ctx = <span class="keyword">new</span> Properties(m_as.getCtx());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;314</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_ctx.setProperty(<span class="string">"#AD_Client_ID"</span>, String.valueOf(m_as.getAD_Client_ID()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;314</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                m_ctx.setProperty(<span class="string">"#AD_Client_ID"</span>, String.valueOf(m_as.getADClientID()));</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;315</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;316</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String className = clazz.getName();</span></pre></td></tr>
@@ -900,11 +900,11 @@
   <td class="src"><pre class="src">&nbsp;                }        </pre></td></tr>
 <tr>  <td class="numLine">&nbsp;493</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;494</td>  <td class="nbHitsUncovered"><a title="Line 494: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 494: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (p_po.getAD_Client_ID() != m_as.getAD_Client_ID())</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;494</td>  <td class="nbHitsUncovered"><a title="Line 494: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 494: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (p_po.getADClientID() != m_as.getADClientID())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;495</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;496</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder error = <span class="keyword">new</span> StringBuilder(<span class="string">"AD_Client_ID Conflict - Document="</span>).append(p_po.getAD_Client_ID())</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;497</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">", AcctSchema="</span>).append(m_as.getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;496</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        StringBuilder error = <span class="keyword">new</span> StringBuilder(<span class="string">"AD_Client_ID Conflict - Document="</span>).append(p_po.getADClientID())</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;497</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                .append(<span class="string">", AcctSchema="</span>).append(m_as.getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;498</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.severe(error.toString());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;499</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> error.toString();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;500</td>  <td class="nbHits">&nbsp;</td>
@@ -1088,7 +1088,7 @@
 <tr>  <td class="numLineCover">&nbsp;625</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        String AD_MessageValue = <span class="string">"PostingError-"</span> + p_Status;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;626</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">int</span> AD_User_ID = p_po.getUpdatedBy();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;627</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MNote note = <span class="keyword">new</span> MNote (getCtx(), AD_MessageValue, AD_User_ID,</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;628</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                getAD_Client_ID(), getAD_Org_ID(), <span class="keyword">null</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;628</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                getADClientID(), getAD_Org_ID(), <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;629</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        note.setRecord(p_po.get_Table_ID(), p_po.getId());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;630</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//  Reference</span></pre></td></tr>
@@ -1518,7 +1518,7 @@
 <tr>  <td class="numLine">&nbsp;914</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;915</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt = DB.prepareStatement(sql.toString(), <span class="keyword">null</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;916</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;916</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;917</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setString(2, m_DocumentType);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;918</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                rsDT = pstmt.executeQuery();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;919</td>  <td class="nbHitsUncovered"><a title="Line 919: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 919: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (rsDT.next())</a></span></pre></td></tr>
@@ -1560,7 +1560,7 @@
 <tr>  <td class="numLine">&nbsp;943</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;944</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt = DB.prepareStatement(sql, <span class="keyword">null</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;945</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;945</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                pstmt.setInt(1, getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;946</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                rsDT = pstmt.executeQuery();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;947</td>  <td class="nbHitsUncovered"><a title="Line 947: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 947: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (rsDT.next())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;948</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        m_GL_Category_ID = rsDT.getInt(1);</span></pre></td></tr>
@@ -1692,7 +1692,7 @@
 <tr>  <td class="numLine">&nbsp;1031</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1032</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal amt = MConversionRate.getRate (C_Currency_ID, acctSchema.getC_Currency_ID(),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1033</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        getDateAcct(), getC_ConversionType_ID(), getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1033</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        getDateAcct(), getC_ConversionType_ID(), getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1034</td>  <td class="nbHitsUncovered"><a title="Line 1034: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1034: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (amt == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1035</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
@@ -2495,12 +2495,12 @@
 <tr>  <td class="numLine">&nbsp;1525</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">         */</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1526</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getAD_Client_ID()</pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> <span class="keyword">int</span> getADClientID()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1527</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1528</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> p_po.getAD_Client_ID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1528</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">return</span> p_po.getADClientID();</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1529</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getAD_Client_ID</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;        }        <span class="comment">//        getADClientID</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1530</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1531</td>  <td class="nbHits">&nbsp;</td>
@@ -2952,7 +2952,7 @@
 <tr>  <td class="numLine">&nbsp;1805</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1806</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1807</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_MatMatchPO);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1807</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_MatMatchPO);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1808</td>  <td class="nbHitsUncovered"><a title="Line 1808: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1808: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1809</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1810</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -2960,7 +2960,7 @@
 <tr>  <td class="numLine">&nbsp;1812</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1813</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1814</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_MatMatchInv);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1814</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_MatMatchInv);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1815</td>  <td class="nbHitsUncovered"><a title="Line 1815: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1815: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1816</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1817</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -2968,7 +2968,7 @@
 <tr>  <td class="numLine">&nbsp;1819</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1820</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1821</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_Allocation);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1821</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_Allocation);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1822</td>  <td class="nbHitsUncovered"><a title="Line 1822: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1822: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1823</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1824</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -2976,7 +2976,7 @@
 <tr>  <td class="numLine">&nbsp;1826</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1827</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1828</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_BankStatement);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1828</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_BankStatement);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1829</td>  <td class="nbHitsUncovered"><a title="Line 1829: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1829: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1830</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1831</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -2984,7 +2984,7 @@
 <tr>  <td class="numLine">&nbsp;1833</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1834</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1835</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_CashJournal);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1835</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_CashJournal);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1836</td>  <td class="nbHitsUncovered"><a title="Line 1836: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1836: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1837</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1838</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -2992,7 +2992,7 @@
 <tr>  <td class="numLine">&nbsp;1840</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1841</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1842</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_ProjectIssue);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1842</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_ProjectIssue);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1843</td>  <td class="nbHitsUncovered"><a title="Line 1843: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1843: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1844</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1845</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
@@ -3000,7 +3000,7 @@
 <tr>  <td class="numLine">&nbsp;1847</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1848</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> docTypeId = DB.getSQLValue((String)<span class="keyword">null</span>, DOC_TYPE_BY_DOC_BASE_TYPE_SQL, </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1849</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getAD_Client_ID(), Doc.DOCTYPE_MatProduction);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1849</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                p_po.getADClientID(), Doc.DOCTYPE_MatProduction);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1850</td>  <td class="nbHitsUncovered"><a title="Line 1850: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1850: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (docTypeId &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1851</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> docTypeId;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1852</td>  <td class="nbHits">&nbsp;</td>
@@ -3742,6 +3742,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  Doc</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

@@ -177,7 +177,7 @@
 <tr>  <td class="numLine">&nbsp;81</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;82</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                to.set_TrxName(trxName);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                copyValues(from, to, from.getAD_Client_ID(), from.getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;83</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                copyValues(from, to, from.getADClientID(), from.getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;84</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                to.set_ValueNoCheck (<span class="string">"C_Order_ID"</span>, I_ZERO);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;85</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                to.set_ValueNoCheck (<span class="string">"DocumentNo"</span>, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;86</td>  <td class="nbHits">&nbsp;</td>
@@ -585,9 +585,9 @@
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" AND IsActive='Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;341</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">"ORDER BY AD_Org_ID DESC, IsDefault DESC"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> C_DocType_ID = DB.getSQLValue(<span class="keyword">null</span>, sql, getAD_Client_ID(), DocSubTypeSO_x);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;342</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> C_DocType_ID = DB.getSQLValue(<span class="keyword">null</span>, sql, getADClientID(), DocSubTypeSO_x);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;343</td>  <td class="nbHitsUncovered"><a title="Line 343: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 343: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (C_DocType_ID &lt;= 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.severe (<span class="string">"Not found for AD_Client_ID="</span> + getAD_Client_ID () + <span class="string">", SubType="</span> + DocSubTypeSO_x);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;344</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.severe (<span class="string">"Not found for AD_Client_ID="</span> + getADClientID() + <span class="string">", SubType="</span> + DocSubTypeSO_x);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;345</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;346</td>  <td class="nbHits">&nbsp;</td>
@@ -627,9 +627,9 @@
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">") AND DocBaseType='POO' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;368</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">"ORDER BY AD_Org_ID DESC, IsDefault DESC"</span>;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> C_DocType_ID = DB.getSQLValue(<span class="keyword">null</span>, sql, getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;369</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> C_DocType_ID = DB.getSQLValue(<span class="keyword">null</span>, sql, getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;370</td>  <td class="nbHitsUncovered"><a title="Line 370: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 370: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (C_DocType_ID &lt;= 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.severe (<span class="string">"No POO found for AD_Client_ID="</span> + getAD_Client_ID ());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;371</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        log.severe (<span class="string">"No POO found for AD_Client_ID="</span> + getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;372</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">else</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;373</td>  <td class="nbHits">&nbsp;</td>
@@ -781,7 +781,7 @@
 <tr>  <td class="numLine">&nbsp;474</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;475</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MOrderLine line = <span class="keyword">new</span> MOrderLine (<span class="keyword">this</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;476</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        copyValues(fromLines[i], line, getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;476</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        copyValues(fromLines[i], line, getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;477</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.setC_Order_ID(getC_Order_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;478</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">//</span></pre></td></tr>
@@ -1423,7 +1423,7 @@
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;872</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;873</td>  <td class="nbHitsUncovered"><a title="Line 873: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 873: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getAD_Client_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;873</td>  <td class="nbHitsUncovered"><a title="Line 873: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 873: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getADClientID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;874</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;875</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        m_processMsg = <span class="string">"AD_Client_ID = 0"</span>;</span></pre></td></tr>
@@ -1484,7 +1484,7 @@
 <tr>  <td class="numLine">&nbsp;912</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//        No Partner Info - set Template</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;913</td>  <td class="nbHitsUncovered"><a title="Line 913: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 913: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getC_BPartner_ID() == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;914</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setBPartner(MBPartner.getTemplate(getCtx(), getAD_Client_ID()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;914</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setBPartner(MBPartner.getTemplate(getCtx(), getADClientID()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;915</td>  <td class="nbHitsUncovered"><a title="Line 915: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 915: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (getC_BPartner_Location_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;916</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        setBPartner(<span class="keyword">new</span> MBPartner(getCtx(), getC_BPartner_ID(), <span class="keyword">null</span>));</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;917</td>  <td class="nbHits">&nbsp;</td>
@@ -1510,7 +1510,7 @@
   <td class="src"><pre class="src">&nbsp;                                <span class="string">"SELECT M_PriceList_ID FROM M_PriceList "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;931</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                + <span class="string">"WHERE AD_Client_ID=? AND IsSOPriceList=? AND IsActive=?"</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;932</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"ORDER BY IsDefault DESC"</span>, getAD_Client_ID(), isSOTrx(), <span class="keyword">true</span>);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;932</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"ORDER BY IsDefault DESC"</span>, getADClientID(), isSOTrx(), <span class="keyword">true</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;933</td>  <td class="nbHitsUncovered"><a title="Line 933: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 933: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (ii != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;934</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                setM_PriceList_ID (ii);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;935</td>  <td class="nbHits">&nbsp;</td>
@@ -1562,7 +1562,7 @@
 <tr>  <td class="numLine">&nbsp;966</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;967</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                String sql = <span class="string">"SELECT C_PaymentTerm_ID FROM C_PaymentTerm WHERE AD_Client_ID=? AND IsDefault='Y' AND IsActive='Y'"</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;968</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                ii = DB.getSQLValue(<span class="keyword">null</span>, sql, getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;968</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                ii = DB.getSQLValue(<span class="keyword">null</span>, sql, getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;969</td>  <td class="nbHitsUncovered"><a title="Line 969: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 969: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (ii != 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;970</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        setC_PaymentTerm_ID (ii);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;971</td>  <td class="nbHits">&nbsp;</td>
@@ -1862,7 +1862,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">protected</span> <span class="keyword">boolean</span> calculateFreightCharge()</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1165</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1166</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MClientInfo ci = MClientInfo.get(getCtx(), getAD_Client_ID(), get_TrxName());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1166</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MClientInfo ci = MClientInfo.get(getCtx(), getADClientID(), get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1167</td>  <td class="nbHitsUncovered"><a title="Line 1167: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1167: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                <span class="keyword">if</span> (ci.getC_ChargeFreight_ID() == 0 &amp;&amp; ci.getM_ProductFreight_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1168</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
@@ -2688,6 +2688,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MOrder</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

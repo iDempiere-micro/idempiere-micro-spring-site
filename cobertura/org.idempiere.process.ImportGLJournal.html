@@ -900,7 +900,7 @@
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;691</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        BatchDocumentNo = impBatchDocumentNo;        <span class="comment">//        cannot compare real DocumentNo</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;692</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        batch = <span class="keyword">new</span> MJournalBatch (getCtx(), 0, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;693</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        batch.setClientOrg(imp.getAD_Client_ID(), imp.getAD_OrgDoc_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;693</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        batch.setClientOrg(imp.getADClientID(), imp.getAD_OrgDoc_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;694</td>  <td class="nbHitsUncovered"><a title="Line 694: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 694: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (imp.getBatchDocumentNo() != <span class="keyword">null</span> </a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;695</td>  <td class="nbHitsUncovered"><a title="Line 695: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 695: Conditional coverage 0% (0/2).">                                                &amp;&amp; imp.getBatchDocumentNo().length() &gt; 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;696</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                batch.setDocumentNo (imp.getBatchDocumentNo());</span></pre></td></tr>
@@ -958,7 +958,7 @@
 <tr>  <td class="numLineCover">&nbsp;737</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        journal = <span class="keyword">new</span> MJournal (getCtx(), 0, get_TrxName());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;738</td>  <td class="nbHitsUncovered"><a title="Line 738: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 738: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (batch != <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;739</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                journal.setGL_JournalBatch_ID(batch.getGL_JournalBatch_ID());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;740</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        journal.setClientOrg(imp.getAD_Client_ID(), imp.getAD_OrgDoc_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;740</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        journal.setClientOrg(imp.getADClientID(), imp.getAD_OrgDoc_ID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;741</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        <span class="comment">//</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;742</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        String description = imp.getBatchDescription();</span></pre></td></tr>
@@ -1017,7 +1017,7 @@
 <tr>  <td class="numLineCover">&nbsp;781</td>  <td class="nbHitsUncovered"><a title="Line 781: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 781: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (imp.getC_ValidCombination_ID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;782</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;783</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        MAccount acct = MAccount.get(getCtx(), imp.getAD_Client_ID(), imp.getAD_Org_ID(),</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;783</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        MAccount acct = MAccount.get(getCtx(), imp.getADClientID(), imp.getAD_Org_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;784</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                imp.getC_AcctSchema_ID(), imp.getAccount_ID(), 0,</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;785</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                imp.getM_Product_ID(), imp.getC_BPartner_ID(), imp.getAD_OrgTrx_ID(),</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;786</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                imp.getC_LocFrom_ID(), imp.getC_LocTo_ID(), imp.getC_SalesRegion_ID(),</span></pre></td></tr>
@@ -1115,6 +1115,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        ImportGLJournal</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

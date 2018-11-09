@@ -393,14 +393,14 @@
 <tr>  <td class="numLine">&nbsp;221</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;222</td>  <td class="nbHitsUncovered"><a title="Line 222: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 222: Conditional coverage 0% (0/2).">                <span class="keyword">for</span> (MUser user : users) {</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered"><a title="Line 223: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 223: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (clientsValidated.contains(user.getAD_Client_ID())) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;223</td>  <td class="nbHitsUncovered"><a title="Line 223: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 223: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (clientsValidated.contains(user.getADClientID())) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;224</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                s_log.severe(<span class="string">"Two users with password with the same name/email combination on same tenant: "</span> + name);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;225</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="keyword">null</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;226</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;227</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;228</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        clientsValidated.add(user.getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;228</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        clientsValidated.add(user.getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;229</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">boolean</span> valid = <span class="keyword">false</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;230</td>  <td class="nbHitsUncovered"><a title="Line 230: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 230: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (hash_password) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;231</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                valid = user.authenticateHash(password);</span></pre></td></tr>
@@ -1509,7 +1509,7 @@
 <tr>  <td class="numLineCover">&nbsp;913</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> cnt = DB.getSQLValue(get_TrxName(),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;914</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="string">"SELECT COUNT(*) FROM AD_User WHERE Password IS NOT NULL AND EMail=? AND AD_Client_ID=? AND AD_User_ID!=?"</span>,</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;915</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getEMail(), getAD_Client_ID(), getAD_User_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;915</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getEMail(), getADClientID(), getAD_User_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;916</td>  <td class="nbHitsUncovered"><a title="Line 916: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 916: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (cnt &gt; 0) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;917</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        log.saveError(<span class="string">"SaveError"</span>, Msg.getMsg(getCtx(), DBException.SAVE_ERROR_NOT_UNIQUE_MSG, <span class="keyword">true</span>) + Msg.getElement(getCtx(), I_AD_User.COLUMNNAME_EMail));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;918</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
@@ -1524,7 +1524,7 @@
 <tr>  <td class="numLineCover">&nbsp;925</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> cnt = DB.getSQLValue(get_TrxName(),</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;926</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="string">"SELECT COUNT(*) FROM AD_User WHERE Password IS NOT NULL AND COALESCE(LDAPUser,Name)=? AND AD_Client_ID=? AND AD_User_ID!=?"</span>,</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;927</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                nameToValidate, getAD_Client_ID(), getAD_User_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;927</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                nameToValidate, getADClientID(), getAD_User_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;928</td>  <td class="nbHitsUncovered"><a title="Line 928: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 928: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (cnt &gt; 0) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;929</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        log.saveError(<span class="string">"SaveError"</span>, Msg.getMsg(getCtx(), DBException.SAVE_ERROR_NOT_UNIQUE_MSG, <span class="keyword">true</span>) + Msg.getElement(getCtx(), HasName.Companion.getCOLUMNNAME_Name()) + <span class="string">" / "</span> + Msg.getElement(getCtx(), I_AD_User.COLUMNNAME_LDAPUser));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;930</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        <span class="keyword">return</span> <span class="keyword">false</span>;</span></pre></td></tr>
@@ -1603,7 +1603,7 @@
 <tr>  <td class="numLine">&nbsp;974</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;975</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MUser retValue = <span class="keyword">null</span>;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;976</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> AD_Client_ID = Env.getAD_Client_ID(ctx);</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;976</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> AD_Client_ID = Env.getADClientID(ctx);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;977</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;978</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                StringBuffer sql = <span class="keyword">new</span> StringBuffer(<span class="string">"SELECT DISTINCT u.AD_User_ID "</span>)</span></pre></td></tr>
@@ -1701,11 +1701,11 @@
   <td class="src"><pre class="src">&nbsp;        }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1040</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1041</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setAD_Client_ID(<span class="keyword">int</span> AD_Client_ID) {<span class="keyword">super</span>.setAD_Client_ID(AD_Client_ID);}</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1041</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;        <span class="keyword">public</span> <span class="keyword">void</span> setADClientID(<span class="keyword">int</span> AD_Client_ID) {<span class="keyword">super</span>.setADClientID(AD_Client_ID);}</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1042</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MUser</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

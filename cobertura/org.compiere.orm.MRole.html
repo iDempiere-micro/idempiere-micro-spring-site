@@ -317,7 +317,7 @@
 <tr>  <td class="numLine">&nbsp;166</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;167</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt = DB.prepareStatement (sql, <span class="keyword">null</span>);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;168</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt.setInt (1, Env.getAD_Client_ID(ctx));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;168</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        pstmt.setInt (1, Env.getADClientID(ctx));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;169</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        rs = pstmt.executeQuery ();</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;170</td>  <td class="nbHitsUncovered"><a title="Line 170: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 170: Conditional coverage 0% (0/2).">                        <span class="keyword">while</span> (rs.next ())</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;171</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                list.add (<span class="keyword">new</span> MRole(ctx, rs, <span class="keyword">null</span>));</span></pre></td></tr>
@@ -583,7 +583,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        if (newRecord || is_ValueChanged("UserLevel"))</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;332</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        <span class="comment">//        {</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;333</td>  <td class="nbHitsUncovered"><a title="Line 333: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 333: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (getAD_Client_ID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;333</td>  <td class="nbHitsUncovered"><a title="Line 333: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 333: Conditional coverage 0% (0/2).">                        <span class="keyword">if</span> (getADClientID() == 0)</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;334</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                setUserLevel(X_AD_Role.USERLEVEL_System);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;335</td>  <td class="nbHitsUncovered"><a title="Line 335: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 335: Conditional coverage 0% (0/2).">                        <span class="keyword">else</span> <span class="keyword">if</span> (getUserLevel().equals(X_AD_Role.USERLEVEL_System))</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;336</td>  <td class="nbHits">&nbsp;</td>
@@ -712,7 +712,7 @@
 <tr>  <td class="numLine">&nbsp;410</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;411</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String roleClientOrgUser = getAD_Role_ID() + <span class="string">","</span></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getAD_Client_ID() + <span class="string">","</span> + getAD_Org_ID() + <span class="string">",'Y', SysDate,"</span></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;412</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getADClientID() + <span class="string">","</span> + getAD_Org_ID() + <span class="string">",'Y', SysDate,"</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;413</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getUpdatedBy() + <span class="string">", SysDate,"</span> + getUpdatedBy()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;414</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">",'Y' "</span>;        <span class="comment">//        IsReadWrite</span></pre></td></tr>
@@ -788,7 +788,7 @@
 <tr>  <td class="numLineCover">&nbsp;453</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + <span class="string">"(wa.AD_Role_ID="</span> + getAD_Role_ID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;454</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">" AND w.AD_WorkFlow_ID = wa.AD_WorkFlow_ID) "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + <span class="string">"WHERE w.AD_Client_ID IN (0,"</span> + getAD_Client_ID() + <span class="string">") AND wa.AD_WorkFlow_ID IS NULL AND AccessLevel IN "</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;455</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + <span class="string">"WHERE w.AD_Client_ID IN (0,"</span> + getADClientID() + <span class="string">") AND wa.AD_WorkFlow_ID IS NULL AND AccessLevel IN "</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;456</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;457</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String sqlDocAction = <span class="string">"INSERT INTO AD_Document_Action_Access "</span></span></pre></td></tr>
@@ -798,7 +798,7 @@
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">"C_DocType_ID , AD_Ref_List_ID, AD_Role_ID) "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;460</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">"(SELECT "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;461</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getAD_Client_ID() + <span class="string">",0,'Y', SysDate,"</span></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;461</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getADClientID() + <span class="string">",0,'Y', SysDate,"</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;462</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        + getUpdatedBy() + <span class="string">", SysDate,"</span> + getUpdatedBy()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;463</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        + <span class="string">", doctype.C_DocType_ID, action.AD_Ref_List_ID, rol.AD_Role_ID "</span></pre></td></tr>
@@ -826,14 +826,14 @@
 <tr>  <td class="numLine">&nbsp;476</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                + <span class="string">" AD_Client_ID,AD_Org_ID,IsActive,Created,CreatedBy,Updated,UpdatedBy) "</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;477</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"SELECT i.AD_InfoWindow_ID,"</span> + getAD_Role_ID() + <span class="string">","</span></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + getAD_Client_ID() + <span class="string">","</span> + getAD_Org_ID() + <span class="string">",'Y',SysDate,"</span></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;478</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + getADClientID() + <span class="string">","</span> + getAD_Org_ID() + <span class="string">",'Y',SysDate,"</span></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;479</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + getUpdatedBy() + <span class="string">", SysDate,"</span> + getUpdatedBy()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;480</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                + <span class="string">" FROM AD_InfoWindow i LEFT JOIN AD_InfoWindow_Access ia ON "</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;481</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"(ia.AD_Role_ID="</span> + getAD_Role_ID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;482</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                + <span class="string">" AND i.AD_InfoWindow_ID = ia.AD_InfoWindow_ID) "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;483</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"WHERE i.AD_Client_ID IN (0,"</span> + getAD_Client_ID() + <span class="string">") AND ia.AD_InfoWindow_ID IS NULL"</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;483</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                + <span class="string">"WHERE i.AD_Client_ID IN (0,"</span> + getADClientID() + <span class="string">") AND ia.AD_InfoWindow_ID IS NULL"</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;484</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;485</td>  <td class="nbHits">&nbsp;</td>
@@ -1215,7 +1215,7 @@
 <tr>  <td class="numLine">&nbsp;727</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;728</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MUserOrgAccess oa = <span class="keyword">new</span> MUserOrgAccess(getCtx(), rs, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getAD_Client_ID(), oa.getAD_Org_ID(), oa.isReadOnly()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;729</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getADClientID(), oa.getAD_Org_ID(), oa.isReadOnly()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;730</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;731</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -1262,7 +1262,7 @@
 <tr>  <td class="numLine">&nbsp;758</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;759</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                MRoleOrgAccess oa = <span class="keyword">new</span> MRoleOrgAccess(getCtx(), rs, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;760</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getAD_Client_ID(), oa.getAD_Org_ID(), oa.isReadOnly()));</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;760</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                loadOrgAccessAdd (list, <span class="keyword">new</span> OrgAccess(oa.getADClientID(), oa.getAD_Org_ID(), oa.isReadOnly()));</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;761</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        }</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;762</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
@@ -1631,9 +1631,9 @@
 <tr>  <td class="numLineCover">&nbsp;1009</td>  <td class="nbHitsUncovered"><a title="Line 1009: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1009: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (isAccessAllOrgs())</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1010</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1011</td>  <td class="nbHitsUncovered"><a title="Line 1011: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1011: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (rw || getAD_Client_ID() == 0)</a></span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1012</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Client_ID="</span> + getAD_Client_ID();</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1013</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="string">"AD_Client_ID IN (0,"</span> + getAD_Client_ID() + <span class="string">")"</span>;</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1011</td>  <td class="nbHitsUncovered"><a title="Line 1011: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1011: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                        <span class="keyword">if</span> (rw || getADClientID() == 0)</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1012</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">return</span> <span class="string">"AD_Client_ID="</span> + getADClientID();</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1013</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">return</span> <span class="string">"AD_Client_ID IN (0,"</span> + getADClientID() + <span class="string">")"</span>;</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1014</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1015</td>  <td class="nbHits">&nbsp;</td>
@@ -1713,7 +1713,7 @@
 <tr>  <td class="numLineCover">&nbsp;1063</td>  <td class="nbHitsUncovered"><a title="Line 1063: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1063: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (isAccessAllOrgs()) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1064</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">// User has access to given AD_Client_ID if the role is defined on that AD_Client_ID</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1065</td>  <td class="nbHitsUncovered"><a title="Line 1065: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1065: Conditional coverage 0% (0/2).">                        <span class="keyword">return</span> getAD_Client_ID() == AD_Client_ID;</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1065</td>  <td class="nbHitsUncovered"><a title="Line 1065: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1065: Conditional coverage 0% (0/2).">                        <span class="keyword">return</span> getADClientID() == AD_Client_ID;</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1066</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                }</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1067</td>  <td class="nbHits">&nbsp;</td>
@@ -2360,7 +2360,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_Window w, ASP_Level l, ASP_ClientLevel cl "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1482</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"               WHERE w.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1483</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1483</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1484</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1485</td>  <td class="nbHits">&nbsp;</td>
@@ -2379,7 +2379,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"              SELECT AD_Window_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1492</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1493</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1493</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1494</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1495</td>  <td class="nbHits">&nbsp;</td>
@@ -2400,7 +2400,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"          SELECT AD_Window_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1503</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"            FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1504</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1504</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1505</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1506</td>  <td class="nbHits">&nbsp;</td>
@@ -2501,7 +2501,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_Process p, ASP_Level l, ASP_ClientLevel cl "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1569</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"               WHERE p.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1570</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1570</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1571</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1572</td>  <td class="nbHits">&nbsp;</td>
@@ -2520,7 +2520,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"              SELECT AD_Process_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1579</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1580</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1580</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1581</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1582</td>  <td class="nbHits">&nbsp;</td>
@@ -2539,7 +2539,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"          SELECT AD_Process_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1589</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"            FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1590</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1590</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1591</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1592</td>  <td class="nbHits">&nbsp;</td>
@@ -2634,7 +2634,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_Task t, ASP_Level l, ASP_ClientLevel cl "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1651</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"               WHERE t.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1652</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1652</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1653</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1654</td>  <td class="nbHits">&nbsp;</td>
@@ -2653,7 +2653,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"              SELECT AD_Task_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1661</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1662</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1662</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1663</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1664</td>  <td class="nbHits">&nbsp;</td>
@@ -2670,7 +2670,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"          SELECT AD_Task_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1670</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"            FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1671</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1671</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1672</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1673</td>  <td class="nbHits">&nbsp;</td>
@@ -2763,7 +2763,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_Form f, ASP_Level l, ASP_ClientLevel cl "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1731</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"               WHERE f.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1732</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1732</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1733</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1734</td>  <td class="nbHits">&nbsp;</td>
@@ -2782,7 +2782,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"              SELECT AD_Form_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1741</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1742</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1742</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1743</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1744</td>  <td class="nbHits">&nbsp;</td>
@@ -2799,7 +2799,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"          SELECT AD_Form_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1750</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"            FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1751</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1751</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1752</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1753</td>  <td class="nbHits">&nbsp;</td>
@@ -2892,7 +2892,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_Workflow w, ASP_Level l, ASP_ClientLevel cl "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1811</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"               WHERE w.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1812</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1812</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"                 AND cl.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1813</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1814</td>  <td class="nbHits">&nbsp;</td>
@@ -2911,7 +2911,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"              SELECT AD_Workflow_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1821</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1822</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1822</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"               WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1823</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1824</td>  <td class="nbHits">&nbsp;</td>
@@ -2928,7 +2928,7 @@
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"          SELECT AD_Workflow_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1830</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"            FROM ASP_ClientException ce "</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1831</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getAD_Client_ID()</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1831</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        + <span class="string">"           WHERE ce.AD_Client_ID = "</span> + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1832</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        + <span class="string">"             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1833</td>  <td class="nbHits">&nbsp;</td>
@@ -3988,7 +3988,7 @@
   <td class="src"><pre class="src">&nbsp;                <span class="keyword">try</span> {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2516</td>  <td class="nbHitsUncovered"><a title="Line 2516: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2516: Conditional coverage 0% (0/2).">                        <span class="keyword">for</span> (MRole role : roles) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2517</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                <span class="keyword">int</span> idxpar = 1;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;2518</td>  <td class="nbHitsUncovered"><a title="Line 2518: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2518: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                                <span class="keyword">if</span> (role.getAD_Client_ID() == 0 &amp;&amp; role.isMasterRole()) {</a></span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;2518</td>  <td class="nbHitsUncovered"><a title="Line 2518: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 2518: Conditional coverage 0% (0/4) [each condition: 0%, 0%].">                                <span class="keyword">if</span> (role.getADClientID() == 0 &amp;&amp; role.isMasterRole()) {</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;2519</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        <span class="comment">// master role on system - check options based on docbasetype and docsubtypeso</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;2520</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        MDocType doc = <span class="keyword">new</span> MDocType(getCtx(), docTypeId, get_TrxName());</span></pre></td></tr>
@@ -4833,7 +4833,7 @@
 <tr>  <td class="numLine">&nbsp;3072</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        <span class="comment">/*</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3073</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                        MClient client = MClient.get(getCtx(), getAD_Client_ID());</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                        MClient client = MClient.get(getCtx(), getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3074</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                        if (client.isUseASP())</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3075</td>  <td class="nbHits">&nbsp;</td>
@@ -4849,7 +4849,7 @@
 <tr>  <td class="numLine">&nbsp;3080</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "               WHERE f.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3081</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "                 AND cl.AD_Client_ID = " + client.getAD_Client_ID()</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "                 AND cl.AD_Client_ID = " + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3082</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "                 AND cl.ASP_Level_ID = l.ASP_Level_ID "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3083</td>  <td class="nbHits">&nbsp;</td>
@@ -4869,7 +4869,7 @@
 <tr>  <td class="numLine">&nbsp;3090</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "                FROM ASP_ClientException ce "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3091</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "               WHERE ce.AD_Client_ID = " + client.getAD_Client_ID()</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "               WHERE ce.AD_Client_ID = " + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3092</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "                 AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3093</td>  <td class="nbHits">&nbsp;</td>
@@ -4887,7 +4887,7 @@
 <tr>  <td class="numLine">&nbsp;3099</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "            FROM ASP_ClientException ce "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3100</td>  <td class="nbHits">&nbsp;</td>
-  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "           WHERE ce.AD_Client_ID = " + client.getAD_Client_ID()</span></pre></td></tr>
+  <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "           WHERE ce.AD_Client_ID = " + client.getADClientID()</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3101</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;<span class="comment">                                        + "             AND ce.IsActive = 'Y' "</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;3102</td>  <td class="nbHits">&nbsp;</td>
@@ -5016,6 +5016,6 @@
   <td class="src"><pre class="src">&nbsp;}        <span class="comment">//        MRole</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>

@@ -1488,7 +1488,7 @@
   <td class="src"><pre class="src">&nbsp;</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;932</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        BigDecimal allocAmt = line.getAmount().add(line.getDiscountAmt()).add(line.getWriteOffAmt());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;933</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        BigDecimal openBalanceDiff = Env.ZERO;</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;934</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        org.compiere.accounting.MClient client = org.compiere.accounting.MClient.get(getCtx(), getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;934</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        org.compiere.accounting.MClient client = org.compiere.accounting.MClient.get(getCtx(), getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;935</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                        </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;936</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        <span class="keyword">boolean</span> paymentProcessed = <span class="keyword">false</span>;</span></pre></td></tr>
@@ -1523,7 +1523,7 @@
 <tr>  <td class="numLine">&nbsp;957</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="comment">// If payment is already processed, only adjust open balance by discount and write off amounts.</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;958</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                BigDecimal amt = MConversionRate.convertBase(getCtx(), line.getWriteOffAmt().add(line.getDiscountAmt()),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;959</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                getC_Currency_ID(), paymentDate, convTypeID, getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;959</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                getC_Currency_ID(), paymentDate, convTypeID, getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;960</td>  <td class="nbHitsUncovered"><a title="Line 960: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 960: Conditional coverage 0% (0/2).">                                                <span class="keyword">if</span> (amt == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;961</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                {</pre></td></tr>
@@ -1541,7 +1541,7 @@
 <tr>  <td class="numLine">&nbsp;970</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                <span class="comment">// Allocating payment to payment.</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;971</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                BigDecimal amt = MConversionRate.convertBase(getCtx(), allocAmt,</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;972</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                getC_Currency_ID(), paymentDate, convTypeID, getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;972</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                                getC_Currency_ID(), paymentDate, convTypeID, getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;973</td>  <td class="nbHitsUncovered"><a title="Line 973: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 973: Conditional coverage 0% (0/2).">                                                <span class="keyword">if</span> (amt == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;974</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                                {</pre></td></tr>
@@ -1557,7 +1557,7 @@
 <tr>  <td class="numLine">&nbsp;982</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        <span class="comment">// If payment has not been processed, adjust open balance by entire allocated amount.</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;983</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        BigDecimal allocAmtBase = MConversionRate.convertBase(getCtx(), allocAmt,        </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;984</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getC_Currency_ID(), getDateAcct(), convTypeID, getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;984</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getC_Currency_ID(), getDateAcct(), convTypeID, getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;985</td>  <td class="nbHitsUncovered"><a title="Line 985: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 985: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (allocAmtBase == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;986</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        {</pre></td></tr>
@@ -1578,7 +1578,7 @@
 <tr>  <td class="numLine">&nbsp;997</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                <span class="comment">// adjust open balance by discount and write off amounts.</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;998</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal amt = MConversionRate.convertBase(getCtx(), line.getWriteOffAmt().add(line.getDiscountAmt()),</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;999</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getC_Currency_ID(), invoice.getDateAcct(), invoice.getC_ConversionType_ID(), getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;999</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                getC_Currency_ID(), invoice.getDateAcct(), invoice.getC_ConversionType_ID(), getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1000</td>  <td class="nbHitsUncovered"><a title="Line 1000: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1000: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (amt == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1001</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
@@ -1603,7 +1603,7 @@
 <tr>  <td class="numLine">&nbsp;1015</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1016</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                        allocAmt = MConversionRate.convert(getCtx(), allocAmt,        </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1017</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getC_Currency_ID(), invoice.getC_Currency_ID(), getDateAcct(), invoice.getC_ConversionType_ID(), getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1017</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                        getC_Currency_ID(), invoice.getC_Currency_ID(), getDateAcct(), invoice.getC_ConversionType_ID(), getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1018</td>  <td class="nbHitsUncovered"><a title="Line 1018: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1018: Conditional coverage 0% (0/2).">                                        <span class="keyword">if</span> (allocAmt == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1019</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                        {</pre></td></tr>
@@ -1615,7 +1615,7 @@
 <tr>  <td class="numLine">&nbsp;1024</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                }</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1025</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal invAmtAccted = MConversionRate.convertBase(getCtx(), invoice.getGrandTotal(),        </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1026</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                invoice.getC_Currency_ID(), invoice.getDateAcct(), invoice.getC_ConversionType_ID(), getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1026</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                invoice.getC_Currency_ID(), invoice.getDateAcct(), invoice.getC_ConversionType_ID(), getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1027</td>  <td class="nbHitsUncovered"><a title="Line 1027: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1027: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (invAmtAccted == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1028</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
@@ -1627,7 +1627,7 @@
 <tr>  <td class="numLine">&nbsp;1033</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                </pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1034</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                BigDecimal allocAmtAccted = MConversionRate.convertBase(getCtx(), allocAmt,        </span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1035</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                invoice.getC_Currency_ID(), getDateAcct(), invoice.getC_ConversionType_ID(), getAD_Client_ID(), getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1035</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                                                invoice.getC_Currency_ID(), getDateAcct(), invoice.getC_ConversionType_ID(), getADClientID(), getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1036</td>  <td class="nbHitsUncovered"><a title="Line 1036: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1036: Conditional coverage 0% (0/2).">                                <span class="keyword">if</span> (allocAmtAccted == <span class="keyword">null</span>)</a></span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1037</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                                {</pre></td></tr>
@@ -1822,7 +1822,7 @@
 <tr>  <td class="numLine">&nbsp;1158</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1159</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                MAllocationHdr to = <span class="keyword">new</span> MAllocationHdr (from.getCtx(), 0, trxName);</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1160</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                PO.copyValues(from, to, from.getAD_Client_ID(), from.getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1160</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                PO.copyValues(from, to, from.getADClientID(), from.getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1161</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                to.set_ValueNoCheck (<span class="string">"DocumentNo"</span>, <span class="keyword">null</span>);</span></pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1162</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;                <span class="comment">//</span></pre></td></tr>
@@ -1876,7 +1876,7 @@
 <tr>  <td class="numLineCover">&nbsp;1194</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                <span class="keyword">int</span> count = 0;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1195</td>  <td class="nbHitsUncovered"><a title="Line 1195: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1195: Conditional coverage 0% (0/2).">                <span class="keyword">for</span> (MAllocationLine fromLine : fromLines) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1196</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        MAllocationLine line = <span class="keyword">new</span> MAllocationLine (getCtx(), 0, get_TrxName());</span></pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1197</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        PO.copyValues(fromLine, line, fromLine.getAD_Client_ID(), fromLine.getAD_Org_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1197</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        PO.copyValues(fromLine, line, fromLine.getADClientID(), fromLine.getAD_Org_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1198</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.setC_AllocationHdr_ID(getC_AllocationHdr_ID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1199</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.setParent(<span class="keyword">this</span>);</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1200</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        line.set_ValueNoCheck (<span class="string">"C_AllocationLine_ID"</span>, PO.I_ZERO);        <span class="comment">// new</span></span></pre></td></tr>
@@ -1959,7 +1959,7 @@
   <td class="src"><pre class="src">&nbsp;        <span class="keyword">public</span> String getDescriptionForManualAllocation(<span class="keyword">int</span> bpartnerID, String trxName)</pre></td></tr>
 <tr>  <td class="numLine">&nbsp;1247</td>  <td class="nbHits">&nbsp;</td>
   <td class="src"><pre class="src">&nbsp;        {</pre></td></tr>
-<tr>  <td class="numLineCover">&nbsp;1248</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String sysconfig_desc = MSysConfig.getValue(MSysConfig.ALLOCATION_DESCRIPTION, <span class="string">"@#AD_User_Name@"</span>, getAD_Client_ID());</span></pre></td></tr>
+<tr>  <td class="numLineCover">&nbsp;1248</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String sysconfig_desc = MSysConfig.getValue(MSysConfig.ALLOCATION_DESCRIPTION, <span class="string">"@#AD_User_Name@"</span>, getADClientID());</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1249</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                String description = <span class="string">""</span>;</span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1250</td>  <td class="nbHitsUncovered"><a title="Line 1250: Conditional coverage 0% (0/2).">&nbsp;0</a></td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;<a title="Line 1250: Conditional coverage 0% (0/2).">                <span class="keyword">if</span> (sysconfig_desc.contains(<span class="string">"@"</span>)) {</a></span></pre></td></tr>
 <tr>  <td class="numLineCover">&nbsp;1251</td>  <td class="nbHitsUncovered">&nbsp;0</td>  <td class="src"><pre class="src"><span class="srcUncovered">&nbsp;                        description = MSequence.parseVariable(sysconfig_desc, <span class="keyword">new</span> MBPartner(getCtx(), bpartnerID, <span class="keyword">null</span>), trxName, <span class="keyword">true</span>);</span></pre></td></tr>
@@ -1995,6 +1995,6 @@
   <td class="src"><pre class="src">&nbsp;}   <span class="comment">//  MAllocation</span></pre></td></tr>
 </table>
 
-<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:25 AM.</div>
+<div class="footer">Report generated by <a href="http://cobertura.sourceforge.net/" target="_top">Cobertura</a> 2.1.1 on 11/9/18 9:36 PM.</div>
 </body>
 </html>
